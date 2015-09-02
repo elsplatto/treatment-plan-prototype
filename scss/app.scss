@@ -9,6 +9,10 @@ h3 {
 	float: left;
 }
 
+.float-right {
+	float: right;
+}
+
 .help {
 	width: rem-calc(19);
 	height: rem-calc(19);
@@ -531,6 +535,7 @@ aside {
 				  &::-webkit-scrollbar {
 				  	background-color: inherit;
 				  	width: 0.75rem;
+				  	padding: 0 2px;
 				  }
 				  &::-webkit-scrollbar-thumb {
 				  	background-color: #fff;
@@ -539,7 +544,10 @@ aside {
 				  }
 			  }
 			  .front {
-
+			  	display: flex;
+			  	flex-direction: column;
+			  	align-items: center;
+			  	justify-content: center;
 			  }
 			  .back {
 			  	overflow-y: auto;
@@ -570,11 +578,12 @@ aside {
 			margin-left: 0.5rem;
 		}
 		.label {
-			font-size: rem-calc(24);
+			font-size: rem-calc(18);
 			background-color: transparent;
 			white-space: normal;
 		}
 		.data-text {
+			padding-top: 4.3rem;
 			font-size: rem-calc(124);
 			line-height: 100%;
 		}
@@ -933,6 +942,9 @@ h4.accordion.show {
 #gumChart {
 	width: 20em;
 	height: 15em;
+	text {
+		fill: #fff;
+	}
 }
 
 
