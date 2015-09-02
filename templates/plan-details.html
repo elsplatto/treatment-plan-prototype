@@ -1,0 +1,8 @@
+ <div ng-controller="TreatmentDetailController"> 
+ 	<h3>{{planDetail.name}}</h3>
+ 		<ol> 
+ 			<li ng-repeat="(key, item) in planDetail.planItems">
+ 				Item Name: <a href="#{{key}}">{{item.itemName}}</a>
+ 			</li>
+ 		</ol>
+</div>

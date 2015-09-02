@@ -218,13 +218,13 @@
           </p>
         </div>
       </div>
-      <div class="large-12 clear hide" id="chartContainer">
+      <div class="large-12 hide" id="chartContainer">
 
-        <div class="large-4 centered dental-health float-left">
-          <div class="container">
-                <a href="#" class="button read-more" data-target="card1">Read more</a>
+        <div class="large-4 centered dental-health bg-1 columns">
+          <a href="#" class="read-more" data-target="card1">Read more</a>
+          <div class="container vertical-center">
             <div class="card" id="card1">
-              <div class="surface front bg-1">
+              <div class="surface front">
                 <ul data-pie-id="sugarChart" data-options='{"percent__offset": 0}'>
                   <li data-value="25">Sugar</li>
                   <li data-value="75">Not Sugar</li>
@@ -234,7 +234,8 @@
                 <span class="label">Your sugar intake</span>
               </div>
 
-              <div class="surface back bg-1">               
+              <div class="surface back">
+                
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. Curabitur hendrerit libero vel sollicitudin convallis. Proin scelerisque dolor lectus, a vehicula enim sodales eu. Curabitur mollis, velit sed consectetur pulvinar, libero lacus consequat metus, sit amet ornare enim eros id libero. Praesent suscipit libero lectus, consectetur placerat felis sagittis nec. Proin facilisis gravida felis at varius. Curabitur scelerisque eget lacus sed ullamcorper. Cras massa enim, hendrerit et elementum sit amet, condimentum eu urna. Nullam mollis, eros a euismod venenatis, odio magna scelerisque ex, in semper nunc lorem id dui. Ut ac suscipit augue. Duis in lacinia nulla, sit amet tincidunt augue.
                 </p>
@@ -249,32 +250,15 @@
           </div>
         </div>
 
-        <div class="large-4 centered dental-health float-left">
-          <div class="container">
-            <a href="#" class="button read-more" data-target="card2">Read more</a>
-            <div class="card" id="card2">
-              <div class="surface front subtle-shade-bg-4">
-                <div class="data-text">
-                  64%
-                </div>
-
-                <span class="label">Likely fail to floss on the weekends</span>          
-              </div>
-
-              <div class="surface back subtle-shade-bg-4"> 
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. Curabitur hendrerit libero vel sollicitudin convallis. Proin scelerisque dolor lectus, a vehicula enim sodales eu. Curabitur mollis, velit sed consectetur pulvinar, libero lacus consequat metus, sit amet ornare enim eros id libero. Praesent suscipit libero lectus, consectetur placerat felis sagittis nec. Proin facilisis gravida felis at varius. Curabitur scelerisque eget lacus sed ullamcorper. Cras massa enim, hendrerit et elementum sit amet, condimentum eu urna. Nullam mollis, eros a euismod venenatis, odio magna scelerisque ex, in semper nunc lorem id dui. Ut ac suscipit augue. Duis in lacinia nulla, sit amet tincidunt augue.
-                </p>
-                <p>
-                Aliquam vehicula enim vitae velit elementum ultricies. Donec congue justo non odio pharetra, vitae aliquet ipsum interdum. In facilisis ex lacus, et tempus orci finibus scelerisque. Sed rhoncus sem id enim convallis viverra. Sed urna metus, convallis ac nisl in, ornare semper justo. Aenean iaculis condimentum metus, eu lobortis diam finibus id. Aenean vulputate sapien sit amet bibendum pretium.
-                </p>
-                <p>
-                Sed ac mollis magna. Praesent justo nisl, placerat ac neque id, commodo faucibus erat. Pellentesque in scelerisque metus. Duis volutpat, tortor ut vulputate faucibus, lectus metus egestas nisl, quis semper ligula eros eu ex. Quisque vel felis nisl. Suspendisse tincidunt venenatis commodo. Fusce in metus sed enim interdum consectetur vitae at tortor.
-                </p>
-              </div>
-
+        <div class="large-4 centered dental-health subtle-shade-bg-4 columns">
+          <div class="container vertical-center">
+            <div class="data-text">
+              64%
             </div>
-          </div>            
+
+            <span class="label">Likely fail to floss on the weekends</span>
+          </div>
+            
         </div>
 
         <div class="large-4 dental-health bg-2 columns">
@@ -639,13 +623,11 @@
           e.preventDefault();
           var el = $('#'+$(this).attr('data-target'));
           if (el.hasClass('flipped')) {
-            el.removeClass('flipped');       
-            $(this).text('Read more');
+            el.removeClass('flipped');
           }  
           else 
           {
-            el.addClass('flipped');     
-            $(this).text('Back to chart');
+            el.addClass('flipped');[]
           }
         });
 

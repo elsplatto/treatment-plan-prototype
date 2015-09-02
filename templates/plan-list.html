@@ -1,0 +1,9 @@
+ <div ng-controller="TreatmentListController">   
+  <ul ng-repeat="plan in plans">            
+    <li>
+      <!-- <a href="plan-detail.html#{{plan.$id}}">Plan Name: {{plan.name}}</a> -->
+      <a href="#plan-detail/{{patientId}}/{{plan.$id}}">Plan Name: {{plan.name}}</a>
+      <p>{{plan.description}}</p>      
+    </li>
+  </ul>  
+</div>

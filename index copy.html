@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="treatmentPlan">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treatment Plan</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+
+    <div class="module-hero">
+      <div class="module-hero-background">
+        <div class="module-hero-image" id="heroImageContainer">
+          <!-- <div class="module-hero-overlay">
+
+          </div> -->
+        </div>
+        <div class="module-hero-logo">
+          <h1>Bupa Dental</h1>
+        </div>
+
+        <div class="module-hero-message-box">
+          <h3>Liam Tonks</h3>
+          <hr />
+          <h2>CO-BRANDING</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Consultation summary and diagnostic findings</h2>
+        <span class="date">Date: 15.11.2015</span>
+        <hr />
+        <p>
+          Dear Ruth Namor. Today you had a preventative and diagnostic appointment comprised of a comprehensive oral exam, 
+          removal of plaque, flouride treatment and inter oral diagnostic imaging to evaluate any changes in your dental 
+          and medical health status
+        </p>
+      </div>
+    </div>
+
+    <div class="primary-bg">
+      <div class="row">
+        <div class="large-12 columns">
+          <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+              <a href="#summaryItemsHolder"><h3>Item codes from today's appointment</h3></a>
+
+              <div id="summaryItemsHolder" class="content">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>011</td>
+                    <td>Comprehensive Oral Examination</td>
+                    <td class="subtotal">$89.00</td>
+                  </tr>
+                  <tr>
+                    <td>111</td>
+                    <td>Clean - Removal of plaque</td>
+                    <td class="subtotal">$195.00</td>
+                  </tr>
+                  <tr>
+                    <td>121</td>
+                    <td>Flouride treatment</td>
+                    <td class="subtotal">$35.00</td>
+                  </tr>
+                  <tr>
+                    <td>022</td>
+                    <td>Inter oral imaging</td>
+                    <td class="subtotal">$41.50</td>
+                  </tr>
+                  <tr>
+                    <td>037</td>
+                    <td>Xray Scan - Radiograph</td>
+                    <td class="subtotal">$137.00</td>
+                  </tr>
+                  <tr class="total">
+                    <td colspan="2">Total for 15.11.2015</td>
+                    <td class="total" id="summaryTotal"></td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="large-12 columns">
+        <h3>Claim Health Insurance</h3>
+        <hr />
+        <p>
+          All helth insurance policies are different and coverage for dental services can vary so we recommend that you speak with your health insurance provider for details.
+        </p>
+        <p>
+        <strong>Bupa members are covered for 60%-100% back on most dental items*.</strong>
+        </p>
+        <p>Bupa members, if you'd like to find out more about how much your're covered for next dental treatment, you can log into <a href="#">myBupa</a> to check your cover, call <a href="tel:134135">134 135</a> or visit your local <a href="#">Bupa Center</a></p>
+        <hr />
+        <aside>
+          * For most items at our Members First extras providers covering detnal. Excludes orthodontics and hospital treatments. Fund and policy rules, waiting periods and yearly limits
+        </aside>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Next Steps</h2>
+        <hr />
+
+        <h4>Come back in 6 months</h4>
+        <hr />
+        <p>
+         Continue to brush throughly and floss regularly. A healthy diet will lower your risk of dental problems and enhance your overall oral health.
+        </p>
+      </div>
+    </div>
+
+    <div class="primary-bg">
+      <div class="row">
+        <div class="large-12 columns">
+          
+
+        </div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      $(document).foundation({
+        accordion: {
+          // specify the class used for accordion panels
+          content_class: 'content',
+          // specify the class used for active (or open) accordion panels
+          active_class: 'active',
+          // allow multiple accordion panels to be active at the same time
+          multi_expand: true,
+          // allow accordion panels to be closed by clicking on their headers
+          // setting to false only closes accordion panels when another is opened
+          toggleable: true
+        }
+      });
+
+      $(window).load(function() {
+        // console.log('window height: ' + window.innerHeight);
+        // console.dir(window)
+        $('#heroImageContainer').css({
+          'backgroundImage': 'url(stylesheets/img/hero-1.png)'
+        });        
+      });
+
+      $(function() {
+        function calcTotal(arr, target)
+        {
+          console.log(target)
+          var total = 0;
+          $.each(arr, function(key, value) {
+            console.log('key: ' + key);
+            console.log('value: ' + value.innerHTML);
+            var subtotal = Number(value.innerHTML.replace('$',''));
+            console.log('Subtotal: ' + subtotal);
+            // subtotal = subtotal.formatMoney(2, '.', ',');
+            console.log('Subtotal: ' + subtotal);
+            total = Number(total + subtotal);
+            console.log('Total: ' + total)
+          });
+          total = total.formatMoney(2, '.', ',');
+          console.dir(target);
+          console.dir($('#summaryTotal'));
+          target.text('$'+total);
+        }
+
+        calcTotal($('.subtotal'),$('#summaryTotal'));
+      })
+
+      Number.prototype.formatMoney = function(c, d, t){
+      var n = this, 
+          c = isNaN(c = Math.abs(c)) ? 2 : c, 
+          d = d == undefined ? "." : d, 
+          t = t == undefined ? "," : t, 
+          s = n < 0 ? "-" : "", 
+          i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
+          j = (j = i.length) > 3 ? j % 3 : 0;
+         return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+       };
+    </script>
+  </body>
+</html>

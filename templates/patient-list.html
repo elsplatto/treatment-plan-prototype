@@ -1,0 +1,8 @@
+<div ng-controller="PatientListController">  
+  <ul ng-repeat="patient in patients">            
+    <li>
+      <a href="#patient-plans/{{patient.$id}}">Patient Name: {{patient.name}}</a>
+      <!-- <a href="patient-plans.html#patient-plans/{{patient.$id}}">Patient Name: {{patient.name}}</a> -->
+    </li>
+  </ul>  
+</div>

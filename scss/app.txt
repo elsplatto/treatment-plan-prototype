@@ -5,10 +5,6 @@ h3 {
 	font-size: rem-calc(30);
 }
 
-.float-left {
-	float: left;
-}
-
 .help {
 	width: rem-calc(19);
 	height: rem-calc(19);
@@ -499,17 +495,18 @@ aside {
 		border-style: solid;
 	}
 	.dental-health {
+		padding-top: 1rem;
 		height: 20rem;
 		display: block;
 		position: relative;
 		.read-more {
-			width: 200px;
 			position: absolute;
-			bottom: -5rem;
-			left: calc(50% - 100px);			
+			top: 1rem;
+			right: 1rem;			
 			z-index: 20;
 		}
 		.container {
+			background-color: inherit;
 			height: 100%;
 			width: 100%;
 			text-align: center;
@@ -521,36 +518,33 @@ aside {
 			  position: absolute;
 			  transform-style: preserve-3d;
 			  transition: transform 1s;
+			  transform-origin: right center;
+				background-color: inherit;
 			  .surface {
 			  	margin: 0;
 				  display: block;
 				  position: absolute;
 				  width: 100%;
-				  height: 100%;
+				  height: 98%;
 				  backface-visibility: hidden;
-				  &::-webkit-scrollbar {
-				  	background-color: inherit;
-				  	width: 0.75rem;
-				  }
-				  &::-webkit-scrollbar-thumb {
-				  	background-color: #fff;
-				  	border: 1px solid transparent;
-				  	border-radius: 5px;
-				  }
+				  background-color: inherit;
 			  }
 			  .front {
 
 			  }
 			  .back {
+			  	background-color: inherit;
 			  	overflow-y: auto;
 			  	overflow-x: hidden;
 			  	text-align: left;
 			  	transform: rotateY(180deg);
-			  	padding: 2rem;
+			  	&:webkit-scrollbar {
+			  		background-color: #000;
+			  	}
 			  }
 			}
 			.card.flipped {
-				transform: rotateY( -180deg );
+				transform: translateX( -100% ) rotateY( -180deg );
 			}
 		}
 		&:nth-child(1)
@@ -925,9 +919,8 @@ h4.accordion.show {
 }
 
 #sugarChart {
-	width: 16em;
+	width: 22em;
 	height: 16em;
-	margin: 0 auto;
 }
 
 #gumChart {
