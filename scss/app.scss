@@ -5,6 +5,14 @@ h3 {
 	font-size: rem-calc(30);
 }
 
+h3.shade-5 {
+	color: $background-subtle-shade-5;
+}
+
+h4.shade-4 {
+	color: $background-subtle-shade-4;
+}
+
 .float-left {
 	float: left;
 }
@@ -663,7 +671,7 @@ aside {
 	.border, .no-border-top, .no-border-bottom, .no-border-top-bottom 
 	{		
 		h3 {
-			margin-bottom: 2.5rem;
+			margin-bottom: 1.25rem;
 		}
 		h4 {
 			margin-bottom: 1.25rem;
@@ -706,8 +714,8 @@ a {
 a.chevron {
 	font-weight: normal;
 	position: relative;
-	font-size: rem-calc(24);
-	padding: 0.25rem 4rem 0.25rem 0;
+	font-size: 1.25rem;
+	padding: 0.25rem 3rem 0.25rem 0;
 	display: inline-block;
 	&:after {
 		content: '';
@@ -716,7 +724,7 @@ a.chevron {
 		background-position: 0px -758px;
 		width: rem-calc(35);
 		height: rem-calc(35);
-		top: 5px;
+		top: 3px;
 		right: 0;
 	}
 	&:hover {
@@ -736,7 +744,7 @@ a.show {
 	}
 }
 
-h4.tick {
+h3.tick {
 	padding-right: 4rem;
 	position: relative;
 	&:after {
@@ -750,6 +758,51 @@ h4.tick {
 		right: 0;	
 	}
 }
+
+h3.cross {
+	padding-right: 4rem;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		background-image: url('img/icon-sheet.png');
+		background-position: 0px -1139px;
+		width: rem-calc(41);
+		height: rem-calc(41);
+		top: 1px;
+		right: 0;	
+	}
+}
+
+h3.chevron.left {
+	position: relative;
+	font-size: rem-calc(30);
+	padding-left: 3rem;
+	cursor: pointer;
+	&:before {
+		content: '';
+		position: absolute;
+		background-image: url('img/icon-sheet.png');
+		background-position: 0px -758px;
+		width: rem-calc(35);
+		height: rem-calc(35);
+		top: 3px;
+		left: 0;
+	}
+	&:hover {
+		color: $primary-color-1;
+		&:before {
+			background-position: 0px -794px;
+		}
+	}
+}
+h3.chevron.show {
+	&:before {
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+}
+
 
 h4.chevron.left {
 	color: $primary-color-1;
@@ -841,10 +894,9 @@ table.treatment-facts {
 			td.read-more-cell {
 				text-align: right;
 				a.chevron {
-					padding: 0 4rem 0 0;
 					display: inline-block;
 					&:after {
-						top: -10px
+						top: -5px
 					}
 				}
 			}
@@ -993,7 +1045,7 @@ table.treatment-facts {
 		display: inline-block;
 		padding: 0 0 0 3rem;
 	}
-	.alert {
+	.alert-symbol {
 		width: 1.375rem;
 		height: 1.375rem;
 		display: inline-block;
@@ -1011,6 +1063,31 @@ table.treatment-facts {
 	}
 }
 
+.booking-alert {
+	position: absolute;
+	padding: 0.25rem 2rem;
+	z-index: 20;
+	margin: -5px 0 0 0;
+	.close {
+		color: $white !important;
+		top: 11px;
+		padding: 4px;
+		opacity: 1;
+	}
+}
+
+
+.tooltip {
+	background-color: $white;
+	border: 2px solid #d81e05;
+	color: $background-subtle-shade-5;
+	padding: 1rem !important;
+	line-height: 1.5rem;
+}
+
+.tooltip > .nub {
+	border-color: transparent transparent #d81e05 transparent;
+}
 
 
 .show-hide-container.hide {
@@ -1038,17 +1115,8 @@ table.treatment-facts {
 	margin-top: 2.5rem;
 }
 
-.margin-top-bottom-2-5 {
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-}
-
 .margin-top-3 {
 	margin-top: 3rem;
-}
-
-.margin-bottom-3 {
-	margin-bottom: 3rem;
 }
 
 .margin-top-3-5 {
@@ -1061,6 +1129,60 @@ table.treatment-facts {
 
 .margin-top-4-5 {
 	margin-top: 4.5rem;
+}
+
+.margin-top-5 {
+	margin-top: 5rem;
+}
+
+
+.margin-bottom-0-5 {
+	margin-bottom: 0.5rem;
+}
+
+.margin-bottom-1 {
+	margin-bottom: 1rem;
+}
+
+.margin-bottom-1-5 {
+	margin-bottom: 1.5rem;
+}
+
+.margin-bottom-2 {
+	margin-bottom: 2rem;
+}
+
+.margin-bottom-2-5 {
+	margin-bottom: 2.5rem;
+}
+
+.margin-bottom-3 {
+	margin-bottom: 3rem;
+}
+
+.margin-bottom-3-5 {
+	margin-bottom: 3.5rem;
+}
+
+.margin-bottom-4 {
+	margin-bottom: 4rem;
+}
+
+.margin-bottom-4-5 {
+	margin-bottom: 4.5rem;
+}
+
+.margin-bottom-5 {
+	margin-bottom: 5rem;
+}
+
+.margin-top-bottom-2-5 {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.margin-right-2 {
+	margin-right: 2rem !important;
 }
 
 
@@ -1292,7 +1414,7 @@ ul[data-bar-id] li:nth-child(2) {
 
 
 
-#consentArea {
+#consentArea1, #consentArea2, #consentArea3 {
 	input[type='checkbox'] {
 		display: none;
 	}
@@ -1369,7 +1491,15 @@ ul[data-bar-id] li:nth-child(2) {
 }
 
 #applyNow {
-	overflow: hidden;
+	p {
+		font-size: rem-calc(22);
+		span {
+			font-size: rem-calc(16)
+		}
+	}
+	.button {
+		margin: 0 !important;
+	}
 }
 
 
