@@ -44,7 +44,7 @@
           <div class="large-12 clear greeting-container">
             <div class="large-7">
               <h2>Hi Liam</h2>
-              <h3>Let’s get that tooth sorted out.</h3>
+              <h3>To avoid a more serious infection, let's get that tooth sorted out.</h3>
               <span>Dr. Mark Johnson,<br />
               Bexley Clinic</span>
             </div>
@@ -114,13 +114,21 @@
 
     </div>
 
+
     <div class="row">
-      <div class="large-12 columns centered">
-        <a href="#" id="btnConfirmAppointment" class="button large icon"><span>Confirm your appointment now</span><svg class="si-icon si-icon-clock" id="confirmIcon"></svg></a>
+      <div class="large-12 columns centered appt-actions">
+        <a href="#" id="btnAddToCalendar" class="button">Add to calendar</a>
+        <a href="#" id="btnFindClinic" class="button">Find clinic location</a>
       </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
+      <div class="large-12 columns centered">
+        <a href="#" id="btnConfirmAppointment" class="button large icon"><span>Confirm your appointment now</span><svg class="si-icon si-icon-clock" id="confirmIcon"></svg></a>
+      </div>
+    </div> -->
+
+    <!-- <div class="row">
       <div class="large-12 columns" id="utilityBelt">
         <div class="large-4 columns calendar">
           <a href="#">Add to calendar</a>
@@ -134,12 +142,12 @@
           <a href="#">Request an SMS reminder</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="row">
-      <div class="large-12 columns subtle-shade-bg-4 call">
+      <div class="large-12 columns call">
         <div class="large-7 columns info">For more information or to change your appointment call</div>
-        <div class="large-5 columns phone-number"><a href="tel:0279101112">02 7910 1112</a></div>
+        <div class="large-5 columns phone-number text-right"><a href="tel:0279101112">02 7910 1112</a></div>
       </div>
     </div>
 
@@ -287,7 +295,8 @@
                   <li data-value="6.5">Non-smoker</li>
                 </ul>
                 <div id="gumChart"></div>
-                 <span class="label">Smoker vs Non-smoker percentage of having gum disease</span>
+                <span class="label">Smoker vs Non-smoker percentage of having gum disease</span>
+              
               </div>
 
                <div class="surface back bg-2"> 
@@ -315,21 +324,20 @@
 
     <div class="row summary margin-top-2-5 collapse">
       <div class="large-12 columns primary-color-1-bg centered header">
-        <h3>YOUR TREATMENT PLAN: ROOT CANAL THERAPY</h3>
+        <h3>YOUR TREATMENT PLAN</h3>
       </div>
 
-      <div class="large-12 columns no-border-top padding-top-bottom-2 subtle-shade-bg-3">               
+      <div class="large-12 columns padding-top-2">               
 
         <div class="large-7 columns">
-          <h4 class="accordion chevron left" data-target="treatmentOption1">Option 1: Root Canal Therapy <br />
-          (Recommended)</h4>
+          <h4 class="accordion chevron tick left" data-target="treatmentOption1">Option 1: Root Canal Therapy</h4>
         </div>
         
         <div class="large-5 columns text-right">
           <h4>Total $5663.00</h4>
         </div>
 
-        <div class="large-12 columns padding-left-4">
+        <div class="large-12 padding-top-bottom-1 columns">
           <p>
             I recommend Root canal therapy for you to eradicate the infection in your mouth. This is the preferred option because it’s always better to do everything possible to keep the teeth you have in your mouth. This is better for your overall ongoing health and avoids removing the tooth and the expense of replacing it.
           </p>
@@ -339,6 +347,163 @@
     </div>
 
     <div class="row collapse hide" id="treatmentOption1">
+
+      <div class="large-10 large-centered columns border-top-dark">
+        <div class="large-12 large-centered padding-top-1 columns">
+          <table cellpadding="0" cellspacing="0" border="0" class="treatment-facts">
+            <tbody>
+              <tr>
+                <td class="title">What is root canal therapy?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail1">Read more</a></td>
+              </tr>
+              <tr class="holder">
+                <td colspan="2">
+                  <div class="hide" id="factDetail1">
+                    <p>
+                      The need for root canal treatment arises for two main reasons:
+                    </p>
+                    <p>
+                      Infection or permanent damage to the tooth’s pulp: Commonly this is the result of an untreated cavity, which allows the bacteria to enter and infect the pulp. Inflammation resulting from such infection restricts the tooth's blood supply. Hence antibiotic treatment is not effective in treating it.
+                    </p>
+                    <p>
+                      Trauma or dental restorative work: Trauma and extensive dental restorative work can also result in the need for root canal treatment.
+                    </p>
+                    <p>
+                      <strong>Signs and symptoms of pulp infection</strong><br />
+                      In the case of pulp infection, no pain is felt at first. Pain and swelling occur if the infection is left untreated. An absess may develop. The following are common signs and symptoms of pulp infection:
+                      <ul>
+                        <li>Touching, pushing, or biting down on a tooth makes results in pain</li>
+                        <li>Tooth is sensitive to heat and cold for more than a few seconds</li>
+                        <li>Swelling near the tooth</li>
+                        <li>Discoloration of tooth (with or without pain)</li>
+                        <li>Broken tooth</li>
+                      </ul>
+                    </p>
+                    <p>
+                      The pulp consists of blood vessels, nerves and various other tissues. While the pulp is vital in a tooth’s development during childhood, by the time we reach adulthood, the tooth has finished growing and the pulp starts to decrease in size. If the pulp becomes infected or contaminated by decay, the tooth becomes painful and root canal treatment may be necessary.
+                    </p>
+
+                    <p>
+                      <img src="media/img/movie.png" width="100%" />
+                    </p>
+
+                    <div class="large-12 bg-1 risk-data-header">
+                      <h4>Associated risks</h4>
+                    </div>
+                    <div class="risk-data large-12 no-border-top-color-1 columns margin-bottom-3">
+                      <a href="#" class="accordion dark-chevron" data-target="risk1">Root Canal Therapy or Other Necessary Treatment</a>
+                      <p class="hide" id="risk1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk2">Pulp Death Requiring Root Canal Therapy</a>
+                      <p class="hide" id="risk2">
+                       Ocassionaly the nerve of a tooth dies following the placement of a crown. Should this occur, root canal therapy or extraction are the only options.
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk3">Gum Recession</a>
+                      <p class="hide" id="risk3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk4">Patients That Have Existing Root Canal Teeth</a>
+                      <p class="hide" id="risk4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                      </p>
+                      
+                      <a href="#" class="accordion dark-chevron" data-target="risk5">Caring for the Restoration</a>
+                      <p class="hide" id="risk5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                      </p>
+
+                    </div>
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="shaded">
+                <td class="title">What is crown?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail2">Read more</a></td>  
+              </tr>
+              <tr class="holder shaded">
+                <td colspan="2">
+                  <div class="hide" id="factDetail2">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                      Infection or permanent damage to the tooth’s pulp: Commonly this is the result of an untreated cavity, which allows the bacteria to Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="title">What are direct and indirect fillings?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail3">Read more</a></td>
+              </tr>
+              <tr class="holder">
+                <td colspan="2">
+                  <div class="hide" id="factDetail3">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                      Infection or permanent damage to the tooth’s pulp: Commonly this is the result of an untreated cavity, which allows the bacteria to Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                  </div>
+                </td>
+              </tr>
+
+               <tr class="shaded">
+                <td class="title">What is oral sedation?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail4">Read more</a></td>  
+              </tr>
+              <tr class="holder shaded">
+                <td colspan="2">
+                  <div class="hide" id="factDetail4">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                      Infection or permanent damage to the tooth’s pulp: Commonly this is the result of an untreated cavity, which allows the bacteria to Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. 
+                    </p>
+                    
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+
+      <div class="large-12 padding-top-bottom-1 columns">
+        <h3>Schedule &amp; cost breakdown</h3>
+      </div>
+
+
       <div class="large-12">
         <table cellpadding="0" cellspacing="0" border="0" class="plan-table">
           <thead>
@@ -352,12 +517,13 @@
               <th>Description</th>
               <th>Tooth</th>
               <th>Item code</th>
-              <th>Cost</th>
+              <th class="padding-right-1">Cost</th>
+              <th>Paid</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><a href="#" class="accordion chevron-only" data-target="detailRow1">&nbsp;</a></td>
+              <td><a href="#" class="accordion dark-chevron-only" data-target="detailRow1">&nbsp;</a></td>
               <td>1</td>
               <td>05 August 2015</td>
               <td>09:30am</td>
@@ -367,15 +533,16 @@
               <td></td>
               <td></td>
               <td class="cost">$1640.00</td>
+              <td class="paid no"></td>
             </tr>
 
             <tr class="hide" id="detailRow1">
               <td colspan="6"></td>
-              <td colspan="4">
+              <td colspan="5">
                 <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
                   <thead>
                     <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -384,24 +551,28 @@
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -409,7 +580,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
                   <thead>
                     <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -418,24 +589,28 @@
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
 
                     <tr>
@@ -443,14 +618,14 @@
                       <td></td>
                       <td><strong>Total</strong></td>
                       <td class="cost"><strong>$1640.00</strong></td>
+                      <td class="paid no"></td>
                   </tbody>
                 </table>
               </td>
             </tr>
 
-
-            <tr>
-              <td><a href="#" class="accordion chevron-only" data-target="detailRow2">&nbsp;</a></td>
+            <tr class="border-top">
+              <td><a href="#" class="accordion dark-chevron-only" data-target="detailRow2">&nbsp;</a></td>
               <td>1</td>
               <td>05 August 2015</td>
               <td>09:30am</td>
@@ -460,15 +635,16 @@
               <td></td>
               <td></td>
               <td class="cost">$1640.00</td>
+              <td class="paid no"></td>
             </tr>
 
             <tr class="hide" id="detailRow2">
               <td colspan="6"></td>
-              <td colspan="4">
+              <td colspan="5">
                 <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
                   <thead>
                     <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -477,24 +653,28 @@
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -502,7 +682,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
                   <thead>
                     <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -511,24 +691,28 @@
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
                     <tr>
                       <td class="description">Root canal preparation - 1 Canal</td>
                       <td>37</td>
                       <td>415</td>
                       <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
                     </tr>
 
                     <tr>
@@ -536,14 +720,302 @@
                       <td></td>
                       <td><strong>Total</strong></td>
                       <td class="cost"><strong>$1640.00</strong></td>
+                      <td class="paid no"></td>
                   </tbody>
                 </table>
               </td>
             </tr>
+
+
+
+            <tr class="border-top">
+              <td><a href="#" class="accordion dark-chevron-only" data-target="detailRow3">&nbsp;</a></td>
+              <td>1</td>
+              <td>05 August 2015</td>
+              <td>09:30am</td>
+              <td>150 min</td>
+              <td><a href="#" class="alert has-tip" title="Oral sedation"></a></td>
+              <td class="description"><strong>Root canal preparation and fillings</strong></td>
+              <td></td>
+              <td></td>
+              <td class="cost">$1640.00</td>
+              <td class="paid no"></td>
+            </tr>
+
+            <tr class="hide" id="detailRow3">
+              <td colspan="6"></td>
+              <td colspan="5">
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><strong>Total</strong></td>
+                      <td class="cost"><strong>$1640.00</strong></td>
+                      <td class="paid no"></td>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+
+
+
+
+            <tr class="border-top grand-total-row">
+              <td><a href="#" class="accordion dark-chevron-only" data-target="detailRow4">&nbsp;</a></td>
+              <td>1</td>
+              <td>05 August 2015</td>
+              <td>09:30am</td>
+              <td>150 min</td>
+              <td><a href="#" class="alert has-tip" title="Oral sedation"></a></td>
+              <td class="description"><strong>Root canal preparation and fillings</strong></td>
+              <td></td>
+              <td></td>
+              <td class="cost">$1640.00</td>
+              <td class="paid no"></td>
+            </tr>
+
+            <tr class="hide" id="detailRow4">
+              <td colspan="6"></td>
+              <td colspan="5">
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid yes"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td>37</td>
+                      <td>415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><strong>Total</strong></td>
+                      <td class="cost"><strong>$1640.00</strong></td>
+                      <td class="paid no"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+            <tr class="border-top">              
+              <td colspan="11" class="text-right">
+                <h4 class="padding-right-1"><span>Total:</span> <span>$5663.00</span></h4>
+                 <span class="special-text padding-right-1">*0% interest for 6, 12, and 18 months</span>
+              </td>
+            </tr>
+
           </tbody>
         </table>
       </div>
+
+
+      <div class="large-12 border-primary-color-5 padding-2 columns" id="consentArea">
+        <input type="checkbox" id="consent1" /> <label for="consent1"><span></span>I have read and understood the information provided about the procedures involved in my treatment and risks associated with it. I give consent to have the treatment as recommended.</label>
+        <button id="btnConsent1" disabled="disabled">Submit</button>
+      </div>
+
+
+      <div class="large-12 columns padding-2 hi-bg margin-top-bottom-2-5">
+
+        <h4>Health insurance</h4>
+
+        <p>
+          <i>Check your allowances and limits with your health insurance provider</i>
+        </p>
+        <p class="small">
+          All health insurance policies are different and coverage for dental services can vary, so we recommend that you speak with your health insurance provider for details.
+        </p>
+      </div>
+
+
+      <div class="large-12 columns padding-2 border-subtle-shade-3 margin-top-bottom-2-5 payment">
+
+        <div class="intro">
+          <h4>Payment</h4>
+
+          <p>
+           To pay by direct deposit, cheque or for financing call us at <a href="tel:0279101112">02 7910 1112</a>
+          </p>
+          <h5>0% interest for 6, 12, and 18 months</h5>
+          <p>
+             <a href="#" class="accordion chevron" data-target="applyNow">Read more</a>
+          </p>
+        </div>
+
+        <div class="large-12 subtle-shade-bg-2 padding-top-bottom-1" id="applyNow">
+          <div class="large-4 columns text-center border-right">
+            <p>
+              6 months<br />
+              <span>for $350/month</span>
+            </p>
+          </div>
+          <div class="large-4 columns text-center border-right">
+            <p>
+              12 months<br />
+              <span>for $350/month</span>
+            </p>
+          </div>
+          <div class="large-4 columns text-center">
+            <p>
+              18 months<br />
+              <span>for $350/month</span>
+            </p>
+          </div>
+
+          <div class="large-12 columns">
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+
     </div>
+
+
+  
 
 
 
@@ -560,27 +1032,27 @@
     <script src="js/app.js"></script>
     <script>
 
-      var s = Snap('#confirmIcon');
+      // var s = Snap('#confirmIcon');
 
-      var clockCircle = s.circle(18, 18, 16);
+      // var clockCircle = s.circle(18, 18, 16);
 
-      clockCircle.attr({
-          fill: "transparent",
-          stroke: "#fff",
-          strokeWidth: 2.5
-      });
+      // clockCircle.attr({
+      //     fill: "transparent",
+      //     stroke: "#fff",
+      //     strokeWidth: 2.5
+      // });
 
-      var minuteHand = s.line(18,20,18,5);
-      var hourHand = s.line(19,20,8,18);
+      // var minuteHand = s.line(18,20,18,5);
+      // var hourHand = s.line(19,20,8,18);
 
-      minuteHand.attr({
-        stroke: "#fff",
-        strokeWidth: 2.5
-      });
-      hourHand.attr({
-        stroke: "#fff",
-        strokeWidth: 2.5
-      });    
+      // minuteHand.attr({
+      //   stroke: "#fff",
+      //   strokeWidth: 2.5
+      // });
+      // hourHand.attr({
+      //   stroke: "#fff",
+      //   strokeWidth: 2.5
+      // });    
 
 
       Pizza.init();
@@ -633,6 +1105,16 @@
           // console.log('auto hieght: ' + autoHeight);
           // console.log('==================================================');
 
+          var timing = autoHeight;
+
+          if (timing === 0) {
+            timing = curHeight;
+          } 
+
+          if (timing > 800) {
+            timing = 800;
+          }
+
 
           if (el.hasClass('hide'))
           {
@@ -640,13 +1122,13 @@
             el.removeClass('hide');
             $(this).addClass('show');
             curHeight = 0;
-            el.height(curHeight).animate({height: autoHeight}, 500);
+            el.height(curHeight).animate({height: autoHeight}, timing);
           }
           else
           {
             // console.log('close');
             $(this).removeClass('show');
-            el.height(curHeight).animate({height: 0}, 500, function(){
+            el.height(curHeight).animate({height: 0}, timing, function(){
               el.addClass('hide');  
             });             
           }
@@ -683,6 +1165,21 @@
             var tooltip = $('#'+ $('#apptHelp').attr('data-selector'));
             tooltip.text('For more information or to change your appointment call 02 7901 1112');
           }
+        });
+
+
+        $('#consent1').change(function() {
+          if($(this).is(":checked")) {
+            $('#btnConsent1').removeAttr('disabled');
+          }
+          else {
+            $('#btnConsent1').attr('disabled','disabled');
+          }  
+        });
+
+        $('#btnConsent1').click(function(e) {
+          e.preventDefault();
+          $('#consentArea').html('<p><strong>I have understood the treatment and the risks associated with the recommended option and have given consent.</strong></p>').addClass('primary-color-5-bg');
         });
 
 

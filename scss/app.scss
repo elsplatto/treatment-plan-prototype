@@ -13,6 +13,11 @@ h3 {
 	float: right;
 }
 
+span.special-text {
+	color: $primary-color-4;
+	font-size: rem-calc(12);
+}
+
 .help {
 	width: rem-calc(19);
 	height: rem-calc(19);
@@ -60,9 +65,44 @@ h3 {
 	}
 }
 
+.primary-color-2-bg {
+	background-color: $primary-color-2;
+	color: $white;
+	h1, h2, h3, h4 {
+		color: $white;		
+	}
+}
+
+.primary-color-3-bg {
+	background-color: $primary-color-3;
+	color: $white;
+	h1, h2, h3, h4 {
+		color: $white;		
+	}
+}
+
+.primary-color-4-bg {
+	background-color: $primary-color-4;
+	color: $white;
+	h1, h2, h3, h4 {
+		color: $white;		
+	}
+}
+
+.primary-color-5-bg {
+	background-color: $primary-color-5;
+	color: $white;
+	h1, h2, h3, h4 {
+		color: $white;		
+	}
+}
+
 .bg-1 {
 	background-color: $background-color-1;
 	color: $white;
+	h1, h2, h3, h4 {
+		color: $white;
+	}
 }
 
 .bg-2 {
@@ -280,8 +320,8 @@ h3 {
 				}
 				h3 {
 					font-weight: 200;
-					font-size: rem-calc(70);		
-					line-height: rem-calc(80);	
+					font-size: rem-calc(54);		
+					line-height: rem-calc(70);	
 					padding-bottom: 3rem;
 				}
 				span {
@@ -394,27 +434,31 @@ h3 {
 .call {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
+	border-bottom: 10px solid $primary-color-1;
 	.info {
-		font-size: 1.5rem;
-		line-height: 2rem;
+		font-size: rem-calc(30);
+		line-height: rem-calc(40);
 		padding-left: 8rem;
 		position: relative;
+		color: $background-subtle-shade-5;
+		font-weight: 200;
 		&:before {
 			position: absolute;
 			content: '';
 			background-image: url('img/icon-sheet.png');
-			background-position: 0px -412px;
-			width: rem-calc(62);
-			height: rem-calc(62);
+			background-position: 0px -672px;
+			width: rem-calc(82);
+			height: rem-calc(82);
 			left: 20px;
 		}
 	}
 	.phone-number {
+		font-weight: normal;
 		font-size: 3rem;
 		position: relative;
 		a {
-			color: $white;
-			margin-top: 1rem;
+			color: $primary-color-5;
+			margin-top: 2rem;
 			position: relative;
 			display: block;
 		}
@@ -434,7 +478,7 @@ h2 {
 	color: $primary-color-1;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
 	color: $primary-color-1;
 }
 
@@ -481,6 +525,33 @@ aside {
 			}
 		}
 	}
+}
+
+.appt-actions {
+	.button {
+		&:nth-child(1) {
+			margin-right: 1rem;
+		}
+		&:nth-child(2) {
+			margin-left: 1rem;
+		}
+	}
+}
+
+.border-top-dark {
+	border-top: 1px solid $background-subtle-shade-5;
+}
+
+.border-primary-color-4 {
+	border: 3px solid $primary-color-4;
+}
+
+.border-primary-color-5 {
+	border: 3px solid $primary-color-5;
+}
+
+.border-subtle-shade-3 {
+	border: 3px solid $background-subtle-shade-3;
 }
 
 .summary {
@@ -538,7 +609,7 @@ aside {
 				  	padding: 0 2px;
 				  }
 				  &::-webkit-scrollbar-thumb {
-				  	background-color: #fff;
+				  	background-color: $white;
 				  	border: 1px solid transparent;
 				  	border-radius: 5px;
 				  }
@@ -631,11 +702,12 @@ a {
 	font-weight: 400;
 }
 
-a.accordion {
+a.chevron {
 	font-weight: normal;
 	position: relative;
 	font-size: rem-calc(24);
 	padding: 0.25rem 4rem 0.25rem 0;
+	display: inline-block;
 	&:after {
 		content: '';
 		position: absolute;
@@ -643,7 +715,7 @@ a.accordion {
 		background-position: 0px -758px;
 		width: rem-calc(35);
 		height: rem-calc(35);
-		top: 0;
+		top: 5px;
 		right: 0;
 	}
 	&:hover {
@@ -656,48 +728,187 @@ a.accordion {
 		color: $primary-color-4;
 	}
 }
-a.accordion.show {
+a.show {
 	&:after {
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg);
 	}
 }
 
-h4.accordion.chevron.left {
+h4.tick {
+	padding-right: 4rem;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		background-image: url('img/icon-sheet.png');
+		background-position: 0px -1096px;
+		width: rem-calc(41);
+		height: rem-calc(41);
+		top: 1px;
+		right: 0;	
+	}
+}
+
+h4.chevron.left {
 	color: $primary-color-1;
 	position: relative;
-	font-size: rem-calc(24);
-	padding: 0 0 0 3rem;
+	font-size: rem-calc(30);
+	padding-left: 3rem;
 	cursor: pointer;
-	&:after {
+	&:before {
 		content: '';
 		position: absolute;
 		background-image: url('img/icon-sheet.png');
 		background-position: 0px -758px;
 		width: rem-calc(35);
 		height: rem-calc(35);
-		top: 0;
+		top: 3px;
 		left: 0;
 	}
 	&:hover {
 		color: $primary-color-1;
-		&:after {
+		&:before {
 			background-position: 0px -794px;
 		}
 	}
 }
-h4.accordion.show {
-	&:after {
+h4.chevron.show {
+	&:before {
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg);
 	}
 }
 
-.accordion.chevron-only {
+.chevron-only {
 	width: 2.25rem;
 	height: 2.25rem;
 	display: inline-block;
 	padding: 0;
+}
+
+.dark-chevron-only {
+	width: 2.25rem;
+	height: 2.25rem;
+	display: inline-block;
+	padding: 0;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		background-image: url('img/icon-sheet.png');
+		background-position: -36px -794px;
+		width: rem-calc(36);
+		height: rem-calc(36);
+		top: 3px;
+		left: 0;
+	}
+	&:after {
+		background-image: none;
+	}
+}
+
+.dark-chevron-only.show {
+	&:before {
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);	
+	}
+}
+
+table.treatment-facts {
+	width: 100%;
+	border: none;
+	tbody {
+		tr.holder {
+			padding: 0;
+			margin: 0;
+			td {
+				padding: 0 1rem;
+				margin: 0;				
+			}
+		}
+		tr {
+			background-color: $white;
+			td {
+				vertical-align: middle;
+				padding: 1.5rem 1rem;
+			}
+			td.title {
+				color: $primary-color-1;
+				font-size: rem-calc(24);
+			}
+			td.read-more-cell {
+				text-align: right;
+				a.chevron {
+					padding: 0 4rem 0 0;
+					display: inline-block;
+					&:after {
+						top: -10px
+					}
+				}
+			}
+		}
+		tr.shaded {
+			background-color: $background-subtle-shade-2;
+		}
+	}
+}
+
+.risk-data-header {
+	width: 100%;
+	padding: 0.25rem 1.5rem;
+}
+
+.risk-data {
+	padding: 1.25rem;
+	a.dark-chevron {
+		display: block;
+		color: $background-subtle-shade-5;
+		padding: 1.25rem 3rem 1.25rem 0;
+		font-size: rem-calc(18);
+		font-weight: bold;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			background-image: url('img/icon-sheet.png');
+			background-position: -36px -794px;
+			width: rem-calc(35);
+			height: rem-calc(35);
+			top: 10px;
+			right: 0;
+		}
+	}
+}
+
+.paid {
+	position: relative;
+	width: 3rem;
+	&:before {
+		content: '';
+		position: absolute;
+		background-image: url('img/icon-sheet.png');		
+	}
+}
+
+.paid.yes {
+	&:before {
+		background-position: 0 -1060px;
+		width: rem-calc(21);
+		height: rem-calc(16);
+		top: 20px;
+		left: 12px;
+	}
+}
+
+.paid.no {
+	&:before {
+		background-position: 0 -1078px;
+		width: rem-calc(14);
+		height: rem-calc(13);
+		top: 20px;
+		left: 12px;
+	}
 }
 
 .plan-table {
@@ -707,12 +918,11 @@ h4.accordion.show {
 		background-color: $background-subtle-shade-4;
 		tr {
 			th {
-				color: #fff;	
+				color: $white;	
 				&:first-child {
 					width: 5rem;
 				}
-				&:last-child {
-					padding-right: 1rem;
+				&:last-child, &:nth-child(10) {
 					text-align: right;					
 				}
 			}
@@ -720,9 +930,9 @@ h4.accordion.show {
 	}		
 	tbody {
 		tr {			
-			border-bottom: 1px solid $background-subtle-shade-5;
-			background-color: #fff;
+			background-color: $white;
 			td.cost {
+				text-align: right;
 				padding-right: 1rem;
 				&:last-child {
 					padding-right: 1rem;
@@ -738,6 +948,12 @@ h4.accordion.show {
 				}			
 			}
 		}
+
+		tr.border-top {
+			td {
+				border-top: 1px solid $background-subtle-shade-5;
+			}
+		}
 	}
 
 	.detail-table {
@@ -746,7 +962,7 @@ h4.accordion.show {
 		thead {
 			tr {
 				background-color: $primary-color-2;
-				color: #fff;
+				color: $white;
 			}
 		}
 		tbody {
@@ -757,10 +973,20 @@ h4.accordion.show {
 				td.description {
 					width: rem-calc(332);
 				}
+				td {
+					&:nth-child(4) {
+						text-align: right;
+					}
+				}
+				td.paid.yes, td.paid.no {
+					&:before {
+						top: 12px;
+					}
+				}
 			}
 		}
 	}
-	.accordion.chevron-only {
+	.chevron-only {
 		width: 2.25rem;
 		height: 2.25rem;
 		display: inline-block;
@@ -820,6 +1046,10 @@ h4.accordion.show {
 	margin-top: 3rem;
 }
 
+.margin-bottom-3 {
+	margin-bottom: 3rem;
+}
+
 .margin-top-3-5 {
 	margin-top: 3.5rem;
 }
@@ -832,6 +1062,10 @@ h4.accordion.show {
 	margin-top: 4.5rem;
 }
 
+
+.padding-2 {
+	padding: 2rem !important;
+}
 
 
 .padding-top-0-5 {
@@ -848,6 +1082,11 @@ h4.accordion.show {
 
 .padding-top-2 {
 	padding-top: 2rem;
+}
+
+.padding-top-bottom-1 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .padding-top-bottom-2 {
@@ -875,7 +1114,21 @@ h4.accordion.show {
 	padding-top: 4.5rem;
 }
 
+.padding-left-1 {
+	padding-left: 1rem;
+}
 
+.padding-left-1-5 {
+	padding-left: 1.5rem;
+}
+
+.padding-left-2 {
+	padding-left: 2rem;
+}
+
+.padding-left-2-5 {
+	padding-left: 2.5rem;
+}
 
 .padding-left-3 {
 	padding-left: 3rem;
@@ -897,6 +1150,13 @@ h4.accordion.show {
 	padding-left: 5rem;
 }
 
+.padding-right-0-5 {
+	padding-right: 0.5rem;
+}
+
+.padding-right-1 {
+	padding-right: 1rem !important;
+}
 
 
 #btnConfirmAppointment {
@@ -943,8 +1203,14 @@ h4.accordion.show {
 	width: 20em;
 	height: 15em;
 	text {
-		fill: #fff;
+		fill: $white;
 	}
+}
+
+.no-border-top-color-1 {
+	border-style: solid;
+	border-color: $background-color-1;
+	border-width: 0 4px 4px 4px;
 }
 
 
@@ -1022,14 +1288,88 @@ ul[data-bar-id] li:nth-child(2) {
   padding: 5px;
 }
 
-// svg text {
-//  fill: $label-color;
-// }
 
 
 
+#consentArea {
+	input[type='checkbox'] {
+		display: none;
+	}
+	input[type='checkbox'] + label {
+		font-size: rem-calc(16);
+		padding-left: rem-calc(42);
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			background-image: url('img/icon-sheet.png');
+			background-position: 0 -1186px;
+			top: 3px;
+			left: 0;
+			width: rem-calc(26);
+			height: rem-calc(28);
+		}
+	}
 
+	input[type='checkbox']:checked + label {
+		&:before {			
+			top: 0;
+			left: 0;
+			background-position: 0 -1220px;
+		}
+	}
 
+	input[type='checkbox'] + label + button {
+		margin: 2rem 0 0 0;
+	}
+
+	button[disabled] {
+		background-color: rgba($button-bg-color,0.45);
+	}
+}
+
+.hi-bg {
+	background-image: url('img/health-insurance-bg.jpg');
+	background-size: cover;
+	color: $white;
+	h4 {
+		color: $white;
+		margin-bottom: 0.75rem;
+		font-size: rem-calc(26);
+	}
+	i {
+		font-size: rem-calc(20);
+		font-weight: normal;
+	}
+	.small {
+		font-size: rem-calc(14);
+	}
+}
+
+.payment {
+	overflow: hidden;
+	.intro {
+		padding-right: rem-calc(350);
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			background-image: url('img/icon-sheet.png');
+			background-position: 0 -876px;
+			width: rem-calc(232);
+			height: rem-calc(184);
+			top: 0;
+			right: 0;
+		}
+	}
+	.border-right {
+		border-right: 2px solid $background-subtle-shade-5;
+	}
+}
+
+#applyNow {
+	overflow: hidden;
+}
 
 
 // Or selectively include components
