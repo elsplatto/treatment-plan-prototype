@@ -1055,22 +1055,7 @@ table.treatment-facts {
 		display: inline-block;
 		padding: 0 0 0 3rem;
 	}
-	.alert-symbol {
-		width: 1.375rem;
-		height: 1.375rem;
-		display: inline-block;
-		position: relative;
-		&:after {
-			content: '';
-			position: absolute;
-			background-image: url('img/icon-sheet.png');
-			background-position: 0px -830px;
-			width: 1.375rem;
-			height: 1.375rem;
-			top: 0;
-			left: 0;	
-		}
-	}
+	
 }
 
 .booking-alert {
@@ -1083,6 +1068,23 @@ table.treatment-facts {
 		top: 11px;
 		padding: 4px;
 		opacity: 1;
+	}
+}
+
+.alert-symbol {
+	width: 1.375rem;
+	height: 1.375rem;
+	display: inline-block;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		background-image: url('img/icon-sheet.png');
+		background-position: 0px -830px;
+		width: 1.375rem;
+		height: 1.375rem;
+		top: 0;
+		left: 0;	
 	}
 }
 
@@ -1382,6 +1384,7 @@ ul[data-bar-id] li:nth-child(2) {
 }
 
 #consentArea1, #consentArea2, #consentArea3 {
+	transition: all 1s;
 	input[type='checkbox'] {
 		display: none;
 	}

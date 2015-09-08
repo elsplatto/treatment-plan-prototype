@@ -98,6 +98,9 @@
           <div class="large-12 columns">
             <span class="time">11:00</span>
             <span class="ampm">am</span>
+
+            <a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a>
+
             <div id="statusText" class="status right not-confirmed"><span class="text">Not Confirmed</span><!-- <span id="apptHelp" data-tooltip aria-haspopup="true" class="help has-tip" title="Please confirm your appointment by clicking on the button below."></span> --></div>
           </div>               
         </div>
@@ -896,7 +899,7 @@
           As a Bupa member, you may want to find out more about your coverage. You can log into myBupa to check your cover, call <a href="tel:134135">134 135</a> or visit your local <a href="#">Bupa centre</a>.
         </p>
         <p>
-          <a href="#" class="button margin-right-2">Log into MyBupa</a>
+          <a href="#" class="button margin-right-2">Log into myBupa</a>
 
           <a href="#" class="button">How to make a claim</a>
         </p>
@@ -967,7 +970,7 @@
 
     </div>
 
-
+    <!-- Option 2 -->
     <div class="row summary collapse">     
 
       <div class="large-12 columns padding-top-2 border-top-dark">               
@@ -1122,7 +1125,7 @@
                 </td>
               </tr>
 
-               <tr class="shaded">
+              <tr class="shaded">
                 <td class="title">What is an implant?</td>
                 <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail2-4">Read more</a></td>  
               </tr>
@@ -1825,12 +1828,14 @@
 
         $('.appt-date-time').datetimepicker({
           format: 'D d M y',
-          onSelectTime: handleTimeSelect
+          onSelectTime: handleTimeSelect,
+          step: 30
         });
 
         $('.appt-time').datetimepicker({
           datepicker: false,
-          format: 'H:i'
+          format: 'H:i',
+          step: 30
         });
 
 
