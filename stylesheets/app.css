@@ -9644,104 +9644,129 @@ span.special-text {
   text-align: right;
 }
 
-/* line 174, ../scss/app.scss */
-.header-bar {
-  padding: 0.5rem 0;
-}
 /* line 176, ../scss/app.scss */
+.collapse .header-bar h3 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* line 183, ../scss/app.scss */
+.header-bar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/* line 186, ../scss/app.scss */
 .header-bar h1, .header-bar h2, .header-bar h3, .header-bar h4 {
   margin: 0;
   padding: 0;
 }
+/* line 191, ../scss/app.scss */
+.header-bar h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding: 0.25rem 0;
+}
 
-/* line 183, ../scss/app.scss */
+/* line 200, ../scss/app.scss */
 #appointmentDetails .appt-tile {
   height: 12rem;
   display: block;
 }
-/* line 186, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-date {
   text-align: center;
 }
-/* line 188, ../scss/app.scss */
+/* line 205, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-date span {
   clear: both;
 }
-/* line 191, ../scss/app.scss */
+/* line 208, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-date .month {
   font-size: 3.4375rem;
   line-height: 3.4375rem;
 }
-/* line 195, ../scss/app.scss */
+/* line 212, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-date .year {
   font-size: 3rem;
   line-height: 3rem;
 }
-/* line 199, ../scss/app.scss */
+/* line 216, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-date .day-name {
   font-size: 1.25rem;
   line-height: 1.25rem;
 }
-/* line 203, ../scss/app.scss */
+/* line 220, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-date .day {
   font-size: 5.5rem;
   line-height: 5.5rem;
 }
-/* line 208, ../scss/app.scss */
+/* line 225, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-time {
   text-align: center;
 }
-/* line 210, ../scss/app.scss */
+/* line 227, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-time .time {
   font-size: 4.875rem;
   line-height: 4.875rem;
 }
-/* line 214, ../scss/app.scss */
+/* line 231, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-time .ampm {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-/* line 218, ../scss/app.scss */
+/* line 235, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-time .status {
   clear: both;
   padding-top: 1rem;
   font-size: 1.5rem;
 }
-/* line 223, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-time .not-confirmed {
   color: #c6007e;
 }
-/* line 226, ../scss/app.scss */
+/* line 243, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-time .confirmed {
   color: #48bfae;
 }
-/* line 229, ../scss/app.scss */
+/* line 246, ../scss/app.scss */
 #appointmentDetails .appt-tile .appt-time .on-time {
   color: #48bfae;
 }
-/* line 233, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 #appointmentDetails .appt-tile .clinic-address {
   text-align: left;
 }
-/* line 235, ../scss/app.scss */
+/* line 252, ../scss/app.scss */
 #appointmentDetails .appt-tile .clinic-address .clinic-name {
   font-size: 1.875rem;
   padding-bottom: 1rem;
 }
-/* line 239, ../scss/app.scss */
+/* line 256, ../scss/app.scss */
 #appointmentDetails .appt-tile .clinic-address .clinic-address {
   font-size: 1rem;
   line-height: 1.25rem;
 }
 
-/* line 248, ../scss/app.scss */
+/* line 265, ../scss/app.scss */
 .header-bg {
   position: relative;
   z-index: 20;
-  height: calc(100vh - 2.5rem);
-  min-height: 47rem;
+  min-height: 45rem;
 }
-/* line 253, ../scss/app.scss */
+/* line 269, ../scss/app.scss */
+.header-bg:after {
+  content: '';
+  position: absolute;
+  background-image: url("img/icon-sheet.png");
+  background-position: -50px 0px;
+  width: 9.375rem;
+  height: 2.5rem;
+  margin: 0 0 0 -75px;
+  bottom: -40px;
+  left: 50%;
+}
+/* line 280, ../scss/app.scss */
 .header-bg .chevron {
   background-image: url("img/chevron-round-down-big.png");
   background-repeat: no-repeat;
@@ -9756,27 +9781,27 @@ span.special-text {
   border-radius: 50%;
   text-indent: -10000px;
 }
-/* line 267, ../scss/app.scss */
+/* line 294, ../scss/app.scss */
 .header-bg .row {
   height: 100%;
 }
-/* line 269, ../scss/app.scss */
+/* line 296, ../scss/app.scss */
 .header-bg .row .hero {
   display: block;
   background-image: url("img/hero-1.png");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 70px;
   height: 100%;
   line-height: inherit;
 }
-/* line 276, ../scss/app.scss */
+/* line 303, ../scss/app.scss */
 .header-bg .row .hero .top-bar {
   background: none;
   overflow: inherit;
   height: auto;
   position: inherit;
 }
-/* line 282, ../scss/app.scss */
+/* line 309, ../scss/app.scss */
 .header-bg .row .hero .top-bar .logo-bar .bupa {
   background-image: url("img/logo.png");
   display: block;
@@ -9785,7 +9810,7 @@ span.special-text {
   margin-right: 1.5rem;
   float: left;
 }
-/* line 290, ../scss/app.scss */
+/* line 317, ../scss/app.scss */
 .header-bg .row .hero .top-bar .logo-bar .dentist-logo {
   background-image: url("img/dentist-logo.png");
   display: block;
@@ -9793,19 +9818,19 @@ span.special-text {
   height: 4.625rem;
   float: left;
 }
-/* line 299, ../scss/app.scss */
+/* line 326, ../scss/app.scss */
 .header-bg .row .hero .top-bar .profile-bar .profile {
   text-align: right;
 }
-/* line 301, ../scss/app.scss */
+/* line 328, ../scss/app.scss */
 .header-bg .row .hero .top-bar .profile-bar .profile a {
   position: relative;
   display: inline-block;
   padding: 0 1.25rem 0 3.25rem;
   white-space: nowrap;
-  color: #646464;
+  color: #404040 !important;
 }
-/* line 307, ../scss/app.scss */
+/* line 334, ../scss/app.scss */
 .header-bg .row .hero .top-bar .profile-bar .profile a:before {
   content: '';
   position: absolute;
@@ -9815,7 +9840,7 @@ span.special-text {
   top: 0;
   left: 0;
 }
-/* line 316, ../scss/app.scss */
+/* line 343, ../scss/app.scss */
 .header-bg .row .hero .top-bar .profile-bar .profile a:after {
   content: '';
   position: absolute;
@@ -9825,76 +9850,86 @@ span.special-text {
   top: 1.1rem;
   right: 0;
 }
-/* line 329, ../scss/app.scss */
+/* line 356, ../scss/app.scss */
 .header-bg .row .hero .greeting-container {
   position: relative;
-  top: 40%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  padding-top: 6rem;
 }
-/* line 335, ../scss/app.scss */
+/* line 359, ../scss/app.scss */
 .header-bg .row .hero .greeting-container h2 {
   font-weight: lighter;
-  font-size: 5rem;
-  line-height: 7.5rem;
+  font-size: 4.6875rem;
+  line-height: 6.25rem;
+  color: #636363;
 }
-/* line 340, ../scss/app.scss */
+/* line 364, ../scss/app.scss */
+.header-bg .row .hero .greeting-container h2:before {
+  content: open-quote;
+}
+/* line 368, ../scss/app.scss */
 .header-bg .row .hero .greeting-container h3 {
   font-weight: 200;
-  font-size: 3.375rem;
-  line-height: 4.375rem;
-  padding-bottom: 3rem;
+  font-size: 3.125rem;
+  line-height: 4.125rem;
+  padding-bottom: 2rem;
+  padding-left: 2.25rem;
+  color: #636363;
 }
-/* line 346, ../scss/app.scss */
-.header-bg .row .hero .greeting-container span {
-  color: #008385;
-  font-size: 2.5rem;
-  line-height: 3.4375rem;
+/* line 375, ../scss/app.scss */
+.header-bg .row .hero .greeting-container h3:after {
+  content: close-quote;
+  font-size: 4.6875rem;
+}
+/* line 380, ../scss/app.scss */
+.header-bg .row .hero .greeting-container h4 {
+  color: #636363;
+  font-size: 2rem;
+  line-height: 3.125rem;
+  padding-left: 2.25rem;
 }
 
-/* line 356, ../scss/app.scss */
+/* line 391, ../scss/app.scss */
 #content {
   height: 16rem;
 }
-/* line 358, ../scss/app.scss */
+/* line 393, ../scss/app.scss */
 #content .container {
   font-size: 1rem;
   height: 100%;
 }
-/* line 361, ../scss/app.scss */
+/* line 396, ../scss/app.scss */
 #content .container .issue {
   padding: 2rem 0 1.6rem 8rem;
   height: 100%;
 }
-/* line 364, ../scss/app.scss */
+/* line 399, ../scss/app.scss */
 #content .container .issue span {
   font-weight: 200;
 }
-/* line 367, ../scss/app.scss */
+/* line 402, ../scss/app.scss */
 #content .container .issue h3 {
   font-size: 2.5rem;
   color: #FFFFFF;
   line-height: 3rem;
   font-weight: 200;
 }
-/* line 374, ../scss/app.scss */
+/* line 409, ../scss/app.scss */
 #content .container .plan {
   padding: 2rem 0;
   height: 100%;
 }
-/* line 378, ../scss/app.scss */
+/* line 413, ../scss/app.scss */
 #content .container .root-canal {
   background-image: url("img/root-canal-icon.png");
   background-position: left center;
   background-repeat: no-repeat;
 }
 
-/* line 386, ../scss/app.scss */
+/* line 421, ../scss/app.scss */
 #utilityBelt {
   height: 9rem;
 }
-/* line 388, ../scss/app.scss */
+/* line 423, ../scss/app.scss */
 #utilityBelt a {
   min-height: 6.25rem;
   color: #c6007e;
@@ -9904,62 +9939,62 @@ span.special-text {
   display: block;
   line-height: 2.25rem;
 }
-/* line 396, ../scss/app.scss */
+/* line 431, ../scss/app.scss */
 #utilityBelt a:after {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
   top: 20px;
 }
-/* line 403, ../scss/app.scss */
+/* line 438, ../scss/app.scss */
 #utilityBelt .calendar {
   border-right: 2px solid #333333;
 }
-/* line 406, ../scss/app.scss */
+/* line 441, ../scss/app.scss */
 #utilityBelt .calendar a:after {
   width: 3.125rem;
   height: 3.125rem;
   background-position: 0px -1px;
   right: 2rem;
 }
-/* line 413, ../scss/app.scss */
+/* line 448, ../scss/app.scss */
 #utilityBelt .calendar a:hover:after {
   background-position: 0px -52px;
 }
-/* line 419, ../scss/app.scss */
+/* line 454, ../scss/app.scss */
 #utilityBelt .location {
   border-right: 2px solid #333333;
 }
-/* line 422, ../scss/app.scss */
+/* line 457, ../scss/app.scss */
 #utilityBelt .location a:after {
   width: 3.125rem;
   height: 3.125rem;
   background-position: 0px -103px;
   right: 2rem;
 }
-/* line 429, ../scss/app.scss */
+/* line 464, ../scss/app.scss */
 #utilityBelt .location a:hover:after {
   background-position: 0px -154px;
 }
-/* line 437, ../scss/app.scss */
+/* line 472, ../scss/app.scss */
 #utilityBelt .sms a:after {
   width: 3.125rem;
   height: 3.125rem;
   background-position: 0px -205px;
   right: 2rem;
 }
-/* line 444, ../scss/app.scss */
+/* line 479, ../scss/app.scss */
 #utilityBelt .sms a:hover:after {
   background-position: 0px -256px;
 }
 
-/* line 453, ../scss/app.scss */
+/* line 488, ../scss/app.scss */
 .call {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 10px solid #008385;
+  border-bottom: 3px solid #404040;
 }
-/* line 457, ../scss/app.scss */
+/* line 492, ../scss/app.scss */
 .call .info {
   font-size: 1.875rem;
   line-height: 2.5rem;
@@ -9968,7 +10003,7 @@ span.special-text {
   color: #404040;
   font-weight: 200;
 }
-/* line 464, ../scss/app.scss */
+/* line 499, ../scss/app.scss */
 .call .info:before {
   position: absolute;
   content: '';
@@ -9978,13 +10013,13 @@ span.special-text {
   height: 5.125rem;
   left: 20px;
 }
-/* line 474, ../scss/app.scss */
+/* line 509, ../scss/app.scss */
 .call .phone-number {
   font-weight: normal;
   font-size: 3rem;
   position: relative;
 }
-/* line 478, ../scss/app.scss */
+/* line 513, ../scss/app.scss */
 .call .phone-number a {
   color: #1dafec;
   margin-top: 2rem;
@@ -9992,7 +10027,7 @@ span.special-text {
   display: block;
 }
 
-/* line 487, ../scss/app.scss */
+/* line 522, ../scss/app.scss */
 .vertical-center {
   position: relative;
   top: 50%;
@@ -10001,129 +10036,134 @@ span.special-text {
   transform: translateY(-50%);
 }
 
-/* line 496, ../scss/app.scss */
+/* line 531, ../scss/app.scss */
 h2 {
   color: #008385;
 }
 
-/* line 500, ../scss/app.scss */
+/* line 535, ../scss/app.scss */
 h2, h3, h4, h5 {
   color: #008385;
 }
 
-/* line 504, ../scss/app.scss */
+/* line 539, ../scss/app.scss */
 p a {
   font-weight: bold;
 }
 
-/* line 508, ../scss/app.scss */
+/* line 543, ../scss/app.scss */
 aside {
   font-size: 0.875rem;
 }
 
-/* line 512, ../scss/app.scss */
+/* line 547, ../scss/app.scss */
 .header-bg {
   background-color: #c7eafb;
 }
 
-/* line 516, ../scss/app.scss */
+/* line 551, ../scss/app.scss */
 .primary-bg {
   background-color: rgba(0, 131, 133, 0.3);
 }
-/* line 518, ../scss/app.scss */
+/* line 553, ../scss/app.scss */
 .primary-bg .accordion .accordion-navigation > a, .primary-bg .accordion dd > a {
   padding: 0;
 }
-/* line 521, ../scss/app.scss */
+/* line 556, ../scss/app.scss */
 .primary-bg ul {
   margin: 0;
 }
-/* line 524, ../scss/app.scss */
+/* line 559, ../scss/app.scss */
 .primary-bg .content {
   padding: 0;
 }
-/* line 527, ../scss/app.scss */
+/* line 562, ../scss/app.scss */
 .primary-bg table {
   width: 100%;
   border: none;
   background-color: transparent;
 }
-/* line 531, ../scss/app.scss */
+/* line 566, ../scss/app.scss */
 .primary-bg table tr {
   background: transparent;
 }
-/* line 533, ../scss/app.scss */
+/* line 568, ../scss/app.scss */
 .primary-bg table tr td {
   border-bottom: 1px dashed #FFFFFF;
 }
-/* line 536, ../scss/app.scss */
+/* line 571, ../scss/app.scss */
 .primary-bg table tr .subtotal, .primary-bg table tr .total {
   text-align: right;
 }
-/* line 541, ../scss/app.scss */
+/* line 576, ../scss/app.scss */
 .primary-bg table .total td {
   text-align: right;
   font-weight: bold;
 }
 
-/* line 551, ../scss/app.scss */
+/* line 586, ../scss/app.scss */
 .appt-actions .button:nth-child(1) {
   margin-right: 1rem;
 }
-/* line 554, ../scss/app.scss */
+/* line 589, ../scss/app.scss */
 .appt-actions .button:nth-child(2) {
   margin-left: 1rem;
 }
 
-/* line 560, ../scss/app.scss */
+/* line 595, ../scss/app.scss */
 .border-top-dark {
   border-top: 1px solid #404040;
 }
 
-/* line 564, ../scss/app.scss */
+/* line 599, ../scss/app.scss */
+.border-top-subtle-shade-3 {
+  border-top: 2px solid #f1f1f1;
+}
+
+/* line 603, ../scss/app.scss */
 .border-primary-color-4 {
   border: 3px solid #c6007e;
 }
 
-/* line 568, ../scss/app.scss */
+/* line 607, ../scss/app.scss */
 .border-primary-color-5 {
   border: 3px solid #1dafec;
 }
 
-/* line 572, ../scss/app.scss */
+/* line 611, ../scss/app.scss */
 .border-subtle-shade-3 {
   border: 3px solid #f1f1f1;
 }
 
-/* line 577, ../scss/app.scss */
+/* line 616, ../scss/app.scss */
 .summary .border {
   border: 5px solid #f1f1f1;
 }
-/* line 580, ../scss/app.scss */
+/* line 619, ../scss/app.scss */
 .summary .no-border-top {
   border-color: #f1f1f1;
   border-width: 0px 5px 5px 5px;
   border-style: solid;
 }
-/* line 585, ../scss/app.scss */
+/* line 624, ../scss/app.scss */
 .summary .no-border-bottom {
   border-color: #f1f1f1;
   border-width: 5px 5px 0px 5px;
   border-style: solid;
 }
-/* line 590, ../scss/app.scss */
+/* line 629, ../scss/app.scss */
 .summary .no-border-top-bottom {
   border-color: #f1f1f1;
   border-width: 5px 5px 0px 5px;
   border-style: solid;
 }
-/* line 595, ../scss/app.scss */
+/* line 634, ../scss/app.scss */
 .summary .dental-health {
   height: 20rem;
   display: block;
   position: relative;
 }
-/* line 599, ../scss/app.scss */
+/* line 638, ../scss/app.scss */
 .summary .dental-health .read-more {
   width: 200px;
   position: absolute;
@@ -10131,7 +10171,7 @@ aside {
   left: calc(50% - 100px);
   z-index: 20;
 }
-/* line 606, ../scss/app.scss */
+/* line 645, ../scss/app.scss */
 .summary .dental-health .container {
   height: 100%;
   width: 100%;
@@ -10139,7 +10179,7 @@ aside {
   position: relative;
   display: block;
 }
-/* line 612, ../scss/app.scss */
+/* line 651, ../scss/app.scss */
 .summary .dental-health .container .card {
   width: 100%;
   height: 100%;
@@ -10147,7 +10187,7 @@ aside {
   transform-style: preserve-3d;
   transition: transform 1s;
 }
-/* line 618, ../scss/app.scss */
+/* line 657, ../scss/app.scss */
 .summary .dental-health .container .card .surface {
   margin: 0;
   display: block;
@@ -10156,26 +10196,26 @@ aside {
   height: 100%;
   backface-visibility: hidden;
 }
-/* line 625, ../scss/app.scss */
+/* line 664, ../scss/app.scss */
 .summary .dental-health .container .card .surface::-webkit-scrollbar {
   background-color: inherit;
   width: 0.75rem;
   padding: 0 2px;
 }
-/* line 630, ../scss/app.scss */
+/* line 669, ../scss/app.scss */
 .summary .dental-health .container .card .surface::-webkit-scrollbar-thumb {
   background-color: #FFFFFF;
   border: 1px solid transparent;
   border-radius: 5px;
 }
-/* line 636, ../scss/app.scss */
+/* line 675, ../scss/app.scss */
 .summary .dental-health .container .card .front {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-/* line 642, ../scss/app.scss */
+/* line 681, ../scss/app.scss */
 .summary .dental-health .container .card .back {
   overflow-y: auto;
   overflow-x: hidden;
@@ -10183,189 +10223,197 @@ aside {
   transform: rotateY(180deg);
   padding: 2rem;
 }
-/* line 650, ../scss/app.scss */
+/* line 689, ../scss/app.scss */
 .summary .dental-health .container .card.flipped {
   transform: rotateY(-180deg);
 }
-/* line 654, ../scss/app.scss */
+/* line 693, ../scss/app.scss */
 .summary .dental-health:nth-child(1) {
   width: calc(33.333% - 0.5rem);
   margin-right: 0.5rem;
 }
-/* line 659, ../scss/app.scss */
+/* line 698, ../scss/app.scss */
 .summary .dental-health:nth-child(2) {
   width: calc(33.333% - 1rem);
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-/* line 665, ../scss/app.scss */
+/* line 704, ../scss/app.scss */
 .summary .dental-health:nth-child(3) {
   width: calc(33.333% - 0.5rem);
   margin-left: 0.5rem;
 }
-/* line 670, ../scss/app.scss */
+/* line 709, ../scss/app.scss */
 .summary .dental-health .label {
   font-size: 1.125rem;
   background-color: transparent;
   white-space: normal;
 }
-/* line 675, ../scss/app.scss */
+/* line 714, ../scss/app.scss */
 .summary .dental-health .data-text {
   padding-top: 4.3rem;
   font-size: 7.75rem;
   line-height: 100%;
 }
-/* line 683, ../scss/app.scss */
-.summary .border h3, .summary .no-border-top h3, .summary .no-border-bottom h3, .summary .no-border-top-bottom h3 {
-  margin-bottom: 1.25rem;
-}
-/* line 686, ../scss/app.scss */
-.summary .border h4, .summary .no-border-top h4, .summary .no-border-bottom h4, .summary .no-border-top-bottom h4 {
-  margin-bottom: 1.25rem;
-}
-/* line 690, ../scss/app.scss */
+/* line 729, ../scss/app.scss */
 .summary .border p, .summary .no-border-top p, .summary .no-border-bottom p, .summary .no-border-top-bottom p {
   font-size: 1.125rem;
 }
-/* line 693, ../scss/app.scss */
+/* line 732, ../scss/app.scss */
 .summary .border hr, .summary .no-border-top hr, .summary .no-border-bottom hr, .summary .no-border-top-bottom hr {
   margin: 1.25rem 0;
   background-color: #404040;
   height: 0.063rem;
 }
-/* line 698, ../scss/app.scss */
+/* line 737, ../scss/app.scss */
 .summary .border blockquote, .summary .no-border-top blockquote, .summary .no-border-bottom blockquote, .summary .no-border-top-bottom blockquote {
   margin: 3.5rem 6rem 3.5rem 4rem;
   border-left: none;
 }
-/* line 701, ../scss/app.scss */
+/* line 740, ../scss/app.scss */
 .summary .border blockquote p, .summary .no-border-top blockquote p, .summary .no-border-bottom blockquote p, .summary .no-border-top-bottom blockquote p {
   font-size: 1.5rem;
   border-left: 1.125rem #e7b513 solid;
   padding-left: 2.5rem;
 }
 
-/* line 711, ../scss/app.scss */
+/* line 750, ../scss/app.scss */
 p a {
   font-weight: normal;
 }
-/* line 713, ../scss/app.scss */
+/* line 752, ../scss/app.scss */
 p a:hover {
   color: #c6007e;
 }
 
-/* line 719, ../scss/app.scss */
+/* line 758, ../scss/app.scss */
 a {
   color: #c6007e;
   font-weight: 400;
 }
 
-/* line 724, ../scss/app.scss */
+/* line 763, ../scss/app.scss */
+a[href^='tel:'] {
+  color: #1dafec;
+  cursor: pointer;
+}
+
+/* line 768, ../scss/app.scss */
 a.chevron {
   font-weight: normal;
   position: relative;
-  font-size: 1.25rem;
-  padding: 0.25rem 3rem 0.25rem 0;
+  font-size: 1.125rem;
+  padding: 0.25rem 2rem 0.25rem 0;
   display: inline-block;
+  line-height: 1.5rem;
+  cursor: pointer;
 }
-/* line 730, ../scss/app.scss */
+/* line 776, ../scss/app.scss */
 a.chevron:after {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
-  background-position: 0px -758px;
-  width: 2.1875rem;
-  height: 2.1875rem;
+  background-position: -48px -758px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   top: 3px;
   right: 0;
 }
-/* line 740, ../scss/app.scss */
+/* line 786, ../scss/app.scss */
 a.chevron:hover {
   color: #c6007e;
 }
-/* line 742, ../scss/app.scss */
+/* line 788, ../scss/app.scss */
 a.chevron:hover:after {
-  background-position: 0px -794px;
+  background-position: -73px -758px;
 }
-/* line 746, ../scss/app.scss */
+/* line 792, ../scss/app.scss */
 a.chevron:visited {
   color: #c6007e;
 }
 
-/* line 751, ../scss/app.scss */
+/* line 797, ../scss/app.scss */
 a.show:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 757, ../scss/app.scss */
-h3.tick {
-  padding-right: 4rem;
-  position: relative;
+/* line 803, ../scss/app.scss */
+h3.tick-left {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #008385;
+  padding-left: 3.25rem;
 }
-/* line 760, ../scss/app.scss */
-h3.tick:after {
+/* line 808, ../scss/app.scss */
+h3.tick-left:before {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
-  background-position: 0px -1096px;
-  width: 2.5625rem;
-  height: 2.5625rem;
+  background-position: 0px -1251px;
+  width: 2.5rem;
+  height: 2.5rem;
   top: 1px;
-  right: 0;
+  left: 20px;
+}
+/* line 818, ../scss/app.scss */
+h3.tick-left:after {
+  background-image: none;
 }
 
-/* line 772, ../scss/app.scss */
-h3.cross {
-  padding-right: 4rem;
-  position: relative;
+/* line 823, ../scss/app.scss */
+h3.cross-left {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #b5b6b8;
+  padding-left: 3.25rem;
 }
-/* line 775, ../scss/app.scss */
-h3.cross:after {
+/* line 828, ../scss/app.scss */
+h3.cross-left:after {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
-  background-position: 0px -1139px;
+  background-position: 0px -1293px;
   width: 2.5625rem;
   height: 2.5625rem;
   top: 1px;
-  right: 0;
+  left: 20px;
 }
 
-/* line 787, ../scss/app.scss */
+/* line 840, ../scss/app.scss */
 h3.chevron.left {
   position: relative;
   font-size: 1.875rem;
   padding-left: 3rem;
   cursor: pointer;
 }
-/* line 792, ../scss/app.scss */
+/* line 845, ../scss/app.scss */
 h3.chevron.left:before {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
-  background-position: 0px -758px;
-  width: 2.1875rem;
-  height: 2.1875rem;
+  background-position: -48px -758px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   top: 3px;
   left: 0;
 }
-/* line 802, ../scss/app.scss */
+/* line 855, ../scss/app.scss */
 h3.chevron.left:hover {
   color: #008385;
 }
-/* line 804, ../scss/app.scss */
+/* line 857, ../scss/app.scss */
 h3.chevron.left:hover:before {
-  background-position: 0px -794px;
+  background-position: -73px -758px;
 }
 
-/* line 810, ../scss/app.scss */
+/* line 863, ../scss/app.scss */
 h3.chevron.show:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 817, ../scss/app.scss */
+/* line 870, ../scss/app.scss */
 h4.chevron.left {
   color: #008385;
   position: relative;
@@ -10373,33 +10421,33 @@ h4.chevron.left {
   padding-left: 3rem;
   cursor: pointer;
 }
-/* line 823, ../scss/app.scss */
+/* line 876, ../scss/app.scss */
 h4.chevron.left:before {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
-  background-position: 0px -758px;
-  width: 2.1875rem;
-  height: 2.1875rem;
+  background-position: -48px -758px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   top: 3px;
   left: 0;
 }
-/* line 833, ../scss/app.scss */
+/* line 886, ../scss/app.scss */
 h4.chevron.left:hover {
   color: #008385;
 }
-/* line 835, ../scss/app.scss */
+/* line 888, ../scss/app.scss */
 h4.chevron.left:hover:before {
-  background-position: 0px -794px;
+  background-position: -73px -758px;
 }
 
-/* line 841, ../scss/app.scss */
+/* line 894, ../scss/app.scss */
 h4.chevron.show:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 847, ../scss/app.scss */
+/* line 900, ../scss/app.scss */
 .chevron-only {
   width: 2.25rem;
   height: 2.25rem;
@@ -10407,7 +10455,36 @@ h4.chevron.show:before {
   padding: 0;
 }
 
-/* line 854, ../scss/app.scss */
+/* line 907, ../scss/app.scss */
+.plus-minus {
+  width: 1.9375rem;
+  height: 1.9375rem;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+}
+/* line 913, ../scss/app.scss */
+.plus-minus:before {
+  content: '';
+  position: absolute;
+  background-image: url("img/icon-sheet.png");
+  background-position: -115px -1293px;
+  width: 1.9375rem;
+  height: 1.9375rem;
+  top: 0;
+  left: 0;
+}
+/* line 923, ../scss/app.scss */
+.plus-minus:after {
+  background-image: none;
+}
+
+/* line 929, ../scss/app.scss */
+.plus-minus.show:before {
+  background-position: -83px -1293px;
+}
+
+/* line 934, ../scss/app.scss */
 .dark-chevron-only {
   width: 2.25rem;
   height: 2.25rem;
@@ -10415,7 +10492,7 @@ h4.chevron.show:before {
   padding: 0;
   position: relative;
 }
-/* line 860, ../scss/app.scss */
+/* line 940, ../scss/app.scss */
 .dark-chevron-only:before {
   content: '';
   position: absolute;
@@ -10426,74 +10503,74 @@ h4.chevron.show:before {
   top: 3px;
   left: 0;
 }
-/* line 870, ../scss/app.scss */
+/* line 950, ../scss/app.scss */
 .dark-chevron-only:after {
   background-image: none;
 }
 
-/* line 876, ../scss/app.scss */
+/* line 956, ../scss/app.scss */
 .dark-chevron-only.show:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 882, ../scss/app.scss */
+/* line 962, ../scss/app.scss */
 table.treatment-facts {
   width: 100%;
   border: none;
 }
-/* line 886, ../scss/app.scss */
+/* line 966, ../scss/app.scss */
 table.treatment-facts tbody tr.holder {
   padding: 0;
   margin: 0;
 }
-/* line 889, ../scss/app.scss */
+/* line 969, ../scss/app.scss */
 table.treatment-facts tbody tr.holder td {
   padding: 0 1rem;
   margin: 0;
 }
-/* line 894, ../scss/app.scss */
+/* line 974, ../scss/app.scss */
 table.treatment-facts tbody tr {
   background-color: #FFFFFF;
 }
-/* line 896, ../scss/app.scss */
+/* line 976, ../scss/app.scss */
 table.treatment-facts tbody tr td {
   vertical-align: middle;
   padding: 1.5rem 1rem;
 }
-/* line 900, ../scss/app.scss */
+/* line 980, ../scss/app.scss */
 table.treatment-facts tbody tr td.title {
   color: #008385;
   font-size: 1.5rem;
 }
-/* line 904, ../scss/app.scss */
+/* line 984, ../scss/app.scss */
 table.treatment-facts tbody tr td.read-more-cell {
   text-align: right;
 }
-/* line 906, ../scss/app.scss */
+/* line 986, ../scss/app.scss */
 table.treatment-facts tbody tr td.read-more-cell a.chevron {
   display: inline-block;
 }
-/* line 908, ../scss/app.scss */
+/* line 988, ../scss/app.scss */
 table.treatment-facts tbody tr td.read-more-cell a.chevron:after {
-  top: -5px;
+  top: 0px;
 }
-/* line 914, ../scss/app.scss */
+/* line 994, ../scss/app.scss */
 table.treatment-facts tbody tr.shaded {
   background-color: #f7f7f7;
 }
 
-/* line 920, ../scss/app.scss */
+/* line 1000, ../scss/app.scss */
 .risk-data-header {
   width: 100%;
   padding: 0.25rem 1.5rem;
 }
 
-/* line 925, ../scss/app.scss */
+/* line 1005, ../scss/app.scss */
 .risk-data {
   padding: 1.25rem;
 }
-/* line 927, ../scss/app.scss */
+/* line 1007, ../scss/app.scss */
 .risk-data a.dark-chevron {
   display: block;
   color: #404040;
@@ -10502,7 +10579,7 @@ table.treatment-facts tbody tr.shaded {
   font-weight: bold;
   position: relative;
 }
-/* line 934, ../scss/app.scss */
+/* line 1014, ../scss/app.scss */
 .risk-data a.dark-chevron:after {
   content: '';
   position: absolute;
@@ -10514,19 +10591,19 @@ table.treatment-facts tbody tr.shaded {
   right: 0;
 }
 
-/* line 947, ../scss/app.scss */
+/* line 1027, ../scss/app.scss */
 .paid {
   position: relative;
   width: 3rem;
 }
-/* line 950, ../scss/app.scss */
+/* line 1030, ../scss/app.scss */
 .paid:before {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
 }
 
-/* line 958, ../scss/app.scss */
+/* line 1038, ../scss/app.scss */
 .paid.yes:before {
   background-position: 0 -1060px;
   width: 1.3125rem;
@@ -10535,89 +10612,101 @@ table.treatment-facts tbody tr.shaded {
   left: 12px;
 }
 
-/* line 968, ../scss/app.scss */
+/* line 1048, ../scss/app.scss */
 .paid.no:before {
-  background-position: 0 -1078px;
-  width: 0.875rem;
+  background-position: -14px -1078px;
+  width: 1rem;
   height: 0.8125rem;
   top: 20px;
   left: 12px;
 }
 
-/* line 977, ../scss/app.scss */
+/* line 1057, ../scss/app.scss */
 .plan-table {
   width: 100%;
   border: none;
 }
-/* line 980, ../scss/app.scss */
+/* line 1060, ../scss/app.scss */
 .plan-table thead {
   background-color: #b5b6b8;
 }
-/* line 983, ../scss/app.scss */
+/* line 1063, ../scss/app.scss */
 .plan-table thead tr th {
   color: #FFFFFF;
 }
-/* line 985, ../scss/app.scss */
+/* line 1065, ../scss/app.scss */
 .plan-table thead tr th:first-child {
   width: 5rem;
 }
-/* line 988, ../scss/app.scss */
+/* line 1068, ../scss/app.scss */
 .plan-table thead tr th:last-child, .plan-table thead tr th:nth-child(10) {
   text-align: right;
 }
-/* line 995, ../scss/app.scss */
+/* line 1075, ../scss/app.scss */
 .plan-table tbody tr {
   background-color: #FFFFFF;
 }
-/* line 997, ../scss/app.scss */
+/* line 1077, ../scss/app.scss */
 .plan-table tbody tr td.cost {
   text-align: right;
   padding-right: 1rem;
 }
-/* line 1000, ../scss/app.scss */
+/* line 1080, ../scss/app.scss */
 .plan-table tbody tr td.cost:last-child {
   padding-right: 1rem;
 }
-/* line 1004, ../scss/app.scss */
+/* line 1084, ../scss/app.scss */
 .plan-table tbody tr td.description {
   width: 20.75rem;
 }
-/* line 1008, ../scss/app.scss */
+/* line 1086, ../scss/app.scss */
+.plan-table tbody tr td.description strong {
+  color: #c6007e;
+}
+/* line 1091, ../scss/app.scss */
 .plan-table tbody tr td:last-child {
   padding-right: 0;
   text-align: right;
 }
-/* line 1016, ../scss/app.scss */
+/* line 1099, ../scss/app.scss */
 .plan-table tbody tr.border-top td {
   border-top: 1px solid #404040;
 }
-/* line 1022, ../scss/app.scss */
+/* line 1105, ../scss/app.scss */
 .plan-table .detail-table {
   width: 100%;
   border: none;
 }
-/* line 1026, ../scss/app.scss */
+/* line 1109, ../scss/app.scss */
 .plan-table .detail-table thead tr {
   background-color: #48bfae;
   color: #FFFFFF;
 }
-/* line 1033, ../scss/app.scss */
+/* line 1116, ../scss/app.scss */
 .plan-table .detail-table tbody tr:nth-child(even) {
   background-color: #f7f7f7;
 }
-/* line 1036, ../scss/app.scss */
+/* line 1119, ../scss/app.scss */
 .plan-table .detail-table tbody tr td.description {
   width: 20.75rem;
 }
-/* line 1040, ../scss/app.scss */
-.plan-table .detail-table tbody tr td:nth-child(4) {
+/* line 1122, ../scss/app.scss */
+.plan-table .detail-table tbody tr td.cost {
   text-align: right;
 }
-/* line 1045, ../scss/app.scss */
+/* line 1129, ../scss/app.scss */
+.plan-table .detail-table tbody tr td.code span {
+  font-size: 0.63rem;
+}
+/* line 1133, ../scss/app.scss */
+.plan-table .detail-table tbody tr td.paid.yes, .plan-table .detail-table tbody tr td.paid.no {
+  display: block;
+}
+/* line 1135, ../scss/app.scss */
 .plan-table .detail-table tbody tr td.paid.yes:before, .plan-table .detail-table tbody tr td.paid.no:before {
   top: 12px;
 }
-/* line 1052, ../scss/app.scss */
+/* line 1142, ../scss/app.scss */
 .plan-table .chevron-only {
   width: 2.25rem;
   height: 2.25rem;
@@ -10625,14 +10714,38 @@ table.treatment-facts tbody tr.shaded {
   padding: 0 0 0 3rem;
 }
 
-/* line 1061, ../scss/app.scss */
+/* line 1151, ../scss/app.scss */
+.booking-alert.show {
+  -webkit-transform: perspective(350px) rotateX(0deg);
+  -o-transform: perspective(350px) rotateX(0deg);
+  transform: perspective(350px) rotateX(0deg);
+  -webkit-transition: 0.2s linear 0s;
+  -o-transition: 0.2s linear 0s;
+  transition: 0.2s linear 0s;
+}
+
+/* line 1160, ../scss/app.scss */
+.alert-box.alert {
+  border-color: #e7b513 !important;
+}
+
+/* line 1164, ../scss/app.scss */
 .booking-alert {
+  width: 19.5rem;
   position: absolute;
   padding: 0.25rem 2rem;
   z-index: 2;
   margin: -5px 0 0 0;
+  background-color: #e7b513 !important;
+  border: 1px solid #e7b513;
+  -webkit-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: perspective(350px) rotateX(-90deg);
+  -o-transform: perspective(350px) rotateX(-90deg);
+  transform: perspective(350px) rotateX(-90deg);
 }
-/* line 1066, ../scss/app.scss */
+/* line 1180, ../scss/app.scss */
 .booking-alert .close {
   color: #FFFFFF !important;
   top: 11px;
@@ -10640,14 +10753,14 @@ table.treatment-facts tbody tr.shaded {
   opacity: 1;
 }
 
-/* line 1074, ../scss/app.scss */
+/* line 1188, ../scss/app.scss */
 .alert-symbol {
   width: 1.375rem;
   height: 1.375rem;
   display: inline-block;
   position: relative;
 }
-/* line 1079, ../scss/app.scss */
+/* line 1193, ../scss/app.scss */
 .alert-symbol:after {
   content: '';
   position: absolute;
@@ -10659,7 +10772,16 @@ table.treatment-facts tbody tr.shaded {
   left: 0;
 }
 
-/* line 1092, ../scss/app.scss */
+/* line 1206, ../scss/app.scss */
+.has-tip {
+  border-bottom: none;
+}
+/* line 1208, ../scss/app.scss */
+.has-tip:hover {
+  border-bottom: none;
+}
+
+/* line 1213, ../scss/app.scss */
 .tooltip {
   background-color: #FFFFFF;
   border: 2px solid #d81e05;
@@ -10668,274 +10790,280 @@ table.treatment-facts tbody tr.shaded {
   line-height: 1.5rem;
 }
 
-/* line 1100, ../scss/app.scss */
+/* line 1221, ../scss/app.scss */
 .tooltip > .nub {
   border-color: transparent transparent #d81e05 transparent;
 }
 
-/* line 1105, ../scss/app.scss */
+/* line 1226, ../scss/app.scss */
 .show-hide-container.hide {
   height: 0px;
 }
 
-/* line 1110, ../scss/app.scss */
+/* line 1231, ../scss/app.scss */
 .margin-top-0-5 {
   margin-top: 0.5rem;
 }
 
-/* line 1114, ../scss/app.scss */
+/* line 1235, ../scss/app.scss */
 .margin-top-1 {
   margin-top: 1rem;
 }
 
-/* line 1118, ../scss/app.scss */
+/* line 1239, ../scss/app.scss */
 .margin-top-1-5 {
   margin-top: 1.5rem;
 }
 
-/* line 1122, ../scss/app.scss */
+/* line 1243, ../scss/app.scss */
 .margin-top-2 {
   margin-top: 2rem;
 }
 
-/* line 1126, ../scss/app.scss */
+/* line 1247, ../scss/app.scss */
 .margin-top-2-5 {
   margin-top: 2.5rem;
 }
 
-/* line 1130, ../scss/app.scss */
+/* line 1251, ../scss/app.scss */
 .margin-top-3 {
   margin-top: 3rem;
 }
 
-/* line 1134, ../scss/app.scss */
+/* line 1255, ../scss/app.scss */
 .margin-top-3-5 {
   margin-top: 3.5rem;
 }
 
-/* line 1138, ../scss/app.scss */
+/* line 1259, ../scss/app.scss */
 .margin-top-4 {
   margin-top: 4rem;
 }
 
-/* line 1142, ../scss/app.scss */
+/* line 1263, ../scss/app.scss */
 .margin-top-4-5 {
   margin-top: 4.5rem;
 }
 
-/* line 1146, ../scss/app.scss */
+/* line 1267, ../scss/app.scss */
 .margin-top-5 {
   margin-top: 5rem;
 }
 
-/* line 1151, ../scss/app.scss */
+/* line 1272, ../scss/app.scss */
 .margin-bottom-0-5 {
   margin-bottom: 0.5rem;
 }
 
-/* line 1155, ../scss/app.scss */
+/* line 1276, ../scss/app.scss */
 .margin-bottom-1 {
   margin-bottom: 1rem;
 }
 
-/* line 1159, ../scss/app.scss */
+/* line 1280, ../scss/app.scss */
 .margin-bottom-1-5 {
   margin-bottom: 1.5rem;
 }
 
-/* line 1163, ../scss/app.scss */
+/* line 1284, ../scss/app.scss */
 .margin-bottom-2 {
   margin-bottom: 2rem;
 }
 
-/* line 1167, ../scss/app.scss */
+/* line 1288, ../scss/app.scss */
 .margin-bottom-2-5 {
   margin-bottom: 2.5rem;
 }
 
-/* line 1171, ../scss/app.scss */
+/* line 1292, ../scss/app.scss */
 .margin-bottom-3 {
   margin-bottom: 3rem;
 }
 
-/* line 1175, ../scss/app.scss */
+/* line 1296, ../scss/app.scss */
 .margin-bottom-3-5 {
   margin-bottom: 3.5rem;
 }
 
-/* line 1179, ../scss/app.scss */
+/* line 1300, ../scss/app.scss */
 .margin-bottom-4 {
   margin-bottom: 4rem;
 }
 
-/* line 1183, ../scss/app.scss */
+/* line 1304, ../scss/app.scss */
 .margin-bottom-4-5 {
   margin-bottom: 4.5rem;
 }
 
-/* line 1187, ../scss/app.scss */
+/* line 1308, ../scss/app.scss */
 .margin-bottom-5 {
   margin-bottom: 5rem;
 }
 
-/* line 1191, ../scss/app.scss */
+/* line 1312, ../scss/app.scss */
 .margin-top-bottom-2-5 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-/* line 1196, ../scss/app.scss */
+/* line 1317, ../scss/app.scss */
 .margin-right-2 {
   margin-right: 2rem !important;
 }
 
-/* line 1201, ../scss/app.scss */
+/* line 1322, ../scss/app.scss */
 .padding-2 {
   padding: 2rem !important;
 }
 
-/* line 1206, ../scss/app.scss */
+/* line 1327, ../scss/app.scss */
 .padding-top-0-5 {
   padding-top: 0.5rem;
 }
 
-/* line 1210, ../scss/app.scss */
+/* line 1331, ../scss/app.scss */
 .padding-top-1 {
   padding-top: 1rem;
 }
 
-/* line 1214, ../scss/app.scss */
+/* line 1335, ../scss/app.scss */
 .padding-top-1-5 {
   padding-top: 1.5rem;
 }
 
-/* line 1218, ../scss/app.scss */
+/* line 1339, ../scss/app.scss */
 .padding-top-2 {
   padding-top: 2rem;
 }
 
-/* line 1222, ../scss/app.scss */
+/* line 1343, ../scss/app.scss */
 .padding-top-bottom-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-/* line 1227, ../scss/app.scss */
+/* line 1348, ../scss/app.scss */
 .padding-top-bottom-2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 1232, ../scss/app.scss */
+/* line 1353, ../scss/app.scss */
 .padding-top-2-5 {
   padding-top: 2.5rem;
 }
 
-/* line 1236, ../scss/app.scss */
+/* line 1357, ../scss/app.scss */
 .padding-top-3 {
   padding-top: 3rem;
 }
 
-/* line 1240, ../scss/app.scss */
+/* line 1361, ../scss/app.scss */
 .padding-top-3-5 {
   padding-top: 3.5rem;
 }
 
-/* line 1244, ../scss/app.scss */
+/* line 1365, ../scss/app.scss */
 .padding-top-4 {
   padding-top: 4rem;
 }
 
-/* line 1248, ../scss/app.scss */
+/* line 1369, ../scss/app.scss */
 .padding-top-4-5 {
   padding-top: 4.5rem;
 }
 
-/* line 1252, ../scss/app.scss */
+/* line 1373, ../scss/app.scss */
 .padding-left-1 {
   padding-left: 1rem;
 }
 
-/* line 1256, ../scss/app.scss */
+/* line 1377, ../scss/app.scss */
 .padding-left-1-5 {
   padding-left: 1.5rem;
 }
 
-/* line 1260, ../scss/app.scss */
+/* line 1381, ../scss/app.scss */
 .padding-left-2 {
   padding-left: 2rem;
 }
 
-/* line 1264, ../scss/app.scss */
+/* line 1385, ../scss/app.scss */
 .padding-left-2-5 {
   padding-left: 2.5rem;
 }
 
-/* line 1268, ../scss/app.scss */
+/* line 1389, ../scss/app.scss */
 .padding-left-3 {
   padding-left: 3rem;
 }
 
-/* line 1272, ../scss/app.scss */
+/* line 1393, ../scss/app.scss */
 .padding-left-3-5 {
   padding-left: 3.5rem;
 }
 
-/* line 1276, ../scss/app.scss */
+/* line 1397, ../scss/app.scss */
 .padding-left-4 {
   padding-left: 4rem;
 }
 
-/* line 1280, ../scss/app.scss */
+/* line 1401, ../scss/app.scss */
 .padding-left-4-5 {
   padding-left: 4.5rem;
 }
 
-/* line 1284, ../scss/app.scss */
+/* line 1405, ../scss/app.scss */
 .padding-left-5 {
   padding-left: 5rem;
 }
 
-/* line 1288, ../scss/app.scss */
+/* line 1409, ../scss/app.scss */
 .padding-right-0-5 {
   padding-right: 0.5rem;
 }
 
-/* line 1292, ../scss/app.scss */
+/* line 1413, ../scss/app.scss */
 .padding-right-1 {
   padding-right: 1rem !important;
 }
 
-/* line 1297, ../scss/app.scss */
+/* line 1418, ../scss/app.scss */
 #btnConfirmAppointment {
   width: 30rem;
   -webkit-transition: width 2s;
   transition: width 2s;
 }
 
-/* line 1305, ../scss/app.scss */
+/* line 1426, ../scss/app.scss */
 #btnConfirmAppointment {
   width: 30rem;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
 
-/* line 1311, ../scss/app.scss */
+/* line 1432, ../scss/app.scss */
 #btnConfirmAppointment.success-bg {
   width: 25rem;
 }
 
-/* line 1315, ../scss/app.scss */
+/* line 1436, ../scss/app.scss */
 .button.icon {
   padding-right: 5rem;
 }
 
-/* line 1319, ../scss/app.scss */
+/* line 1440, ../scss/app.scss */
 .button.success-bg {
   background-color: #007a3d;
 }
 
-/* line 1323, ../scss/app.scss */
+/* line 1444, ../scss/app.scss */
+.button, button {
+  margin: 0;
+  color: #FFFFFF !important;
+}
+
+/* line 1449, ../scss/app.scss */
 .si-icon {
   position: absolute;
   top: 0.85rem;
@@ -10944,86 +11072,86 @@ table.treatment-facts tbody tr.shaded {
   right: 1rem;
 }
 
-/* line 1331, ../scss/app.scss */
+/* line 1457, ../scss/app.scss */
 #sugarChart {
   width: 16em;
   height: 16em;
   margin: 0 auto;
 }
 
-/* line 1337, ../scss/app.scss */
+/* line 1463, ../scss/app.scss */
 #gumChart {
   width: 20em;
   height: 15em;
 }
-/* line 1340, ../scss/app.scss */
+/* line 1466, ../scss/app.scss */
 #gumChart text {
   fill: #FFFFFF;
 }
 
-/* line 1345, ../scss/app.scss */
+/* line 1471, ../scss/app.scss */
 .no-border-top-color-1 {
   border-style: solid;
   border-color: #e7b513;
   border-width: 0 4px 4px 4px;
 }
 
-/* line 1352, ../scss/app.scss */
+/* line 1478, ../scss/app.scss */
 ul[data-pie-id] {
   list-style: none;
   padding: 10px;
   display: none;
 }
 
-/* line 1358, ../scss/app.scss */
+/* line 1484, ../scss/app.scss */
 ul[data-bar-id] {
   list-style: none;
   padding: 10px;
   display: none;
 }
 
-/* line 1364, ../scss/app.scss */
+/* line 1490, ../scss/app.scss */
 ul[data-pie-id] li:nth-child(1) {
   color: #b5b6b8;
 }
 
-/* line 1368, ../scss/app.scss */
+/* line 1494, ../scss/app.scss */
 ul[data-pie-id] li:nth-child(2) {
   color: #f1f1f1;
 }
 
-/* line 1372, ../scss/app.scss */
+/* line 1498, ../scss/app.scss */
 ul[data-bar-id] li:nth-child(1) {
   color: #b5b6b8;
 }
 
-/* line 1376, ../scss/app.scss */
+/* line 1502, ../scss/app.scss */
 ul[data-bar-id] li:nth-child(2) {
   color: #f1f1f1;
 }
 
-/* line 1380, ../scss/app.scss */
+/* line 1506, ../scss/app.scss */
 .tooltip {
   margin-left: -5px;
   border-radius: 3px;
   padding: 5px;
 }
 
-/* line 1386, ../scss/app.scss */
+/* line 1512, ../scss/app.scss */
 #consentArea1, #consentArea2, #consentArea3 {
   transition: all 1s;
 }
-/* line 1388, ../scss/app.scss */
+/* line 1514, ../scss/app.scss */
 #consentArea1 input[type='checkbox'], #consentArea2 input[type='checkbox'], #consentArea3 input[type='checkbox'] {
   display: none;
 }
-/* line 1391, ../scss/app.scss */
+/* line 1517, ../scss/app.scss */
 #consentArea1 input[type='checkbox'] + label, #consentArea2 input[type='checkbox'] + label, #consentArea3 input[type='checkbox'] + label {
   font-size: 1rem;
   padding-left: 2.625rem;
   position: relative;
 }
-/* line 1395, ../scss/app.scss */
+/* line 1521, ../scss/app.scss */
 #consentArea1 input[type='checkbox'] + label:before, #consentArea2 input[type='checkbox'] + label:before, #consentArea3 input[type='checkbox'] + label:before {
   content: '';
   position: absolute;
@@ -11034,53 +11162,64 @@ ul[data-bar-id] li:nth-child(2) {
   width: 1.625rem;
   height: 1.75rem;
 }
-/* line 1408, ../scss/app.scss */
+/* line 1534, ../scss/app.scss */
 #consentArea1 input[type='checkbox']:checked + label:before, #consentArea2 input[type='checkbox']:checked + label:before, #consentArea3 input[type='checkbox']:checked + label:before {
   top: 0;
   left: 0;
   background-position: 0 -1220px;
 }
-/* line 1415, ../scss/app.scss */
+/* line 1541, ../scss/app.scss */
 #consentArea1 input[type='checkbox'] + label + button, #consentArea2 input[type='checkbox'] + label + button, #consentArea3 input[type='checkbox'] + label + button {
   margin: 2rem 0 0 0;
 }
-/* line 1419, ../scss/app.scss */
+/* line 1545, ../scss/app.scss */
 #consentArea1 button[disabled], #consentArea2 button[disabled], #consentArea3 button[disabled] {
   background-color: rgba(198, 0, 126, 0.45);
 }
 
-/* line 1424, ../scss/app.scss */
+/* line 1550, ../scss/app.scss */
 .hi-bg {
-  background-image: url("img/health-insurance-bg.jpg");
-  background-size: cover;
-  color: #FFFFFF;
+  position: relative;
 }
-/* line 1428, ../scss/app.scss */
-.hi-bg h4 {
-  color: #FFFFFF;
-  margin-bottom: 0.75rem;
-  font-size: 1.625rem;
+/* line 1552, ../scss/app.scss */
+.hi-bg:after {
+  content: '';
+  position: absolute;
+  background-image: url("img/icon-sheet.png");
+  width: 18.75rem;
+  height: 20.5rem;
+  top: 20px;
+  right: 20px;
+  background-position: 0px -1333px;
 }
-/* line 1433, ../scss/app.scss */
+/* line 1562, ../scss/app.scss */
+.hi-bg h3 {
+  padding-right: 20rem !important;
+}
+/* line 1565, ../scss/app.scss */
+.hi-bg p {
+  padding-right: 20rem !important;
+}
+/* line 1568, ../scss/app.scss */
 .hi-bg i {
   font-size: 1.25rem;
   font-weight: normal;
 }
-/* line 1437, ../scss/app.scss */
+/* line 1572, ../scss/app.scss */
 .hi-bg .small {
   font-size: 0.875rem;
 }
 
-/* line 1442, ../scss/app.scss */
+/* line 1577, ../scss/app.scss */
 .payment {
   overflow: hidden;
 }
-/* line 1444, ../scss/app.scss */
+/* line 1579, ../scss/app.scss */
 .payment .intro {
   padding-right: 21.875rem;
   position: relative;
 }
-/* line 1447, ../scss/app.scss */
+/* line 1582, ../scss/app.scss */
 .payment .intro:after {
   position: absolute;
   content: '';
@@ -11091,25 +11230,30 @@ ul[data-bar-id] li:nth-child(2) {
   top: 0;
   right: 0;
 }
-/* line 1458, ../scss/app.scss */
+/* line 1593, ../scss/app.scss */
 .payment .border-right {
   border-right: 2px solid #404040;
 }
 
-/* line 1464, ../scss/app.scss */
+/* line 1598, ../scss/app.scss */
+.pay-now {
+  overflow: hidden;
+}
+
+/* line 1603, ../scss/app.scss */
 #applyNow p {
   font-size: 1.375rem;
 }
-/* line 1466, ../scss/app.scss */
+/* line 1605, ../scss/app.scss */
 #applyNow p span {
   font-size: 1rem;
 }
-/* line 1470, ../scss/app.scss */
+/* line 1609, ../scss/app.scss */
 #applyNow .button {
   margin: 0 !important;
 }
 
-/* line 1479, ../scss/app.scss */
+/* line 1618, ../scss/app.scss */
 .xdsoft_datetimepicker {
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.506);
   background: #fff;
@@ -11129,12 +11273,12 @@ ul[data-bar-id] li:nth-child(2) {
   display: none;
 }
 
-/* line 1497, ../scss/app.scss */
+/* line 1636, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl {
   padding: 8px 0 8px 8px;
 }
 
-/* line 1501, ../scss/app.scss */
+/* line 1640, ../scss/app.scss */
 .xdsoft_datetimepicker iframe {
   position: absolute;
   left: 0;
@@ -11146,12 +11290,12 @@ ul[data-bar-id] li:nth-child(2) {
 }
 
 /*For IE8 or lower*/
-/* line 1512, ../scss/app.scss */
+/* line 1651, ../scss/app.scss */
 .xdsoft_datetimepicker button {
   border: none !important;
 }
 
-/* line 1516, ../scss/app.scss */
+/* line 1655, ../scss/app.scss */
 .xdsoft_noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -11162,24 +11306,24 @@ ul[data-bar-id] li:nth-child(2) {
   user-select: none;
 }
 
-/* line 1526, ../scss/app.scss */
+/* line 1665, ../scss/app.scss */
 .xdsoft_noselect::selection {
   background: transparent;
 }
 
-/* line 1527, ../scss/app.scss */
+/* line 1666, ../scss/app.scss */
 .xdsoft_noselect::-moz-selection {
   background: transparent;
 }
 
-/* line 1529, ../scss/app.scss */
+/* line 1668, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_inline {
   display: inline-block;
   position: static;
   box-shadow: none;
 }
 
-/* line 1535, ../scss/app.scss */
+/* line 1674, ../scss/app.scss */
 .xdsoft_datetimepicker * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -11187,36 +11331,36 @@ ul[data-bar-id] li:nth-child(2) {
   margin: 0;
 }
 
-/* line 1542, ../scss/app.scss */
+/* line 1681, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker, .xdsoft_datetimepicker .xdsoft_timepicker {
   display: none;
 }
 
-/* line 1546, ../scss/app.scss */
+/* line 1685, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker.active, .xdsoft_datetimepicker .xdsoft_timepicker.active {
   display: block;
 }
 
-/* line 1550, ../scss/app.scss */
+/* line 1689, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker {
   width: 224px;
   float: left;
   margin-left: 8px;
 }
 
-/* line 1555, ../scss/app.scss */
+/* line 1694, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_datepicker {
   float: right;
   margin-right: 8px;
   margin-left: 0;
 }
 
-/* line 1561, ../scss/app.scss */
+/* line 1700, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_datepicker {
   width: 256px;
 }
 
-/* line 1565, ../scss/app.scss */
+/* line 1704, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker {
   width: 58px;
   float: left;
@@ -11225,26 +11369,26 @@ ul[data-bar-id] li:nth-child(2) {
   margin-top: 0;
 }
 
-/* line 1572, ../scss/app.scss */
+/* line 1711, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker {
   float: right;
   margin-right: 8px;
   margin-left: 0;
 }
 
-/* line 1578, ../scss/app.scss */
+/* line 1717, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker {
   margin-top: 8px;
   margin-bottom: 3px;
 }
 
-/* line 1583, ../scss/app.scss */
+/* line 1722, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_mounthpicker {
   position: relative;
   text-align: center;
 }
 
-/* line 1588, ../scss/app.scss */
+/* line 1727, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label i,
 .xdsoft_datetimepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_next,
@@ -11252,7 +11396,7 @@ ul[data-bar-id] li:nth-child(2) {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0NBRjI1NjM0M0UwMTFFNDk4NkFGMzJFQkQzQjEwRUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0NBRjI1NjQ0M0UwMTFFNDk4NkFGMzJFQkQzQjEwRUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDQ0FGMjU2MTQzRTAxMUU0OTg2QUYzMkVCRDNCMTBFQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQ0FGMjU2MjQzRTAxMUU0OTg2QUYzMkVCRDNCMTBFQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoNEP54AAAIOSURBVHja7Jq9TsMwEMcxrZD4WpBYeKUCe+kTMCACHZh4BFfHO/AAIHZGFhYkBBsSEqxsLCAgXKhbXYOTxh9pfJVP+qutnZ5s/5Lz2Y5I03QhWji2GIcgAokWgfCxNvcOCCGKqiSqhUp0laHOne05vdEyGMfkdxJDVjgwDlEQgYQBgx+ULJaWSXXS6r/ER5FBVR8VfGftTKcITNs+a1XpcFoExREIDF14AVIFxgQUS+h520cdud6wNkC0UBw6BCO/HoCYwBhD8QCkQ/x1mwDyD4plh4D6DDV0TAGyo4HcawLIBBSLDkHeH0Mg2yVP3l4TQMZQDDsEOl/MgHQqhMNuE0D+oBh0CIr8MAKyazBH9WyBuKxDWgbXfjNf32TZ1KWm/Ap1oSk/R53UtQ5xTh3LUlMmT8gt6g51Q9p+SobxgJQ/qmsfZhWywGFSl0yBjCLJCMgXail3b7+rumdVJ2YRss4cN+r6qAHDkPWjPjdJCF4n9RmAD/V9A/Wp4NQassDjwlB6XBiCxcJQWmZZb8THFilfy/lfrTvLghq2TqTHrRMTKNJ0sIhdo15RT+RpyWwFdY96UZ/LdQKBGjcXpcc1AlSFEfLmouD+1knuxBDUVrvOBmoOC/rEcN7OQxKVeJTCiAdUzUJhA2Oez9QTkp72OTVcxDcXY8iKNkxGAJXmJCOQwOa6dhyXsOa6XwEGAKdeb5ET3rQdAAAAAElFTkSuQmCC);
 }
 
-/* line 1595, ../scss/app.scss */
+/* line 1734, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label i {
   opacity: 0.5;
   background-position: -92px -19px;
@@ -11262,26 +11406,26 @@ ul[data-bar-id] li:nth-child(2) {
   vertical-align: middle;
 }
 
-/* line 1604, ../scss/app.scss */
+/* line 1743, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_prev {
   float: left;
   background-position: -20px 0;
 }
 
-/* line 1608, ../scss/app.scss */
+/* line 1747, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_today_button {
   float: left;
   background-position: -70px 0;
   margin-left: 5px;
 }
 
-/* line 1614, ../scss/app.scss */
+/* line 1753, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_next {
   float: right;
   background-position: 0 0;
 }
 
-/* line 1619, ../scss/app.scss */
+/* line 1758, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_next,
 .xdsoft_datetimepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_today_button {
@@ -11303,7 +11447,7 @@ ul[data-bar-id] li:nth-child(2) {
   min-width: 0;
 }
 
-/* line 1640, ../scss/app.scss */
+/* line 1779, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
   float: none;
@@ -11315,7 +11459,7 @@ ul[data-bar-id] li:nth-child(2) {
   margin-top: 7px;
 }
 
-/* line 1650, ../scss/app.scss */
+/* line 1789, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker .xdsoft_prev,
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker .xdsoft_next {
   float: none;
@@ -11323,21 +11467,21 @@ ul[data-bar-id] li:nth-child(2) {
   margin-right: 14px;
 }
 
-/* line 1657, ../scss/app.scss */
+/* line 1796, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev {
   background-position: -40px 0;
   margin-bottom: 7px;
   margin-top: 0;
 }
 
-/* line 1663, ../scss/app.scss */
+/* line 1802, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
   height: 151px;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
 }
 
-/* line 1669, ../scss/app.scss */
+/* line 1808, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
   background: #f5f5f5;
   border-top: 1px solid #ddd;
@@ -11351,12 +11495,12 @@ ul[data-bar-id] li:nth-child(2) {
   line-height: 25px;
 }
 
-/* line 1682, ../scss/app.scss */
+/* line 1821, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:first-child {
   border-top-width: 0;
 }
 
-/* line 1686, ../scss/app.scss */
+/* line 1825, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_today_button:hover,
 .xdsoft_datetimepicker .xdsoft_next:hover,
 .xdsoft_datetimepicker .xdsoft_prev:hover {
@@ -11364,7 +11508,7 @@ ul[data-bar-id] li:nth-child(2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-/* line 1693, ../scss/app.scss */
+/* line 1832, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label {
   display: inline;
   position: relative;
@@ -11381,17 +11525,17 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: pointer;
 }
 
-/* line 1709, ../scss/app.scss */
+/* line 1848, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label:hover > span {
   text-decoration: underline;
 }
 
-/* line 1713, ../scss/app.scss */
+/* line 1852, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label:hover i {
   opacity: 1.0;
 }
 
-/* line 1717, ../scss/app.scss */
+/* line 1856, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
   border: 1px solid #ccc;
   position: absolute;
@@ -11404,29 +11548,29 @@ ul[data-bar-id] li:nth-child(2) {
   overflow-y: hidden;
 }
 
-/* line 1729, ../scss/app.scss */
+/* line 1868, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_monthselect {
   right: -7px;
 }
 
-/* line 1730, ../scss/app.scss */
+/* line 1869, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_yearselect {
   right: 2px;
 }
 
-/* line 1731, ../scss/app.scss */
+/* line 1870, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
   color: #fff;
   background: #ff8000;
 }
 
-/* line 1736, ../scss/app.scss */
+/* line 1875, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option {
   padding: 2px 10px 2px 5px;
   text-decoration: none !important;
 }
 
-/* line 1741, ../scss/app.scss */
+/* line 1880, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
   background: #33aaff;
   box-shadow: #178fe5 0 1px 3px 0 inset;
@@ -11434,40 +11578,40 @@ ul[data-bar-id] li:nth-child(2) {
   font-weight: 700;
 }
 
-/* line 1748, ../scss/app.scss */
+/* line 1887, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_month {
   width: 100px;
   text-align: right;
 }
 
-/* line 1753, ../scss/app.scss */
+/* line 1892, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar {
   clear: both;
 }
 
-/* line 1757, ../scss/app.scss */
+/* line 1896, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_year {
   width: 48px;
   margin-left: 5px;
 }
 
-/* line 1762, ../scss/app.scss */
+/* line 1901, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar table {
   border-collapse: collapse;
   width: 100%;
 }
 
-/* line 1768, ../scss/app.scss */
+/* line 1907, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td > div {
   padding-right: 5px;
 }
 
-/* line 1772, ../scss/app.scss */
+/* line 1911, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   height: 25px;
 }
 
-/* line 1776, ../scss/app.scss */
+/* line 1915, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th {
   width: 14.2857142%;
   background: #f5f5f5;
@@ -11482,36 +11626,36 @@ ul[data-bar-id] li:nth-child(2) {
   height: 25px;
 }
 
-/* line 1789, ../scss/app.scss */
+/* line 1928, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_calendar td, .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_calendar th {
   width: 12.5%;
 }
 
-/* line 1793, ../scss/app.scss */
+/* line 1932, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   background: #f1f1f1;
 }
 
-/* line 1797, ../scss/app.scss */
+/* line 1936, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
   color: #33aaff;
 }
 
-/* line 1801, ../scss/app.scss */
+/* line 1940, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_default {
   background: #ffe9d2;
   box-shadow: #ffb871 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 1806, ../scss/app.scss */
+/* line 1945, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_mint {
   background: #c1ffc9;
   box-shadow: #00dd1c 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 1812, ../scss/app.scss */
+/* line 1951, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
@@ -11521,7 +11665,7 @@ ul[data-bar-id] li:nth-child(2) {
   font-weight: 700;
 }
 
-/* line 1821, ../scss/app.scss */
+/* line 1960, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled,
 .xdsoft_datetimepicker .xdsoft_time_box > div > div.xdsoft_disabled {
@@ -11530,13 +11674,13 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: default;
 }
 
-/* line 1829, ../scss/app.scss */
+/* line 1968, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled {
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 }
 
-/* line 1834, ../scss/app.scss */
+/* line 1973, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
   color: #fff !important;
@@ -11544,7 +11688,7 @@ ul[data-bar-id] li:nth-child(2) {
   box-shadow: none !important;
 }
 
-/* line 1841, ../scss/app.scss */
+/* line 1980, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current.xdsoft_disabled:hover {
   background: #33aaff !important;
@@ -11552,7 +11696,7 @@ ul[data-bar-id] li:nth-child(2) {
   color: #fff !important;
 }
 
-/* line 1848, ../scss/app.scss */
+/* line 1987, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_disabled:hover {
   color: inherit	!important;
@@ -11560,7 +11704,7 @@ ul[data-bar-id] li:nth-child(2) {
   box-shadow: inherit !important;
 }
 
-/* line 1855, ../scss/app.scss */
+/* line 1994, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   font-weight: 700;
   text-align: center;
@@ -11568,7 +11712,7 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: default;
 }
 
-/* line 1862, ../scss/app.scss */
+/* line 2001, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_copyright {
   color: #ccc !important;
   font-size: 10px;
@@ -11577,30 +11721,30 @@ ul[data-bar-id] li:nth-child(2) {
   margin-left: 8px;
 }
 
-/* line 1870, ../scss/app.scss */
+/* line 2009, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_copyright a {
   color: #eee !important;
 }
 
-/* line 1871, ../scss/app.scss */
+/* line 2010, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_copyright a:hover {
   color: #aaa !important;
 }
 
-/* line 1873, ../scss/app.scss */
+/* line 2012, ../scss/app.scss */
 .xdsoft_time_box {
   position: relative;
   border: 1px solid #ccc;
 }
 
-/* line 1877, ../scss/app.scss */
+/* line 2016, ../scss/app.scss */
 .xdsoft_scrollbar > .xdsoft_scroller {
   background: #ccc !important;
   height: 20px;
   border-radius: 3px;
 }
 
-/* line 1882, ../scss/app.scss */
+/* line 2021, ../scss/app.scss */
 .xdsoft_scrollbar {
   position: absolute;
   width: 7px;
@@ -11610,18 +11754,18 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: pointer;
 }
 
-/* line 1890, ../scss/app.scss */
+/* line 2029, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_scrollbar {
   left: 0;
   right: auto;
 }
 
-/* line 1894, ../scss/app.scss */
+/* line 2033, ../scss/app.scss */
 .xdsoft_scroller_box {
   position: relative;
 }
 
-/* line 1898, ../scss/app.scss */
+/* line 2037, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark {
   box-shadow: 0 5px 15px -5px rgba(255, 255, 255, 0.506);
   background: #000;
@@ -11632,43 +11776,43 @@ ul[data-bar-id] li:nth-child(2) {
   color: #ccc;
 }
 
-/* line 1908, ../scss/app.scss */
+/* line 2047, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box {
   border-bottom: 1px solid #222;
 }
 
-/* line 1911, ../scss/app.scss */
+/* line 2050, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div {
   background: #0a0a0a;
   border-top: 1px solid #222;
   color: #999;
 }
 
-/* line 1917, ../scss/app.scss */
+/* line 2056, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label {
   background-color: #000;
 }
 
-/* line 1920, ../scss/app.scss */
+/* line 2059, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select {
   border: 1px solid #333;
   background: #000;
 }
 
-/* line 1925, ../scss/app.scss */
+/* line 2064, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
   color: #000;
   background: #007fff;
 }
 
-/* line 1930, ../scss/app.scss */
+/* line 2069, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
   background: #cc5500;
   box-shadow: #b03e00 0 1px 3px 0 inset;
   color: #000;
 }
 
-/* line 1936, ../scss/app.scss */
+/* line 2075, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label i,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_prev,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_next,
@@ -11676,7 +11820,7 @@ ul[data-bar-id] li:nth-child(2) {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUExQUUzOTA0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUExQUUzOTE0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQTFBRTM4RTQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQTFBRTM4RjQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pp0VxGEAAAIASURBVHja7JrNSgMxEMebtgh+3MSLr1T1Xn2CHoSKB08+QmR8Bx9A8e7RixdB9CKCoNdexIugxFlJa7rNZneTbLIpM/CnNLsdMvNjM8l0mRCiQ9Ye61IKCAgZAUnH+mU3MMZaHYChBnJUDzWOFZdVfc5+ZFLbrWDeXPwbxIqrLLfaeS0hEBVGIRQCEiZoHQwtlGSByCCdYBl8g8egTTAWoKQMRBRBcZxYlhzhKegqMOageErsCHVkk3hXIFooDgHB1KkHIHVgzKB4ADJQ/A1jAFmAYhkQqA5TOBtocrKrgXwQA8gcFIuAIO8sQSA7hidvPwaQGZSaAYHOUWJABhWWw2EMIH9QagQERU4SArJXo0ZZL18uvaxejXt/Em8xjVBXmvFr1KVm/AJ10tRe2XnraNqaJvKE3KHuUbfK1E+VHB0q40/y3sdQSxY4FHWeKJCunP8UyDdqJZenT3ntVV5jIYCAh20vT7ioP8tpf6E2lfEMwERe+whV1MHjwZB7PBiCxcGQWwKZKD62lfGNnP/1poFAA60T7rF1UgcKd2id3KDeUS+oLWV8DfWAepOfq00CgQabi9zjcgJVYVD7PVzQUAUGAQkbNJTBICDhgwYTjDYD6XeW08ZKh+A4pYkzenOxXUbvZcWz7E8ykRMnIHGX1XPl+1m2vPYpL+2qdb8CDAARlKFEz/ZVkAAAAABJRU5ErkJggg==);
 }
 
-/* line 1943, ../scss/app.scss */
+/* line 2082, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   background: #0a0a0a;
@@ -11684,31 +11828,31 @@ ul[data-bar-id] li:nth-child(2) {
   color: #999;
 }
 
-/* line 1950, ../scss/app.scss */
+/* line 2089, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   background: #0e0e0e;
 }
 
-/* line 1954, ../scss/app.scss */
+/* line 2093, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_today {
   color: #cc5500;
 }
 
-/* line 1958, ../scss/app.scss */
+/* line 2097, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_highlighted_default {
   background: #ffe9d2;
   box-shadow: #ffb871 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 1963, ../scss/app.scss */
+/* line 2102, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_highlighted_mint {
   background: #c1ffc9;
   box-shadow: #00dd1c 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 1969, ../scss/app.scss */
+/* line 2108, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
@@ -11717,44 +11861,44 @@ ul[data-bar-id] li:nth-child(2) {
   color: #000;
 }
 
-/* line 1977, ../scss/app.scss */
+/* line 2116, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
   color: #000 !important;
   background: #007fff !important;
 }
 
-/* line 1983, ../scss/app.scss */
+/* line 2122, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   color: #666;
 }
 
-/* line 1987, ../scss/app.scss */
+/* line 2126, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright {
   color: #333 !important;
 }
 
-/* line 1988, ../scss/app.scss */
+/* line 2127, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright a {
   color: #111 !important;
 }
 
-/* line 1989, ../scss/app.scss */
+/* line 2128, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright a:hover {
   color: #555 !important;
 }
 
-/* line 1991, ../scss/app.scss */
+/* line 2130, ../scss/app.scss */
 .xdsoft_dark .xdsoft_time_box {
   border: 1px solid #333;
 }
 
-/* line 1995, ../scss/app.scss */
+/* line 2134, ../scss/app.scss */
 .xdsoft_dark .xdsoft_scrollbar > .xdsoft_scroller {
   background: #333 !important;
 }
 
-/* line 1998, ../scss/app.scss */
+/* line 2137, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_save_selected {
   display: block;
   border: 1px solid #dddddd !important;
@@ -11764,7 +11908,7 @@ ul[data-bar-id] li:nth-child(2) {
   font-size: 13px;
 }
 
-/* line 2006, ../scss/app.scss */
+/* line 2145, ../scss/app.scss */
 .xdsoft_datetimepicker .blue-gradient-button {
   font-family: "museo-sans", "Book Antiqua", sans-serif;
   font-size: 12px;
@@ -11790,7 +11934,7 @@ ul[data-bar-id] li:nth-child(2) {
   /* IE6-9 */
 }
 
-/* line 2030, ../scss/app.scss */
+/* line 2169, ../scss/app.scss */
 .xdsoft_datetimepicker .blue-gradient-button:hover,
 .xdsoft_datetimepicker .blue-gradient-button:focus,
 .xdsoft_datetimepicker .blue-gradient-button:hover span,
