@@ -43,7 +43,7 @@
             <div class="large-7">
               <h2>Hi Liam</h2>
               <h3>To avoid a more serious infection, let's get that tooth sorted out.</h3>
-              <h4>Dr. Mark Johnson,<br />
+              <h4>Dr. Mark Johns,<br />
               Bexley Clinic</h4>
             </div>
           </div>
@@ -65,8 +65,8 @@
       <div class="large-7 columns subtle-shade-bg-3 container">
         <div class="large-12 columns">
           <div class="plan">
-            <p>When we last met we identified an abcess in your lower left molar. We agreed that immediate root canal treatment is required to not only alleviate the pain but protect against more serious infection.</p>  
-            <a href="#" id="btnTreatmentPlan" class="button">See my treatment plan and costs</a>
+            <p>When we last met we identified an abcess in your lower left molar. We agreed that immediate root canal treatment is required to not only alleviate the pain but protect against more serious infection. We presented <a href="#" class="goToPlan">3 options</a>, and agreed on <a href="#" class="goToPlan">Option 1</a>.</p>  
+            <a href="#" id="btnTreatmentPlan" class="button goToPlan">Treatment plan and costs</a>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
             <span class="year">2015</span>
           </div> 
           <div class="large-6 columns">
-            <span class="day-name">Saturday</span>
+            <span class="day-name">Wednesday</span>
             <span class="day">14</span>
           </div>        
         </div>
@@ -120,8 +120,8 @@
     <!-- Add to calendar and locations buttons -->
     <div class="row">
       <div class="large-12 columns centered appt-actions">
-        <a href="#" id="btnAddToCalendar" class="button">Add to calendar</a>
-        <a href="#" id="btnFindClinic" class="button">Find clinic location</a>
+        <a href="#" id="btnAddToCalendar" class="button width-16">Add to calendar</a>
+        <a href="#" id="btnFindClinic" class="button width-16">Find clinic location</a>
       </div>
     </div>   
 
@@ -1269,9 +1269,9 @@
           </p>
 
           <p>
-            <a href="#" class="button margin-right-2">Log into myBupa</a>
+            <a href="#" class="button margin-right-2 width-20">Log into myBupa</a>
 
-            <a href="#" class="button">How to make a claim</a>
+            <a href="#" class="button width-20">How to make a claim</a>
           </p>
         </div>
       </div>
@@ -1436,7 +1436,7 @@
 
 
         $('.appt-date-time').datetimepicker({
-          format: 'D d M y',
+          format: 'D d M Y',
           onSelectTime: handleTimeSelect,
           step: 30
         });
@@ -1456,7 +1456,7 @@
           el.datetimepicker('show');
         });
 
-        $('#btnTreatmentPlan').click(function(e) {
+        $('a.goToPlan').click(function(e) {
             e.preventDefault();
 
             var scrollHeight = ($('#planContainer').offset().top);
