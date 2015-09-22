@@ -224,27 +224,30 @@ span.special-text {
 		}
 		.appt-time {
 			text-align: center;
-			.time {
-				font-size: rem-calc(78);
-				line-height: rem-calc(78);
-			}
-			.ampm {
-				font-size: rem-calc(24);
-				line-height: rem-calc(24);
-			}
-			.status {
-				clear: both;
-				padding-top: rem-calc(16);
-				font-size: rem-calc(24);
-			}
-			.not-confirmed {
-				color: $primary-color-4;
-			}
-			.confirmed {
-				color: $primary-color-2;
-			}
-			.on-time {
-				color: $primary-color-2;
+			.time-holder {
+				padding-top: 2rem;
+				.time {
+					font-size: rem-calc(78);
+					line-height: rem-calc(78);
+				}
+				.ampm {
+					font-size: rem-calc(24);
+					line-height: rem-calc(24);
+				}
+				.status {
+					clear: both;
+					padding-top: rem-calc(16);
+					font-size: rem-calc(24);
+				}
+				.not-confirmed {
+					color: $primary-color-4;
+				}
+				.confirmed {
+					color: $primary-color-2;
+				}
+				.on-time {
+					color: $primary-color-2;
+				}
 			}
 		}
 		.clinic-address {
@@ -270,7 +273,8 @@ span.special-text {
 		content: '';
 		position: absolute;
 		background-image: url('img/icon-sheet.png');
-		background-position: -50px 0px;
+		background-repeat: no-repeat;
+		background-position: -51px 0px;
 		width: rem-calc(150);
 		height: rem-calc(40);
 		margin: 0 0 0 -75px;
@@ -308,6 +312,7 @@ span.special-text {
 				.logo-bar {
 					.bupa {
 						background-image: url('img/logo.png');
+						background-repeat: no-repeat;
 						display: block;
 						width: 5.063rem;
 						height: 5.063rem;
@@ -316,6 +321,7 @@ span.special-text {
 					}
 					.dentist-logo {
 						background-image: url('img/dentist-logo.png');
+						background-repeat: no-repeat;
 						display: block;
 						width: 11.125rem;
 						height: 4.625rem;
@@ -335,6 +341,7 @@ span.special-text {
 								content: '';
 								position: absolute;
 								background-image: url('img/profile.png');
+								background-repeat: no-repeat;
 								width: 2.5rem;
 								height: 2.5rem;
 								top: 0;
@@ -344,6 +351,7 @@ span.special-text {
 								content:  '';
 								position: absolute;
 								background-image: url('img/down-triangle.png');
+								background-repeat: no-repeat;
 								width: 0.813rem;
 								height: 0.625rem;
 								top: 1.1rem;
@@ -431,7 +439,8 @@ span.special-text {
 		&:after {
 			content: '';
 			position: absolute;
-			background-image: url('img/icon-sheet.png');		
+			background-image: url('img/icon-sheet.png');	
+			background-repeat: no-repeat;	
 			top: 20px;	
 		}
 	}
@@ -510,6 +519,7 @@ span.special-text {
 		font-weight: normal;
 		font-size: 3rem;
 		position: relative;
+		text-align: right;
 		a {
 			color: $primary-color-5;
 			margin-top: 2rem;
@@ -780,6 +790,7 @@ a.chevron {
 		content: '';
 		position: absolute;
 		background-image: url('img/icon-sheet.png');
+		background-repeat: no-repeat;
 		background-position: -48px -758px;
 		width: rem-calc(25);
 		height: rem-calc(25);
@@ -1193,17 +1204,18 @@ table.treatment-facts {
 }
 
 .alert-symbol {
-	width: 1.375rem;
-	height: 1.375rem;
+	width: 1.39rem;
+	height: 1.39rem;
 	display: inline-block;
 	position: relative;
 	&:after {
 		content: '';
 		position: absolute;
 		background-image: url('img/icon-sheet.png');
+		background-repeat: no-repeat;
 		background-position: 0px -830px;
-		width: 1.375rem;
-		height: 1.375rem;
+		width: 1.39rem;
+		height: 1.39rem;
 		top: 0;
 		left: 0;	
 	}
@@ -1314,6 +1326,11 @@ table.treatment-facts {
 
 .margin-bottom-5 {
 	margin-bottom: 5rem;
+}
+
+.margin-top-bottom-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .margin-top-bottom-2-5 {
@@ -2205,6 +2222,264 @@ ul[data-bar-id] li:nth-child(2) {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f8fa', endColorstr='#FFF',GradientType=0 );
   /* IE6-9 */
+}
+
+.no-padding.row {
+	padding: 0;
+}
+
+.summary.row {
+	padding: 1rem 0 0 0;
+}
+
+#mouthImageCarousel .item {
+  padding: 0 1rem 1.5rem 1rem;
+  height: 12rem;
+  .content {
+  	position: relative;
+  	display: block;	
+  	padding: 0 0 0 3rem;
+  }
+}
+
+
+@media only screen and (max-width: 40em) { 
+
+
+	#mouthImageCarousel .item {
+	  padding: 0 1rem 1.5rem 1rem;
+	  height: 12rem;
+	  .content {
+	  	position: relative;
+	  	display: block;	
+	  	padding: 0 0 0 3rem;
+	  }
+	}
+
+	.columns.small-no-columns {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.header-bg {
+		min-height: 30rem;
+		&:after {
+			width: rem-calc(75);
+			height: rem-calc(20);
+			background-position: -201px 0px;
+			background-repeat: no-repeat;
+			margin: 0 0 0 -32.5px;
+			bottom: -19px;
+		}
+		.row {
+			.hero {
+				background-image: none;
+				.greeting-container {
+					padding-top: 2rem;
+					h2 {
+						position: relative;
+						padding-left: 1.15rem;
+						font-size: rem-calc(50);
+						line-height: 4.25rem;	
+						&:before {
+							position: absolute;
+							font-size: 2.5rem;
+							top: -7px;
+							left: 0px;
+						}
+					}
+					h3 {
+						font-size: rem-calc(30);
+						line-height: 2.25rem;	
+						padding-left: 1.15rem;
+						&:after {
+							font-size: 2.5rem;
+						}
+					}
+					h4 {
+						padding-left: 1.15rem;
+						font-size: rem-calc(20);
+						line-height: 1.75rem;	
+					}
+				}				
+				.top-bar {
+					.logo-bar {
+						.bupa {
+							background-image: url('img/logo-mobile.png');
+							background-size: contain;
+							display: block;
+							width: rem-calc(50);
+							height: rem-calc(50);
+							margin-right: 1.5rem;
+							float: left;
+						}
+						.dentist-logo {
+							background-image: url('img/dentist-logo.png');
+							background-size: contain;
+							display: block;
+							width: rem-calc(120);
+							height: rem-calc(50);
+							float: left;
+						}
+					}
+					.profile-bar 
+					{
+						.profile 
+						{
+							display: none;
+						}
+					}
+				}
+			}
+		}	
+	}
+	#content.margin-top-4.row {
+		min-height: 9rem;
+		height: auto;
+		margin-top: 0;
+		padding: 0;
+		.container {
+			.root-canal {
+				background-size: 50px;
+			}
+			.issue {
+				padding: 2rem 0 1.6rem 4rem;
+				span {
+					font-family: 'Gotham';
+					font-size: rem-calc(20)
+				}
+				h3 {
+					font-family: 'Gotham';
+					font-size: 1.25rem;
+					line-height: 1.5rem;
+				}
+			}
+		}
+	}
+
+	#appointmentDetails {
+		margin: 0;
+		padding: 0;
+		.header-bar {
+			padding: 0 1.25em;;
+			h3 {
+				font-family: 'Gotham';
+				font-size: 1rem
+			}
+		}
+		.margin-bottom-0-5 {
+			margin-bottom: 0 !important;
+		}
+		.appt-tile {
+			height: 7rem;
+			.appt-date {
+				span {					
+	    		clear: both;
+	    		display: block;
+				}
+				.year, .day-name {
+	    		font-size: 0.75rem;
+	    		line-height: 1.25rem;
+				}
+				.month, .day {
+					font-size: 1.75rem;
+    			line-height: 2.5rem;
+				}
+				.day-name {
+					padding-top: 0.25rem;
+				}
+			}
+			.appt-time {
+				.time-holder {
+					padding-top: 0.5rem;
+					.status {
+				    clear: both;
+				    padding-top: 0rem;
+				    font-size: 0.75rem;
+					}
+					.time {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+
+		.alert-symbol {
+	    width: 1rem;
+	    height: 1rem;
+	    &:after {
+		    width: 1rem;
+		    height: 1rem;
+		    background-position: -23px -831px;
+	    }
+	  }		 
+	}
+
+	.appt-actions {
+		#btnAddToCalendar {
+			display: none;
+		}
+		.button {
+			&:nth-child(1) {
+				margin-right: 0rem;
+			}
+			&:nth-child(2) {
+				margin-left: 0rem;
+			}
+		}
+	}
+
+	.call {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-bottom: none;
+		.info {
+			font-size: rem-calc(20);
+			line-height: rem-calc(30);
+			padding-left: 4rem;
+			position: relative;
+			color: $background-subtle-shade-5;
+			font-weight: 200;
+			&:before {
+				position: absolute;
+				content: '';
+				background-image: url('img/icon-sheet.png');
+				background-position: -82px -672px;
+				width: rem-calc(48);
+				height: rem-calc(48);
+				left: 0px;
+			}
+		}
+		.phone-number {
+			font-weight: normal;
+			font-size: 2rem;
+			position: relative;
+			text-align: left;
+			padding-left: 4rem;
+			a {
+				color: $primary-color-5;
+				margin-top: 2rem;
+				position: relative;
+				display: block;
+			}
+		}
+	}
+
+	.summary {
+		padding: 0;
+		.no-border-top {
+			p {
+				font-size: 1rem;
+			}
+			blockquote {
+				margin: 0.25rem;
+				p {
+					font-size: 1.125rem;
+					padding-left: 1rem;
+					border-width: 0 0 0 0.5rem; 
+				}
+			}
+		}		
+	}
 }
 
 

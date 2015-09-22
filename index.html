@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treatment Plan</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6681852/682448/css/fonts.css" />
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="bower_components/plugins/css/owl.carousel.css">
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- AngularJS -->
@@ -55,7 +57,7 @@
     <!-- Your issue -->
     <div class="row margin-top-4" id="content">
       <div class="large-5 columns bg-2 container">
-        <div class="large-12 columns">
+        <div class="large-12 columns small-no-columns">
           <div class="issue root-canal">
             <span>Your issue</span>
             <h3>Root canal infection</h3>
@@ -63,10 +65,12 @@
         </div>
       </div>
       <div class="large-7 columns subtle-shade-bg-3 container">
-        <div class="large-12 columns">
+        <div class="large-12 columns small-no-columns">
           <div class="plan">
-            <p>When we last met we identified an abcess in your lower left molar. We agreed that immediate root canal treatment is required to not only alleviate the pain but protect against more serious infection. We presented <a href="#" class="goToPlan">3 options</a>, and agreed on <a href="#" class="goToPlan">Option 1</a>.</p>  
-            <a href="#" id="btnTreatmentPlan" class="button goToPlan">Treatment plan and costs</a>
+            <p>When we last met we identified an abcess in your lower left molar. We agreed that immediate root canal treatment is required to not only alleviate the pain but protect against more serious infection. We presented <a href="#" class="goToPlan">3 options</a>, and agreed on <a href="#" class="goToPlan">Option 1</a>.</p> 
+            <p class="centered"> 
+              <a href="#" id="btnTreatmentPlan" class="button goToPlan">Treatment plan and costs</a>
+            </p>
           </div>
         </div>
       </div>
@@ -82,21 +86,22 @@
         <h3>YOUR NEXT APPOINTMENT</h3>
       </div>
 
-      <div class="large-4 subtle-shade-bg-5 appt-tile columns">
-        <div class="large-12 columns appt-date vertical-center">
-          <div class="large-6 columns">
+      <div class="large-4 small-6 subtle-shade-bg-5 appt-tile columns">
+        <div class="large-12 small-12 columns small-no-columns appt-date vertical-center">
+          <div class="large-6 small-6 columns small-no-columns centered">
             <span class="month">OCT</span>
             <span class="year">2015</span>
           </div> 
-          <div class="large-6 columns">
-            <span class="day-name">Wednesday</span>
+          <div class="large-6 small-6 columns small-no-columns centered">
+            <span class="day-name show-for-medium-up">Wednesday</span>
+            <span class="day-name show-for-small-only">Wed</span>
             <span class="day">14</span>
           </div>        
         </div>
       </div>
-      <div class="large-4 subtle-shade-bg-3 appt-tile columns">
-        <div class="large-12 columns appt-time vertical-center">
-          <div class="large-12 columns">
+      <div class="large-4 small-6 subtle-shade-bg-3 appt-tile columns">
+        <div class="large-12 small-12 columns small-no-columns appt-time">
+          <div class="large-12 small-12 columns small-no-columns time-holder">
             <span class="time">11:00</span>
             <span class="ampm">am</span>
 
@@ -106,10 +111,14 @@
           </div>               
         </div>
       </div>
+
+      <div class="small-12 show-for-small-only centered margin-top-bottom-1 columns">
+        <a href="#" id="btnAddToCalendarSml" class="button margin-top-bottom-1 width-16">Add to calendar</a>
+      </div>
         
       <div class="large-4 subtle-shade-bg-4 appt-tile columns">
-        <div class="large-12 columns clinic-address vertical-center">
-          <div class="large-12 columns">
+        <div class="large-12 columns small-no-columns clinic-address vertical-center">
+          <div class="large-12 columns small-no-columns">
             <div class="clinic-name">Bexley Clinic</div>
             <div class="clinic-address">Suite 61, 47 Neridah Street Chatswood NSW 2067</div>
           </div>               
@@ -128,13 +137,13 @@
     <!-- Contact information -->
     <div class="row">
       <div class="large-12 columns call padding-top-2 border-top-subtle-shade-3">
-        <div class="large-7 columns info">For more information or to change your appointment call</div>
-        <div class="large-5 columns phone-number text-right"><a href="tel:0279101112">02 7910 1112</a></div>
+        <div class="large-7 small-12 columns small-no-columns info">For more information or to change your appointment call</div>
+        <div class="large-5 small-12 columns small-no-columns phone-number"><a href="tel:0279101112">02 7910 1112</a></div>
       </div>
     </div>
 
     <!-- Appointment summary -->
-    <div class="row summary margin-bottom-2-5 collapse">
+    <div class="row summary collapse">
       <div class="large-12 columns primary-color-1-bg header-bar">
         <h3>15 AUG 20</h3>
       </div>
@@ -191,7 +200,8 @@
         </div>
       </div>
 
-      <div class="large-12 columns subtle-shade-bg-3 border padding-top-bottom-2">
+      <!-- Your mouth intro -->
+      <div class="large-12 columns subtle-shade-bg-3 border padding-top-2">
         <div class="large-11 large-centered columns">
           <h4>Your mouth</h4>
 
@@ -201,25 +211,30 @@
 
           <p>
             <a href="#" class="accordion chevron" data-target="patientImages">See images</a>
-          </p>
+          </p>              
 
-          <div class="hide row" id="patientImages">
-            <div class="large-4 columns">
-              <img src="media/img/left-side.jpg" width="100%" />
-              <span>Left side of the mouth</span>
-            </div>
-            <div class="large-4 columns">
-              <img src="media/img/lower-left-molar.jpg" width="100%" />
-              <span>Lower left molar</span>
-            </div>
-            <div class="large-4 columns">
-              <img src="media/img/lower-right-molar.jpg" width="100%" />
-              <span>Lower right molar</span>
-            </div>
-          </div>
         </div>
       </div>      
     </div>
+
+    <!-- Mouth Images -->
+    <div class="row no-padding subtle-shade-bg-3" id="patientImages">
+      <div class="owl-carousel owl-theme" id="mouthImageCarousel">
+        <div class="item">
+          <img src="media/img/left-side.jpg" />
+          <span>Left side of the mouth</span>
+        </div>
+        <div class="item">
+          <img src="media/img/lower-left-molar.jpg" />
+          <span>Lower left molar</span>
+        </div>
+        <div class="item">
+          <img src="media/img/lower-right-molar.jpg" />
+          <span>Lower right molar</span>
+        </div>
+      </div>
+    </div>
+    <div class="row subtle-shade-bg-3 margin-bottom-2-5"></div>
 
     <!-- Lifestyle choices -->
     <div class="row summary margin-bottom-2-5 collapse">
@@ -231,6 +246,7 @@
           </p>
         </div>
       </div>
+      
       <div class="large-12 clear" id="chartContainer">
 
         <div class="large-4 centered dental-health float-left">
@@ -1348,6 +1364,7 @@
     <script src="bower_components/plugins/js/pizza/line.js"></script>
     <script src="bower_components/plugins/js/pizza/bar.js"></script>
     <script src="bower_components/plugins/js/snap.svg.js"></script>
+    <script src="bower_components/plugins/js/owl.carousel.min.js"></script>
 
     <script src="bower_components/plugins/js/datetimepicker.js"></script>
 
@@ -1434,6 +1451,33 @@
           $timeInput.val(timeVal);
         }
 
+        var mouthImageCarousel = $("#mouthImageCarousel"); 
+        mouthImageCarousel.owlCarousel({
+          stagePadding: 50,
+          margin: 0,
+          responsive:{
+              0: {
+                  nav: false,
+                  loop: true,
+                  items: 1
+              },
+              600: {
+                  nav: false,
+                  loop: false,
+                  items: 3
+              },
+              1000: {
+                  nav: false,
+                  loop: false,
+                  items: 3
+             }
+          } 
+        });
+
+        //$('#mobilePatientImages').addClass('hide');
+        $('#patientImages').addClass('hide');
+        
+
 
         $('.appt-date-time').datetimepicker({
           format: 'D d M Y',
@@ -1468,7 +1512,17 @@
         $('.accordion').click(function(e) {
           e.preventDefault();
 
+
+
           var el = $('#'+$(this).attr('data-target')), curHeight = el.height(), autoHeight = el.css('height', 'auto').height();
+
+          if ($('html').hasClass('touch') && $(this).attr('data-touch-target')) {
+            el = $('#'+$(this).attr('data-touch-target'));
+          }
+
+          console.dir(el);
+
+
 
           var timing = autoHeight;
 
