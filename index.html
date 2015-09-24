@@ -382,14 +382,49 @@
     <!-- Option 1 detail -->
     <div class="row collapse hide margin-bottom-2-5" id="treatmentOption1">
 
-      <div class="large-12 padding-top-1 columns">
-        <h3>Schedule &amp; cost breakdown</h3>
+      <div class="large-12 padding-bottom-2 columns">
+        <h3 CLASS=" padding-left-right-1-25">Schedule &amp; cost breakdown</h3>
       </div>
 
       <!-- Treatment Plan -->
       <div class="large-12">
+
+
+        <!-- Mobile version -->
+        <div class="show-for-small-only">
+          <div class="tab-holder">
+            <a href="#" class="tab active" id="calendarTab"></a>
+            <a href="#" class="tab" id="costTab"></a>
+            <div class="folderEdge"></div>
+            <table id="calendarTable" cellpadding="0" cellspacing="0" border="0" class="plan-table show-for-small-only">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Duration</th>
+                  <th>Alert</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="description"><strong>Root canal preparation and fillings</strong></td>
+                  <td>
+                    <div data-alert class="alert-box alert booking-alert">NOT BOOKED
+                      <a href="#" class="close show-calendar" data-input-target="apptDate1">&times;</a>
+                    </div>
+                    <input type="text" class="appt-date-time" id="apptDate1" data-time-field="apptTime1" readonly /></td>
+                  <td><input type="text" class="appt-time" id="apptTime1" readonly /></td>
+                  <td class="duration">150 min</td>
+                  <td><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
        
-        <table cellpadding="0" cellspacing="0" border="0" class="plan-table">
+        <table cellpadding="0" cellspacing="0" border="0" class="plan-table show-for-medium-up">
           <thead>
             <tr>
               <th></th>
@@ -1463,6 +1498,12 @@
              }
           } 
         });
+
+        $('.tab').click(function(e) {
+          e.preventDefault();
+          $('.tab').removeClass('active');
+          $(this).addClass('active');
+        })
 
 
         $('#patientImages').addClass('hide');        
