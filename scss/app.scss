@@ -622,6 +622,22 @@ aside {
 	border: 3px solid $background-subtle-shade-3;
 }
 
+.no-border-top {
+	border-color: $background-subtle-shade-3;
+	border-width: 0px 5px 5px 5px;
+	border-style: solid;
+}
+.no-border-bottom {
+	border-color: $background-subtle-shade-3;
+	border-width: 5px 5px 0px 5px;
+	border-style: solid;
+}
+.no-border-top-bottom {
+	border-color: $background-subtle-shade-3;
+	border-width: 5px 5px 0px 5px;
+	border-style: solid;
+}
+
 .summary {
 	.border {
 		border: 5px solid $background-subtle-shade-3;
@@ -641,92 +657,7 @@ aside {
 		border-width: 5px 5px 0px 5px;
 		border-style: solid;
 	}
-	.dental-health {
-		height: 20rem;
-		display: block;
-		position: relative;
-		.read-more {
-			width: 200px;
-			position: absolute;
-			bottom: -5rem;
-			left: calc(50% - 100px);			
-			z-index: 20;
-		}
-		.container {
-			height: 100%;
-			width: 100%;
-			text-align: center;
-			position: relative;
-			display: block;
-			.card {
-				width: 100%;
-			  height: 100%;
-			  position: absolute;
-			  transform-style: preserve-3d;
-			  transition: transform 1s;
-			  .surface {
-			  	margin: 0;
-				  display: block;
-				  position: absolute;
-				  width: 100%;
-				  height: 100%;
-				  backface-visibility: hidden;
-				  &::-webkit-scrollbar {
-				  	background-color: inherit;
-				  	width: 0.75rem;
-				  	padding: 0 2px;
-				  }
-				  &::-webkit-scrollbar-thumb {
-				  	background-color: $white;
-				  	border: 1px solid transparent;
-				  	border-radius: 5px;
-				  }
-			  }
-			  .front {
-			  	display: flex;
-			  	flex-direction: column;
-			  	align-items: center;
-			  	justify-content: center;
-			  }
-			  .back {
-			  	overflow-y: auto;
-			  	overflow-x: hidden;
-			  	text-align: left;
-			  	transform: rotateY(180deg);
-			  	padding: 2rem;
-			  }
-			}
-			.card.flipped {
-				transform: rotateY( -180deg );
-			}
-		}
-		&:nth-child(1)
-		{
-			width: calc(33.333% - 0.5rem);
-			margin-right: 0.5rem;
-		}
-		&:nth-child(2)
-		{
-			width: calc(33.333% - 1rem);
-			margin-left: 0.5rem;
-			margin-right: 0.5rem;
-		}
-		&:nth-child(3)
-		{
-			width: calc(33.333% - 0.5rem);
-			margin-left: 0.5rem;
-		}
-		.label {
-			font-size: rem-calc(18);
-			background-color: transparent;
-			white-space: normal;
-		}
-		.data-text {
-			padding-top: 4.3rem;
-			font-size: rem-calc(124);
-			line-height: 100%;
-		}
-	}
+	
 	.border, .no-border-top, .no-border-bottom, .no-border-top-bottom 
 	{		
 		// h3 {
@@ -2241,6 +2172,98 @@ ul[data-bar-id] li:nth-child(2) {
   	padding: 0 0 0 3rem;
   }
 }
+
+.dental-health {
+		height: 27rem;
+		display: block;
+		position: relative;
+		.read-more {
+			width: 200px;
+			position: absolute;
+			bottom: -5rem;
+			left: calc(50% - 100px);			
+			z-index: 20;
+		}
+		.container {
+			height: 100%;
+			width: 100%;
+			text-align: center;
+			position: relative;
+			display: block;
+			padding-bottom: 1.5rem;
+			.btnHolder {
+				position: relative;
+				display: block;
+			}
+			.card {
+				width: 100%;
+			  height: 80%;
+			  position: relative;
+			  transform-style: preserve-3d;
+			  transition: transform 1s;
+			  .surface {
+			  	margin: 0;
+				  display: block;
+				  position: absolute;
+				  width: 100%;
+				  height: 100%;
+				  backface-visibility: hidden;
+				  &::-webkit-scrollbar {
+				  	background-color: inherit;
+				  	width: 0.75rem;
+				  	padding: 0 2px;
+				  }
+				  &::-webkit-scrollbar-thumb {
+				  	background-color: $white;
+				  	border: 1px solid transparent;
+				  	border-radius: 5px;
+				  }
+			  }
+			  .front {
+			  	display: flex;
+			  	flex-direction: column;
+			  	align-items: center;
+			  	justify-content: center;
+			  }
+			  .back {
+			  	overflow-y: auto;
+			  	overflow-x: hidden;
+			  	text-align: left;
+			  	transform: rotateY(180deg);
+			  	padding: 2rem;
+			  }
+			}
+			.card.flipped {
+				transform: rotateY( -180deg );
+			}
+		}
+		&:nth-child(1)
+		{
+			width: 100%;
+			margin-right: 0.5rem;
+		}
+		&:nth-child(2)
+		{
+			width: 100%;
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+		}
+		&:nth-child(3)
+		{
+			width: 100%;
+			margin-left: 0.5rem;
+		}
+		.label {
+			font-size: rem-calc(18);
+			background-color: transparent;
+			white-space: normal;
+		}
+		.data-text {
+			padding-top: 4.3rem;
+			font-size: rem-calc(124);
+			line-height: 100%;
+		}
+	}
 
 
 @media only screen and (max-width: 40em) { 

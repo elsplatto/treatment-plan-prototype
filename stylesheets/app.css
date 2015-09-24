@@ -10146,174 +10146,97 @@ aside {
   border: 3px solid #f1f1f1;
 }
 
-/* line 626, ../scss/app.scss */
+/* line 625, ../scss/app.scss */
+.no-border-top {
+  border-color: #f1f1f1;
+  border-width: 0px 5px 5px 5px;
+  border-style: solid;
+}
+
+/* line 630, ../scss/app.scss */
+.no-border-bottom {
+  border-color: #f1f1f1;
+  border-width: 5px 5px 0px 5px;
+  border-style: solid;
+}
+
+/* line 635, ../scss/app.scss */
+.no-border-top-bottom {
+  border-color: #f1f1f1;
+  border-width: 5px 5px 0px 5px;
+  border-style: solid;
+}
+
+/* line 642, ../scss/app.scss */
 .summary .border {
   border: 5px solid #f1f1f1;
 }
-/* line 629, ../scss/app.scss */
+/* line 645, ../scss/app.scss */
 .summary .no-border-top {
   border-color: #f1f1f1;
   border-width: 0px 5px 5px 5px;
   border-style: solid;
 }
-/* line 634, ../scss/app.scss */
+/* line 650, ../scss/app.scss */
 .summary .no-border-bottom {
   border-color: #f1f1f1;
   border-width: 5px 5px 0px 5px;
   border-style: solid;
 }
-/* line 639, ../scss/app.scss */
+/* line 655, ../scss/app.scss */
 .summary .no-border-top-bottom {
   border-color: #f1f1f1;
   border-width: 5px 5px 0px 5px;
   border-style: solid;
 }
-/* line 644, ../scss/app.scss */
-.summary .dental-health {
-  height: 20rem;
-  display: block;
-  position: relative;
-}
-/* line 648, ../scss/app.scss */
-.summary .dental-health .read-more {
-  width: 200px;
-  position: absolute;
-  bottom: -5rem;
-  left: calc(50% - 100px);
-  z-index: 20;
-}
-/* line 655, ../scss/app.scss */
-.summary .dental-health .container {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  display: block;
-}
-/* line 661, ../scss/app.scss */
-.summary .dental-health .container .card {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-/* line 667, ../scss/app.scss */
-.summary .dental-health .container .card .surface {
-  margin: 0;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-/* line 674, ../scss/app.scss */
-.summary .dental-health .container .card .surface::-webkit-scrollbar {
-  background-color: inherit;
-  width: 0.75rem;
-  padding: 0 2px;
-}
-/* line 679, ../scss/app.scss */
-.summary .dental-health .container .card .surface::-webkit-scrollbar-thumb {
-  background-color: #FFFFFF;
-  border: 1px solid transparent;
-  border-radius: 5px;
-}
-/* line 685, ../scss/app.scss */
-.summary .dental-health .container .card .front {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* line 691, ../scss/app.scss */
-.summary .dental-health .container .card .back {
-  overflow-y: auto;
-  overflow-x: hidden;
-  text-align: left;
-  transform: rotateY(180deg);
-  padding: 2rem;
-}
-/* line 699, ../scss/app.scss */
-.summary .dental-health .container .card.flipped {
-  transform: rotateY(-180deg);
-}
-/* line 703, ../scss/app.scss */
-.summary .dental-health:nth-child(1) {
-  width: calc(33.333% - 0.5rem);
-  margin-right: 0.5rem;
-}
-/* line 708, ../scss/app.scss */
-.summary .dental-health:nth-child(2) {
-  width: calc(33.333% - 1rem);
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-/* line 714, ../scss/app.scss */
-.summary .dental-health:nth-child(3) {
-  width: calc(33.333% - 0.5rem);
-  margin-left: 0.5rem;
-}
-/* line 719, ../scss/app.scss */
-.summary .dental-health .label {
-  font-size: 1.125rem;
-  background-color: transparent;
-  white-space: normal;
-}
-/* line 724, ../scss/app.scss */
-.summary .dental-health .data-text {
-  padding-top: 4.3rem;
-  font-size: 7.75rem;
-  line-height: 100%;
-}
-/* line 739, ../scss/app.scss */
+/* line 670, ../scss/app.scss */
 .summary .border p, .summary .no-border-top p, .summary .no-border-bottom p, .summary .no-border-top-bottom p {
   font-size: 1.125rem;
 }
-/* line 742, ../scss/app.scss */
+/* line 673, ../scss/app.scss */
 .summary .border hr, .summary .no-border-top hr, .summary .no-border-bottom hr, .summary .no-border-top-bottom hr {
   margin: 1.25rem 0;
   background-color: #404040;
   height: 0.063rem;
 }
-/* line 747, ../scss/app.scss */
+/* line 678, ../scss/app.scss */
 .summary .border blockquote, .summary .no-border-top blockquote, .summary .no-border-bottom blockquote, .summary .no-border-top-bottom blockquote {
   margin: 3.5rem 6rem 3.5rem 4rem;
   border-left: none;
 }
-/* line 750, ../scss/app.scss */
+/* line 681, ../scss/app.scss */
 .summary .border blockquote p, .summary .no-border-top blockquote p, .summary .no-border-bottom blockquote p, .summary .no-border-top-bottom blockquote p {
   font-size: 1.5rem;
   border-left: 1.125rem #e7b513 solid;
   padding-left: 2.5rem;
 }
 
-/* line 760, ../scss/app.scss */
+/* line 691, ../scss/app.scss */
 p a {
   font-weight: normal;
 }
-/* line 762, ../scss/app.scss */
+/* line 693, ../scss/app.scss */
 p a:hover {
   color: #c6007e;
 }
 
-/* line 768, ../scss/app.scss */
+/* line 699, ../scss/app.scss */
 a {
   color: #c6007e;
   font-weight: 400;
 }
-/* line 771, ../scss/app.scss */
+/* line 702, ../scss/app.scss */
 a:hover, a:active, a:focus, a:visited {
   color: #c6007e;
 }
 
-/* line 776, ../scss/app.scss */
+/* line 707, ../scss/app.scss */
 a[href^='tel:'] {
   color: #1dafec;
   cursor: pointer;
 }
 
-/* line 781, ../scss/app.scss */
+/* line 712, ../scss/app.scss */
 a.chevron {
   font-weight: normal;
   position: relative;
@@ -10323,7 +10246,7 @@ a.chevron {
   line-height: 1.5rem;
   cursor: pointer;
 }
-/* line 789, ../scss/app.scss */
+/* line 720, ../scss/app.scss */
 a.chevron:after {
   content: '';
   position: absolute;
@@ -10335,33 +10258,33 @@ a.chevron:after {
   top: 3px;
   right: 0;
 }
-/* line 800, ../scss/app.scss */
+/* line 731, ../scss/app.scss */
 a.chevron:hover {
   color: #c6007e;
 }
-/* line 802, ../scss/app.scss */
+/* line 733, ../scss/app.scss */
 a.chevron:hover:after {
   background-position: -73px -758px;
 }
-/* line 806, ../scss/app.scss */
+/* line 737, ../scss/app.scss */
 a.chevron:visited {
   color: #c6007e;
 }
 
-/* line 811, ../scss/app.scss */
+/* line 742, ../scss/app.scss */
 a.show:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 817, ../scss/app.scss */
+/* line 748, ../scss/app.scss */
 h3.tick-left {
   font-weight: bold;
   font-size: 1.75rem;
   color: #008385;
   padding-left: 3.25rem;
 }
-/* line 822, ../scss/app.scss */
+/* line 753, ../scss/app.scss */
 h3.tick-left:before {
   content: '';
   position: absolute;
@@ -10372,19 +10295,19 @@ h3.tick-left:before {
   top: 1px;
   left: 20px;
 }
-/* line 832, ../scss/app.scss */
+/* line 763, ../scss/app.scss */
 h3.tick-left:after {
   background-image: none;
 }
 
-/* line 837, ../scss/app.scss */
+/* line 768, ../scss/app.scss */
 h3.cross-left {
   font-weight: bold;
   font-size: 1.75rem;
   color: #b5b6b8;
   padding-left: 3.25rem;
 }
-/* line 842, ../scss/app.scss */
+/* line 773, ../scss/app.scss */
 h3.cross-left:after {
   content: '';
   position: absolute;
@@ -10396,14 +10319,14 @@ h3.cross-left:after {
   left: 20px;
 }
 
-/* line 854, ../scss/app.scss */
+/* line 785, ../scss/app.scss */
 h3.chevron.left {
   position: relative;
   font-size: 1.875rem;
   padding-left: 3rem;
   cursor: pointer;
 }
-/* line 859, ../scss/app.scss */
+/* line 790, ../scss/app.scss */
 h3.chevron.left:before {
   content: '';
   position: absolute;
@@ -10414,22 +10337,22 @@ h3.chevron.left:before {
   top: 3px;
   left: 0;
 }
-/* line 869, ../scss/app.scss */
+/* line 800, ../scss/app.scss */
 h3.chevron.left:hover {
   color: #008385;
 }
-/* line 871, ../scss/app.scss */
+/* line 802, ../scss/app.scss */
 h3.chevron.left:hover:before {
   background-position: -73px -758px;
 }
 
-/* line 877, ../scss/app.scss */
+/* line 808, ../scss/app.scss */
 h3.chevron.show:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 884, ../scss/app.scss */
+/* line 815, ../scss/app.scss */
 h4.chevron.left {
   color: #008385;
   position: relative;
@@ -10437,7 +10360,7 @@ h4.chevron.left {
   padding-left: 3rem;
   cursor: pointer;
 }
-/* line 890, ../scss/app.scss */
+/* line 821, ../scss/app.scss */
 h4.chevron.left:before {
   content: '';
   position: absolute;
@@ -10448,22 +10371,22 @@ h4.chevron.left:before {
   top: 3px;
   left: 0;
 }
-/* line 900, ../scss/app.scss */
+/* line 831, ../scss/app.scss */
 h4.chevron.left:hover {
   color: #008385;
 }
-/* line 902, ../scss/app.scss */
+/* line 833, ../scss/app.scss */
 h4.chevron.left:hover:before {
   background-position: -73px -758px;
 }
 
-/* line 908, ../scss/app.scss */
+/* line 839, ../scss/app.scss */
 h4.chevron.show:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 914, ../scss/app.scss */
+/* line 845, ../scss/app.scss */
 .chevron-only {
   width: 2.25rem;
   height: 2.25rem;
@@ -10471,7 +10394,7 @@ h4.chevron.show:before {
   padding: 0;
 }
 
-/* line 921, ../scss/app.scss */
+/* line 852, ../scss/app.scss */
 .plus-minus {
   width: 1.9375rem;
   height: 1.9375rem;
@@ -10479,7 +10402,7 @@ h4.chevron.show:before {
   padding: 0;
   position: relative;
 }
-/* line 927, ../scss/app.scss */
+/* line 858, ../scss/app.scss */
 .plus-minus:before {
   content: '';
   position: absolute;
@@ -10490,17 +10413,17 @@ h4.chevron.show:before {
   top: 0;
   left: 0;
 }
-/* line 937, ../scss/app.scss */
+/* line 868, ../scss/app.scss */
 .plus-minus:after {
   background-image: none;
 }
 
-/* line 943, ../scss/app.scss */
+/* line 874, ../scss/app.scss */
 .plus-minus.show:before {
   background-position: -83px -1293px;
 }
 
-/* line 948, ../scss/app.scss */
+/* line 879, ../scss/app.scss */
 .dark-chevron-only {
   width: 2.25rem;
   height: 2.25rem;
@@ -10508,7 +10431,7 @@ h4.chevron.show:before {
   padding: 0;
   position: relative;
 }
-/* line 954, ../scss/app.scss */
+/* line 885, ../scss/app.scss */
 .dark-chevron-only:before {
   content: '';
   position: absolute;
@@ -10519,74 +10442,74 @@ h4.chevron.show:before {
   top: 3px;
   left: 0;
 }
-/* line 964, ../scss/app.scss */
+/* line 895, ../scss/app.scss */
 .dark-chevron-only:after {
   background-image: none;
 }
 
-/* line 970, ../scss/app.scss */
+/* line 901, ../scss/app.scss */
 .dark-chevron-only.show:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 976, ../scss/app.scss */
+/* line 907, ../scss/app.scss */
 table.treatment-facts {
   width: 100%;
   border: none;
 }
-/* line 980, ../scss/app.scss */
+/* line 911, ../scss/app.scss */
 table.treatment-facts tbody tr.holder {
   padding: 0;
   margin: 0;
 }
-/* line 983, ../scss/app.scss */
+/* line 914, ../scss/app.scss */
 table.treatment-facts tbody tr.holder td {
   padding: 0 1rem;
   margin: 0;
 }
-/* line 988, ../scss/app.scss */
+/* line 919, ../scss/app.scss */
 table.treatment-facts tbody tr {
   background-color: #FFFFFF;
 }
-/* line 990, ../scss/app.scss */
+/* line 921, ../scss/app.scss */
 table.treatment-facts tbody tr td {
   vertical-align: middle;
   padding: 1.5rem 1rem;
 }
-/* line 994, ../scss/app.scss */
+/* line 925, ../scss/app.scss */
 table.treatment-facts tbody tr td.title {
   color: #008385;
   font-size: 1.5rem;
 }
-/* line 998, ../scss/app.scss */
+/* line 929, ../scss/app.scss */
 table.treatment-facts tbody tr td.read-more-cell {
   text-align: right;
 }
-/* line 1000, ../scss/app.scss */
+/* line 931, ../scss/app.scss */
 table.treatment-facts tbody tr td.read-more-cell a.chevron {
   display: inline-block;
 }
-/* line 1002, ../scss/app.scss */
+/* line 933, ../scss/app.scss */
 table.treatment-facts tbody tr td.read-more-cell a.chevron:after {
   top: 0px;
 }
-/* line 1008, ../scss/app.scss */
+/* line 939, ../scss/app.scss */
 table.treatment-facts tbody tr.shaded {
   background-color: #f7f7f7;
 }
 
-/* line 1014, ../scss/app.scss */
+/* line 945, ../scss/app.scss */
 .risk-data-header {
   width: 100%;
   padding: 0.25rem 1.5rem;
 }
 
-/* line 1019, ../scss/app.scss */
+/* line 950, ../scss/app.scss */
 .risk-data {
   padding: 1.25rem;
 }
-/* line 1021, ../scss/app.scss */
+/* line 952, ../scss/app.scss */
 .risk-data a.dark-chevron {
   display: block;
   color: #404040;
@@ -10595,7 +10518,7 @@ table.treatment-facts tbody tr.shaded {
   font-weight: bold;
   position: relative;
 }
-/* line 1028, ../scss/app.scss */
+/* line 959, ../scss/app.scss */
 .risk-data a.dark-chevron:after {
   content: '';
   position: absolute;
@@ -10607,19 +10530,19 @@ table.treatment-facts tbody tr.shaded {
   right: 0;
 }
 
-/* line 1041, ../scss/app.scss */
+/* line 972, ../scss/app.scss */
 .paid {
   position: relative;
   width: 3rem;
 }
-/* line 1044, ../scss/app.scss */
+/* line 975, ../scss/app.scss */
 .paid:before {
   content: '';
   position: absolute;
   background-image: url("img/icon-sheet.png");
 }
 
-/* line 1052, ../scss/app.scss */
+/* line 983, ../scss/app.scss */
 .paid.yes:before {
   background-position: 0 -1060px;
   width: 1.3125rem;
@@ -10628,7 +10551,7 @@ table.treatment-facts tbody tr.shaded {
   left: 12px;
 }
 
-/* line 1062, ../scss/app.scss */
+/* line 993, ../scss/app.scss */
 .paid.no:before {
   background-position: -14px -1078px;
   width: 1rem;
@@ -10637,92 +10560,92 @@ table.treatment-facts tbody tr.shaded {
   left: 12px;
 }
 
-/* line 1071, ../scss/app.scss */
+/* line 1002, ../scss/app.scss */
 .plan-table {
   width: 100%;
   border: none;
 }
-/* line 1074, ../scss/app.scss */
+/* line 1005, ../scss/app.scss */
 .plan-table thead {
   background-color: #b5b6b8;
 }
-/* line 1077, ../scss/app.scss */
+/* line 1008, ../scss/app.scss */
 .plan-table thead tr th {
   color: #FFFFFF;
 }
-/* line 1079, ../scss/app.scss */
+/* line 1010, ../scss/app.scss */
 .plan-table thead tr th:first-child {
   width: 5rem;
 }
-/* line 1082, ../scss/app.scss */
+/* line 1013, ../scss/app.scss */
 .plan-table thead tr th:last-child, .plan-table thead tr th:nth-child(10) {
   text-align: right;
 }
-/* line 1089, ../scss/app.scss */
+/* line 1020, ../scss/app.scss */
 .plan-table tbody tr {
   background-color: #FFFFFF;
 }
-/* line 1091, ../scss/app.scss */
+/* line 1022, ../scss/app.scss */
 .plan-table tbody tr td.cost {
   text-align: right;
   padding-right: 1rem;
 }
-/* line 1094, ../scss/app.scss */
+/* line 1025, ../scss/app.scss */
 .plan-table tbody tr td.cost:last-child {
   padding-right: 1rem;
 }
-/* line 1098, ../scss/app.scss */
+/* line 1029, ../scss/app.scss */
 .plan-table tbody tr td.description {
   width: 20.75rem;
 }
-/* line 1100, ../scss/app.scss */
+/* line 1031, ../scss/app.scss */
 .plan-table tbody tr td.description strong {
   color: #c6007e;
 }
-/* line 1105, ../scss/app.scss */
+/* line 1036, ../scss/app.scss */
 .plan-table tbody tr td:last-child {
   padding-right: 0;
   text-align: right;
 }
-/* line 1113, ../scss/app.scss */
+/* line 1044, ../scss/app.scss */
 .plan-table tbody tr.border-top td {
   border-top: 1px solid #404040;
 }
-/* line 1119, ../scss/app.scss */
+/* line 1050, ../scss/app.scss */
 .plan-table .detail-table {
   width: 100%;
   border: none;
 }
-/* line 1123, ../scss/app.scss */
+/* line 1054, ../scss/app.scss */
 .plan-table .detail-table thead tr {
   background-color: #48bfae;
   color: #FFFFFF;
 }
-/* line 1130, ../scss/app.scss */
+/* line 1061, ../scss/app.scss */
 .plan-table .detail-table tbody tr:nth-child(even) {
   background-color: #f7f7f7;
 }
-/* line 1133, ../scss/app.scss */
+/* line 1064, ../scss/app.scss */
 .plan-table .detail-table tbody tr td.description {
   width: 20.75rem;
 }
-/* line 1136, ../scss/app.scss */
+/* line 1067, ../scss/app.scss */
 .plan-table .detail-table tbody tr td.cost {
   text-align: right;
 }
-/* line 1143, ../scss/app.scss */
+/* line 1074, ../scss/app.scss */
 .plan-table .detail-table tbody tr td.code span {
   font-size: 0.63rem;
 }
-/* line 1147, ../scss/app.scss */
+/* line 1078, ../scss/app.scss */
 .plan-table .detail-table tbody tr td.paid.yes, .plan-table .detail-table tbody tr td.paid.no {
   display: block;
 }
-/* line 1149, ../scss/app.scss */
+/* line 1080, ../scss/app.scss */
 .plan-table .detail-table tbody tr td.paid.yes:before, .plan-table .detail-table tbody tr td.paid.no:before {
   top: 12px;
 }
-/* line 1156, ../scss/app.scss */
+/* line 1087, ../scss/app.scss */
 .plan-table .chevron-only {
   width: 2.25rem;
   height: 2.25rem;
@@ -10730,7 +10653,7 @@ table.treatment-facts tbody tr.shaded {
   padding: 0 0 0 3rem;
 }
 
-/* line 1165, ../scss/app.scss */
+/* line 1096, ../scss/app.scss */
 .booking-alert.show {
   -webkit-transform: perspective(350px) rotateX(0deg);
   -o-transform: perspective(350px) rotateX(0deg);
@@ -10740,12 +10663,12 @@ table.treatment-facts tbody tr.shaded {
   transition: 0.2s linear 0s;
 }
 
-/* line 1174, ../scss/app.scss */
+/* line 1105, ../scss/app.scss */
 .alert-box.alert {
   border-color: #e7b513 !important;
 }
 
-/* line 1178, ../scss/app.scss */
+/* line 1109, ../scss/app.scss */
 .booking-alert {
   width: 19.5rem;
   position: absolute;
@@ -10764,7 +10687,7 @@ table.treatment-facts tbody tr.shaded {
   -o-transition: 0.2s linear 0s;
   transition: 0.2s linear 0s;
 }
-/* line 1198, ../scss/app.scss */
+/* line 1129, ../scss/app.scss */
 .booking-alert .close {
   color: #FFFFFF !important;
   top: 11px;
@@ -10772,14 +10695,14 @@ table.treatment-facts tbody tr.shaded {
   opacity: 1;
 }
 
-/* line 1206, ../scss/app.scss */
+/* line 1137, ../scss/app.scss */
 .alert-symbol {
   width: 1.39rem;
   height: 1.39rem;
   display: inline-block;
   position: relative;
 }
-/* line 1211, ../scss/app.scss */
+/* line 1142, ../scss/app.scss */
 .alert-symbol:after {
   content: '';
   position: absolute;
@@ -10792,16 +10715,16 @@ table.treatment-facts tbody tr.shaded {
   left: 0;
 }
 
-/* line 1225, ../scss/app.scss */
+/* line 1156, ../scss/app.scss */
 .has-tip {
   border-bottom: none;
 }
-/* line 1227, ../scss/app.scss */
+/* line 1158, ../scss/app.scss */
 .has-tip:hover {
   border-bottom: none;
 }
 
-/* line 1232, ../scss/app.scss */
+/* line 1163, ../scss/app.scss */
 .tooltip {
   background-color: #FFFFFF;
   border: 2px solid #d81e05;
@@ -10810,280 +10733,280 @@ table.treatment-facts tbody tr.shaded {
   line-height: 1.5rem;
 }
 
-/* line 1240, ../scss/app.scss */
+/* line 1171, ../scss/app.scss */
 .tooltip > .nub {
   border-color: transparent transparent #d81e05 transparent;
 }
 
-/* line 1245, ../scss/app.scss */
+/* line 1176, ../scss/app.scss */
 .show-hide-container.hide {
   height: 0px;
 }
 
-/* line 1250, ../scss/app.scss */
+/* line 1181, ../scss/app.scss */
 .margin-top-0-5 {
   margin-top: 0.5rem;
 }
 
-/* line 1254, ../scss/app.scss */
+/* line 1185, ../scss/app.scss */
 .margin-top-1 {
   margin-top: 1rem;
 }
 
-/* line 1258, ../scss/app.scss */
+/* line 1189, ../scss/app.scss */
 .margin-top-1-5 {
   margin-top: 1.5rem;
 }
 
-/* line 1262, ../scss/app.scss */
+/* line 1193, ../scss/app.scss */
 .margin-top-2 {
   margin-top: 2rem;
 }
 
-/* line 1266, ../scss/app.scss */
+/* line 1197, ../scss/app.scss */
 .margin-top-2-5 {
   margin-top: 2.5rem;
 }
 
-/* line 1270, ../scss/app.scss */
+/* line 1201, ../scss/app.scss */
 .margin-top-3 {
   margin-top: 3rem;
 }
 
-/* line 1274, ../scss/app.scss */
+/* line 1205, ../scss/app.scss */
 .margin-top-3-5 {
   margin-top: 3.5rem;
 }
 
-/* line 1278, ../scss/app.scss */
+/* line 1209, ../scss/app.scss */
 .margin-top-4 {
   margin-top: 4rem;
 }
 
-/* line 1282, ../scss/app.scss */
+/* line 1213, ../scss/app.scss */
 .margin-top-4-5 {
   margin-top: 4.5rem;
 }
 
-/* line 1286, ../scss/app.scss */
+/* line 1217, ../scss/app.scss */
 .margin-top-5 {
   margin-top: 5rem;
 }
 
-/* line 1291, ../scss/app.scss */
+/* line 1222, ../scss/app.scss */
 .margin-bottom-0-5 {
   margin-bottom: 0.5rem;
 }
 
-/* line 1295, ../scss/app.scss */
+/* line 1226, ../scss/app.scss */
 .margin-bottom-1 {
   margin-bottom: 1rem;
 }
 
-/* line 1299, ../scss/app.scss */
+/* line 1230, ../scss/app.scss */
 .margin-bottom-1-5 {
   margin-bottom: 1.5rem;
 }
 
-/* line 1303, ../scss/app.scss */
+/* line 1234, ../scss/app.scss */
 .margin-bottom-2 {
   margin-bottom: 2rem;
 }
 
-/* line 1307, ../scss/app.scss */
+/* line 1238, ../scss/app.scss */
 .margin-bottom-2-5 {
   margin-bottom: 2.5rem;
 }
 
-/* line 1311, ../scss/app.scss */
+/* line 1242, ../scss/app.scss */
 .margin-bottom-3 {
   margin-bottom: 3rem;
 }
 
-/* line 1315, ../scss/app.scss */
+/* line 1246, ../scss/app.scss */
 .margin-bottom-3-5 {
   margin-bottom: 3.5rem;
 }
 
-/* line 1319, ../scss/app.scss */
+/* line 1250, ../scss/app.scss */
 .margin-bottom-4 {
   margin-bottom: 4rem;
 }
 
-/* line 1323, ../scss/app.scss */
+/* line 1254, ../scss/app.scss */
 .margin-bottom-4-5 {
   margin-bottom: 4.5rem;
 }
 
-/* line 1327, ../scss/app.scss */
+/* line 1258, ../scss/app.scss */
 .margin-bottom-5 {
   margin-bottom: 5rem;
 }
 
-/* line 1331, ../scss/app.scss */
+/* line 1262, ../scss/app.scss */
 .margin-top-bottom-1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-/* line 1336, ../scss/app.scss */
+/* line 1267, ../scss/app.scss */
 .margin-top-bottom-2-5 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-/* line 1341, ../scss/app.scss */
+/* line 1272, ../scss/app.scss */
 .margin-right-2 {
   margin-right: 2rem !important;
 }
 
-/* line 1346, ../scss/app.scss */
+/* line 1277, ../scss/app.scss */
 .padding-2 {
   padding: 2rem !important;
 }
 
-/* line 1351, ../scss/app.scss */
+/* line 1282, ../scss/app.scss */
 .padding-top-0-5 {
   padding-top: 0.5rem;
 }
 
-/* line 1355, ../scss/app.scss */
+/* line 1286, ../scss/app.scss */
 .padding-top-1 {
   padding-top: 1rem;
 }
 
-/* line 1359, ../scss/app.scss */
+/* line 1290, ../scss/app.scss */
 .padding-top-1-5 {
   padding-top: 1.5rem;
 }
 
-/* line 1363, ../scss/app.scss */
+/* line 1294, ../scss/app.scss */
 .padding-top-2 {
   padding-top: 2rem;
 }
 
-/* line 1367, ../scss/app.scss */
+/* line 1298, ../scss/app.scss */
 .padding-top-bottom-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-/* line 1372, ../scss/app.scss */
+/* line 1303, ../scss/app.scss */
 .padding-top-bottom-2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* line 1377, ../scss/app.scss */
+/* line 1308, ../scss/app.scss */
 .padding-top-2-5 {
   padding-top: 2.5rem;
 }
 
-/* line 1381, ../scss/app.scss */
+/* line 1312, ../scss/app.scss */
 .padding-top-3 {
   padding-top: 3rem;
 }
 
-/* line 1385, ../scss/app.scss */
+/* line 1316, ../scss/app.scss */
 .padding-top-3-5 {
   padding-top: 3.5rem;
 }
 
-/* line 1389, ../scss/app.scss */
+/* line 1320, ../scss/app.scss */
 .padding-top-4 {
   padding-top: 4rem;
 }
 
-/* line 1393, ../scss/app.scss */
+/* line 1324, ../scss/app.scss */
 .padding-top-4-5 {
   padding-top: 4.5rem;
 }
 
-/* line 1397, ../scss/app.scss */
+/* line 1328, ../scss/app.scss */
 .padding-left-1 {
   padding-left: 1rem;
 }
 
-/* line 1401, ../scss/app.scss */
+/* line 1332, ../scss/app.scss */
 .padding-left-1-5 {
   padding-left: 1.5rem;
 }
 
-/* line 1405, ../scss/app.scss */
+/* line 1336, ../scss/app.scss */
 .padding-left-2 {
   padding-left: 2rem;
 }
 
-/* line 1409, ../scss/app.scss */
+/* line 1340, ../scss/app.scss */
 .padding-left-2-5 {
   padding-left: 2.5rem;
 }
 
-/* line 1413, ../scss/app.scss */
+/* line 1344, ../scss/app.scss */
 .padding-left-3 {
   padding-left: 3rem;
 }
 
-/* line 1417, ../scss/app.scss */
+/* line 1348, ../scss/app.scss */
 .padding-left-3-5 {
   padding-left: 3.5rem;
 }
 
-/* line 1421, ../scss/app.scss */
+/* line 1352, ../scss/app.scss */
 .padding-left-4 {
   padding-left: 4rem;
 }
 
-/* line 1425, ../scss/app.scss */
+/* line 1356, ../scss/app.scss */
 .padding-left-4-5 {
   padding-left: 4.5rem;
 }
 
-/* line 1429, ../scss/app.scss */
+/* line 1360, ../scss/app.scss */
 .padding-left-5 {
   padding-left: 5rem;
 }
 
-/* line 1433, ../scss/app.scss */
+/* line 1364, ../scss/app.scss */
 .padding-right-0-5 {
   padding-right: 0.5rem;
 }
 
-/* line 1437, ../scss/app.scss */
+/* line 1368, ../scss/app.scss */
 .padding-right-1 {
   padding-right: 1rem !important;
 }
 
-/* line 1442, ../scss/app.scss */
+/* line 1373, ../scss/app.scss */
 #btnConfirmAppointment {
   width: 30rem;
   -webkit-transition: width 2s;
   transition: width 2s;
 }
 
-/* line 1450, ../scss/app.scss */
+/* line 1381, ../scss/app.scss */
 #btnConfirmAppointment {
   width: 30rem;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
 
-/* line 1456, ../scss/app.scss */
+/* line 1387, ../scss/app.scss */
 #btnConfirmAppointment.success-bg {
   width: 25rem;
 }
 
-/* line 1460, ../scss/app.scss */
+/* line 1391, ../scss/app.scss */
 .button.icon {
   padding-right: 5rem;
 }
 
-/* line 1464, ../scss/app.scss */
+/* line 1395, ../scss/app.scss */
 .button.success-bg {
   background-color: #007a3d;
 }
 
-/* line 1468, ../scss/app.scss */
+/* line 1399, ../scss/app.scss */
 .button, button {
   margin: 0;
   color: #FFFFFF !important;
@@ -11093,17 +11016,17 @@ table.treatment-facts tbody tr.shaded {
   font-weight: 300;
 }
 
-/* line 1477, ../scss/app.scss */
+/* line 1408, ../scss/app.scss */
 .width-16 {
   width: 16rem;
 }
 
-/* line 1482, ../scss/app.scss */
+/* line 1413, ../scss/app.scss */
 .width-20 {
   width: 20rem;
 }
 
-/* line 1486, ../scss/app.scss */
+/* line 1417, ../scss/app.scss */
 .si-icon {
   position: absolute;
   top: 0.85rem;
@@ -11112,86 +11035,86 @@ table.treatment-facts tbody tr.shaded {
   right: 1rem;
 }
 
-/* line 1494, ../scss/app.scss */
+/* line 1425, ../scss/app.scss */
 #sugarChart {
   width: 16em;
   height: 16em;
   margin: 0 auto;
 }
 
-/* line 1500, ../scss/app.scss */
+/* line 1431, ../scss/app.scss */
 #gumChart {
   width: 20em;
   height: 15em;
 }
-/* line 1503, ../scss/app.scss */
+/* line 1434, ../scss/app.scss */
 #gumChart text {
   fill: #FFFFFF;
 }
 
-/* line 1508, ../scss/app.scss */
+/* line 1439, ../scss/app.scss */
 .no-border-top-color-1 {
   border-style: solid;
   border-color: #e7b513;
   border-width: 0 4px 4px 4px;
 }
 
-/* line 1515, ../scss/app.scss */
+/* line 1446, ../scss/app.scss */
 ul[data-pie-id] {
   list-style: none;
   padding: 10px;
   display: none;
 }
 
-/* line 1521, ../scss/app.scss */
+/* line 1452, ../scss/app.scss */
 ul[data-bar-id] {
   list-style: none;
   padding: 10px;
   display: none;
 }
 
-/* line 1527, ../scss/app.scss */
+/* line 1458, ../scss/app.scss */
 ul[data-pie-id] li:nth-child(1) {
   color: #b5b6b8;
 }
 
-/* line 1531, ../scss/app.scss */
+/* line 1462, ../scss/app.scss */
 ul[data-pie-id] li:nth-child(2) {
   color: #f1f1f1;
 }
 
-/* line 1535, ../scss/app.scss */
+/* line 1466, ../scss/app.scss */
 ul[data-bar-id] li:nth-child(1) {
   color: #b5b6b8;
 }
 
-/* line 1539, ../scss/app.scss */
+/* line 1470, ../scss/app.scss */
 ul[data-bar-id] li:nth-child(2) {
   color: #f1f1f1;
 }
 
-/* line 1543, ../scss/app.scss */
+/* line 1474, ../scss/app.scss */
 .tooltip {
   margin-left: -5px;
   border-radius: 3px;
   padding: 5px;
 }
 
-/* line 1549, ../scss/app.scss */
+/* line 1480, ../scss/app.scss */
 #consentArea1, #consentArea2, #consentArea3 {
   transition: all 1s;
 }
-/* line 1551, ../scss/app.scss */
+/* line 1482, ../scss/app.scss */
 #consentArea1 input[type='checkbox'], #consentArea2 input[type='checkbox'], #consentArea3 input[type='checkbox'] {
   display: none;
 }
-/* line 1554, ../scss/app.scss */
+/* line 1485, ../scss/app.scss */
 #consentArea1 input[type='checkbox'] + label, #consentArea2 input[type='checkbox'] + label, #consentArea3 input[type='checkbox'] + label {
   font-size: 1rem;
   padding-left: 2.625rem;
   position: relative;
 }
-/* line 1558, ../scss/app.scss */
+/* line 1489, ../scss/app.scss */
 #consentArea1 input[type='checkbox'] + label:before, #consentArea2 input[type='checkbox'] + label:before, #consentArea3 input[type='checkbox'] + label:before {
   content: '';
   position: absolute;
@@ -11202,26 +11125,26 @@ ul[data-bar-id] li:nth-child(2) {
   width: 1.625rem;
   height: 1.75rem;
 }
-/* line 1571, ../scss/app.scss */
+/* line 1502, ../scss/app.scss */
 #consentArea1 input[type='checkbox']:checked + label:before, #consentArea2 input[type='checkbox']:checked + label:before, #consentArea3 input[type='checkbox']:checked + label:before {
   top: 0;
   left: 0;
   background-position: 0 -1220px;
 }
-/* line 1578, ../scss/app.scss */
+/* line 1509, ../scss/app.scss */
 #consentArea1 input[type='checkbox'] + label + button, #consentArea2 input[type='checkbox'] + label + button, #consentArea3 input[type='checkbox'] + label + button {
   margin: 2rem 0 0 0;
 }
-/* line 1582, ../scss/app.scss */
+/* line 1513, ../scss/app.scss */
 #consentArea1 button[disabled], #consentArea2 button[disabled], #consentArea3 button[disabled] {
   background-color: rgba(198, 0, 126, 0.45);
 }
 
-/* line 1587, ../scss/app.scss */
+/* line 1518, ../scss/app.scss */
 .hi-bg {
   position: relative;
 }
-/* line 1589, ../scss/app.scss */
+/* line 1520, ../scss/app.scss */
 .hi-bg:after {
   content: '';
   position: absolute;
@@ -11232,34 +11155,34 @@ ul[data-bar-id] li:nth-child(2) {
   right: 20px;
   background-position: 0px -1333px;
 }
-/* line 1599, ../scss/app.scss */
+/* line 1530, ../scss/app.scss */
 .hi-bg h3 {
   padding-right: 20rem !important;
 }
-/* line 1602, ../scss/app.scss */
+/* line 1533, ../scss/app.scss */
 .hi-bg p {
   padding-right: 20rem !important;
 }
-/* line 1605, ../scss/app.scss */
+/* line 1536, ../scss/app.scss */
 .hi-bg i {
   font-size: 1.25rem;
   font-weight: normal;
 }
-/* line 1609, ../scss/app.scss */
+/* line 1540, ../scss/app.scss */
 .hi-bg .small {
   font-size: 0.875rem;
 }
 
-/* line 1614, ../scss/app.scss */
+/* line 1545, ../scss/app.scss */
 .payment {
   overflow: hidden;
 }
-/* line 1616, ../scss/app.scss */
+/* line 1547, ../scss/app.scss */
 .payment .intro {
   padding-right: 21.875rem;
   position: relative;
 }
-/* line 1619, ../scss/app.scss */
+/* line 1550, ../scss/app.scss */
 .payment .intro:after {
   position: absolute;
   content: '';
@@ -11270,30 +11193,30 @@ ul[data-bar-id] li:nth-child(2) {
   top: 0;
   right: 0;
 }
-/* line 1630, ../scss/app.scss */
+/* line 1561, ../scss/app.scss */
 .payment .border-right {
   border-right: 2px solid #404040;
 }
 
-/* line 1635, ../scss/app.scss */
+/* line 1566, ../scss/app.scss */
 .pay-now {
   overflow: hidden;
 }
 
-/* line 1640, ../scss/app.scss */
+/* line 1571, ../scss/app.scss */
 #applyNow p {
   font-size: 1.375rem;
 }
-/* line 1642, ../scss/app.scss */
+/* line 1573, ../scss/app.scss */
 #applyNow p span {
   font-size: 1rem;
 }
-/* line 1646, ../scss/app.scss */
+/* line 1577, ../scss/app.scss */
 #applyNow .button {
   margin: 0 !important;
 }
 
-/* line 1655, ../scss/app.scss */
+/* line 1586, ../scss/app.scss */
 .xdsoft_datetimepicker {
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.506);
   background: #fff;
@@ -11313,12 +11236,12 @@ ul[data-bar-id] li:nth-child(2) {
   display: none;
 }
 
-/* line 1673, ../scss/app.scss */
+/* line 1604, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl {
   padding: 8px 0 8px 8px;
 }
 
-/* line 1677, ../scss/app.scss */
+/* line 1608, ../scss/app.scss */
 .xdsoft_datetimepicker iframe {
   position: absolute;
   left: 0;
@@ -11330,12 +11253,12 @@ ul[data-bar-id] li:nth-child(2) {
 }
 
 /*For IE8 or lower*/
-/* line 1688, ../scss/app.scss */
+/* line 1619, ../scss/app.scss */
 .xdsoft_datetimepicker button {
   border: none !important;
 }
 
-/* line 1692, ../scss/app.scss */
+/* line 1623, ../scss/app.scss */
 .xdsoft_noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -11346,24 +11269,24 @@ ul[data-bar-id] li:nth-child(2) {
   user-select: none;
 }
 
-/* line 1702, ../scss/app.scss */
+/* line 1633, ../scss/app.scss */
 .xdsoft_noselect::selection {
   background: transparent;
 }
 
-/* line 1703, ../scss/app.scss */
+/* line 1634, ../scss/app.scss */
 .xdsoft_noselect::-moz-selection {
   background: transparent;
 }
 
-/* line 1705, ../scss/app.scss */
+/* line 1636, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_inline {
   display: inline-block;
   position: static;
   box-shadow: none;
 }
 
-/* line 1711, ../scss/app.scss */
+/* line 1642, ../scss/app.scss */
 .xdsoft_datetimepicker * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -11371,36 +11294,36 @@ ul[data-bar-id] li:nth-child(2) {
   margin: 0;
 }
 
-/* line 1718, ../scss/app.scss */
+/* line 1649, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker, .xdsoft_datetimepicker .xdsoft_timepicker {
   display: none;
 }
 
-/* line 1722, ../scss/app.scss */
+/* line 1653, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker.active, .xdsoft_datetimepicker .xdsoft_timepicker.active {
   display: block;
 }
 
-/* line 1726, ../scss/app.scss */
+/* line 1657, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker {
   width: 224px;
   float: left;
   margin-left: 8px;
 }
 
-/* line 1731, ../scss/app.scss */
+/* line 1662, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_datepicker {
   float: right;
   margin-right: 8px;
   margin-left: 0;
 }
 
-/* line 1737, ../scss/app.scss */
+/* line 1668, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_datepicker {
   width: 256px;
 }
 
-/* line 1741, ../scss/app.scss */
+/* line 1672, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker {
   width: 58px;
   float: left;
@@ -11409,26 +11332,26 @@ ul[data-bar-id] li:nth-child(2) {
   margin-top: 0;
 }
 
-/* line 1748, ../scss/app.scss */
+/* line 1679, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker {
   float: right;
   margin-right: 8px;
   margin-left: 0;
 }
 
-/* line 1754, ../scss/app.scss */
+/* line 1685, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker {
   margin-top: 8px;
   margin-bottom: 3px;
 }
 
-/* line 1759, ../scss/app.scss */
+/* line 1690, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_mounthpicker {
   position: relative;
   text-align: center;
 }
 
-/* line 1764, ../scss/app.scss */
+/* line 1695, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label i,
 .xdsoft_datetimepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_next,
@@ -11436,7 +11359,7 @@ ul[data-bar-id] li:nth-child(2) {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0NBRjI1NjM0M0UwMTFFNDk4NkFGMzJFQkQzQjEwRUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0NBRjI1NjQ0M0UwMTFFNDk4NkFGMzJFQkQzQjEwRUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDQ0FGMjU2MTQzRTAxMUU0OTg2QUYzMkVCRDNCMTBFQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQ0FGMjU2MjQzRTAxMUU0OTg2QUYzMkVCRDNCMTBFQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoNEP54AAAIOSURBVHja7Jq9TsMwEMcxrZD4WpBYeKUCe+kTMCACHZh4BFfHO/AAIHZGFhYkBBsSEqxsLCAgXKhbXYOTxh9pfJVP+qutnZ5s/5Lz2Y5I03QhWji2GIcgAokWgfCxNvcOCCGKqiSqhUp0laHOne05vdEyGMfkdxJDVjgwDlEQgYQBgx+ULJaWSXXS6r/ER5FBVR8VfGftTKcITNs+a1XpcFoExREIDF14AVIFxgQUS+h520cdud6wNkC0UBw6BCO/HoCYwBhD8QCkQ/x1mwDyD4plh4D6DDV0TAGyo4HcawLIBBSLDkHeH0Mg2yVP3l4TQMZQDDsEOl/MgHQqhMNuE0D+oBh0CIr8MAKyazBH9WyBuKxDWgbXfjNf32TZ1KWm/Ap1oSk/R53UtQ5xTh3LUlMmT8gt6g51Q9p+SobxgJQ/qmsfZhWywGFSl0yBjCLJCMgXail3b7+rumdVJ2YRss4cN+r6qAHDkPWjPjdJCF4n9RmAD/V9A/Wp4NQassDjwlB6XBiCxcJQWmZZb8THFilfy/lfrTvLghq2TqTHrRMTKNJ0sIhdo15RT+RpyWwFdY96UZ/LdQKBGjcXpcc1AlSFEfLmouD+1knuxBDUVrvOBmoOC/rEcN7OQxKVeJTCiAdUzUJhA2Oez9QTkp72OTVcxDcXY8iKNkxGAJXmJCOQwOa6dhyXsOa6XwEGAKdeb5ET3rQdAAAAAElFTkSuQmCC);
 }
 
-/* line 1771, ../scss/app.scss */
+/* line 1702, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label i {
   opacity: 0.5;
   background-position: -92px -19px;
@@ -11446,26 +11369,26 @@ ul[data-bar-id] li:nth-child(2) {
   vertical-align: middle;
 }
 
-/* line 1780, ../scss/app.scss */
+/* line 1711, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_prev {
   float: left;
   background-position: -20px 0;
 }
 
-/* line 1784, ../scss/app.scss */
+/* line 1715, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_today_button {
   float: left;
   background-position: -70px 0;
   margin-left: 5px;
 }
 
-/* line 1790, ../scss/app.scss */
+/* line 1721, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_next {
   float: right;
   background-position: 0 0;
 }
 
-/* line 1795, ../scss/app.scss */
+/* line 1726, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_next,
 .xdsoft_datetimepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_today_button {
@@ -11487,7 +11410,7 @@ ul[data-bar-id] li:nth-child(2) {
   min-width: 0;
 }
 
-/* line 1816, ../scss/app.scss */
+/* line 1747, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
   float: none;
@@ -11499,7 +11422,7 @@ ul[data-bar-id] li:nth-child(2) {
   margin-top: 7px;
 }
 
-/* line 1826, ../scss/app.scss */
+/* line 1757, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker .xdsoft_prev,
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker .xdsoft_next {
   float: none;
@@ -11507,21 +11430,21 @@ ul[data-bar-id] li:nth-child(2) {
   margin-right: 14px;
 }
 
-/* line 1833, ../scss/app.scss */
+/* line 1764, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev {
   background-position: -40px 0;
   margin-bottom: 7px;
   margin-top: 0;
 }
 
-/* line 1839, ../scss/app.scss */
+/* line 1770, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
   height: 151px;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
 }
 
-/* line 1845, ../scss/app.scss */
+/* line 1776, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
   background: #f5f5f5;
   border-top: 1px solid #ddd;
@@ -11535,12 +11458,12 @@ ul[data-bar-id] li:nth-child(2) {
   line-height: 25px;
 }
 
-/* line 1858, ../scss/app.scss */
+/* line 1789, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:first-child {
   border-top-width: 0;
 }
 
-/* line 1862, ../scss/app.scss */
+/* line 1793, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_today_button:hover,
 .xdsoft_datetimepicker .xdsoft_next:hover,
 .xdsoft_datetimepicker .xdsoft_prev:hover {
@@ -11548,7 +11471,7 @@ ul[data-bar-id] li:nth-child(2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-/* line 1869, ../scss/app.scss */
+/* line 1800, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label {
   display: inline;
   position: relative;
@@ -11565,17 +11488,17 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: pointer;
 }
 
-/* line 1885, ../scss/app.scss */
+/* line 1816, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label:hover > span {
   text-decoration: underline;
 }
 
-/* line 1889, ../scss/app.scss */
+/* line 1820, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label:hover i {
   opacity: 1.0;
 }
 
-/* line 1893, ../scss/app.scss */
+/* line 1824, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
   border: 1px solid #ccc;
   position: absolute;
@@ -11588,29 +11511,29 @@ ul[data-bar-id] li:nth-child(2) {
   overflow-y: hidden;
 }
 
-/* line 1905, ../scss/app.scss */
+/* line 1836, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_monthselect {
   right: -7px;
 }
 
-/* line 1906, ../scss/app.scss */
+/* line 1837, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_yearselect {
   right: 2px;
 }
 
-/* line 1907, ../scss/app.scss */
+/* line 1838, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
   color: #fff;
   background: #ff8000;
 }
 
-/* line 1912, ../scss/app.scss */
+/* line 1843, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option {
   padding: 2px 10px 2px 5px;
   text-decoration: none !important;
 }
 
-/* line 1917, ../scss/app.scss */
+/* line 1848, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
   background: #33aaff;
   box-shadow: #178fe5 0 1px 3px 0 inset;
@@ -11618,40 +11541,40 @@ ul[data-bar-id] li:nth-child(2) {
   font-weight: 700;
 }
 
-/* line 1924, ../scss/app.scss */
+/* line 1855, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_month {
   width: 100px;
   text-align: right;
 }
 
-/* line 1929, ../scss/app.scss */
+/* line 1860, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar {
   clear: both;
 }
 
-/* line 1933, ../scss/app.scss */
+/* line 1864, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_year {
   width: 48px;
   margin-left: 5px;
 }
 
-/* line 1938, ../scss/app.scss */
+/* line 1869, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar table {
   border-collapse: collapse;
   width: 100%;
 }
 
-/* line 1944, ../scss/app.scss */
+/* line 1875, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td > div {
   padding-right: 5px;
 }
 
-/* line 1948, ../scss/app.scss */
+/* line 1879, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   height: 25px;
 }
 
-/* line 1952, ../scss/app.scss */
+/* line 1883, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th {
   width: 14.2857142%;
   background: #f5f5f5;
@@ -11666,36 +11589,36 @@ ul[data-bar-id] li:nth-child(2) {
   height: 25px;
 }
 
-/* line 1965, ../scss/app.scss */
+/* line 1896, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_calendar td, .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_calendar th {
   width: 12.5%;
 }
 
-/* line 1969, ../scss/app.scss */
+/* line 1900, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   background: #f1f1f1;
 }
 
-/* line 1973, ../scss/app.scss */
+/* line 1904, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
   color: #33aaff;
 }
 
-/* line 1977, ../scss/app.scss */
+/* line 1908, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_default {
   background: #ffe9d2;
   box-shadow: #ffb871 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 1982, ../scss/app.scss */
+/* line 1913, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_mint {
   background: #c1ffc9;
   box-shadow: #00dd1c 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 1988, ../scss/app.scss */
+/* line 1919, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
@@ -11705,7 +11628,7 @@ ul[data-bar-id] li:nth-child(2) {
   font-weight: 700;
 }
 
-/* line 1997, ../scss/app.scss */
+/* line 1928, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled,
 .xdsoft_datetimepicker .xdsoft_time_box > div > div.xdsoft_disabled {
@@ -11714,13 +11637,13 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: default;
 }
 
-/* line 2005, ../scss/app.scss */
+/* line 1936, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled {
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 }
 
-/* line 2010, ../scss/app.scss */
+/* line 1941, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
   color: #fff !important;
@@ -11728,7 +11651,7 @@ ul[data-bar-id] li:nth-child(2) {
   box-shadow: none !important;
 }
 
-/* line 2017, ../scss/app.scss */
+/* line 1948, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current.xdsoft_disabled:hover {
   background: #33aaff !important;
@@ -11736,7 +11659,7 @@ ul[data-bar-id] li:nth-child(2) {
   color: #fff !important;
 }
 
-/* line 2024, ../scss/app.scss */
+/* line 1955, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_disabled:hover {
   color: inherit	!important;
@@ -11744,7 +11667,7 @@ ul[data-bar-id] li:nth-child(2) {
   box-shadow: inherit !important;
 }
 
-/* line 2031, ../scss/app.scss */
+/* line 1962, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   font-weight: 700;
   text-align: center;
@@ -11752,7 +11675,7 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: default;
 }
 
-/* line 2038, ../scss/app.scss */
+/* line 1969, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_copyright {
   color: #ccc !important;
   font-size: 10px;
@@ -11761,30 +11684,30 @@ ul[data-bar-id] li:nth-child(2) {
   margin-left: 8px;
 }
 
-/* line 2046, ../scss/app.scss */
+/* line 1977, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_copyright a {
   color: #eee !important;
 }
 
-/* line 2047, ../scss/app.scss */
+/* line 1978, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_copyright a:hover {
   color: #aaa !important;
 }
 
-/* line 2049, ../scss/app.scss */
+/* line 1980, ../scss/app.scss */
 .xdsoft_time_box {
   position: relative;
   border: 1px solid #ccc;
 }
 
-/* line 2053, ../scss/app.scss */
+/* line 1984, ../scss/app.scss */
 .xdsoft_scrollbar > .xdsoft_scroller {
   background: #ccc !important;
   height: 20px;
   border-radius: 3px;
 }
 
-/* line 2058, ../scss/app.scss */
+/* line 1989, ../scss/app.scss */
 .xdsoft_scrollbar {
   position: absolute;
   width: 7px;
@@ -11794,18 +11717,18 @@ ul[data-bar-id] li:nth-child(2) {
   cursor: pointer;
 }
 
-/* line 2066, ../scss/app.scss */
+/* line 1997, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_scrollbar {
   left: 0;
   right: auto;
 }
 
-/* line 2070, ../scss/app.scss */
+/* line 2001, ../scss/app.scss */
 .xdsoft_scroller_box {
   position: relative;
 }
 
-/* line 2074, ../scss/app.scss */
+/* line 2005, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark {
   box-shadow: 0 5px 15px -5px rgba(255, 255, 255, 0.506);
   background: #000;
@@ -11816,43 +11739,43 @@ ul[data-bar-id] li:nth-child(2) {
   color: #ccc;
 }
 
-/* line 2084, ../scss/app.scss */
+/* line 2015, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box {
   border-bottom: 1px solid #222;
 }
 
-/* line 2087, ../scss/app.scss */
+/* line 2018, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div {
   background: #0a0a0a;
   border-top: 1px solid #222;
   color: #999;
 }
 
-/* line 2093, ../scss/app.scss */
+/* line 2024, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label {
   background-color: #000;
 }
 
-/* line 2096, ../scss/app.scss */
+/* line 2027, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select {
   border: 1px solid #333;
   background: #000;
 }
 
-/* line 2101, ../scss/app.scss */
+/* line 2032, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
   color: #000;
   background: #007fff;
 }
 
-/* line 2106, ../scss/app.scss */
+/* line 2037, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
   background: #cc5500;
   box-shadow: #b03e00 0 1px 3px 0 inset;
   color: #000;
 }
 
-/* line 2112, ../scss/app.scss */
+/* line 2043, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label i,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_prev,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_next,
@@ -11860,7 +11783,7 @@ ul[data-bar-id] li:nth-child(2) {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUExQUUzOTA0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUExQUUzOTE0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQTFBRTM4RTQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQTFBRTM4RjQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pp0VxGEAAAIASURBVHja7JrNSgMxEMebtgh+3MSLr1T1Xn2CHoSKB08+QmR8Bx9A8e7RixdB9CKCoNdexIugxFlJa7rNZneTbLIpM/CnNLsdMvNjM8l0mRCiQ9Ye61IKCAgZAUnH+mU3MMZaHYChBnJUDzWOFZdVfc5+ZFLbrWDeXPwbxIqrLLfaeS0hEBVGIRQCEiZoHQwtlGSByCCdYBl8g8egTTAWoKQMRBRBcZxYlhzhKegqMOageErsCHVkk3hXIFooDgHB1KkHIHVgzKB4ADJQ/A1jAFmAYhkQqA5TOBtocrKrgXwQA8gcFIuAIO8sQSA7hidvPwaQGZSaAYHOUWJABhWWw2EMIH9QagQERU4SArJXo0ZZL18uvaxejXt/Em8xjVBXmvFr1KVm/AJ10tRe2XnraNqaJvKE3KHuUbfK1E+VHB0q40/y3sdQSxY4FHWeKJCunP8UyDdqJZenT3ntVV5jIYCAh20vT7ioP8tpf6E2lfEMwERe+whV1MHjwZB7PBiCxcGQWwKZKD62lfGNnP/1poFAA60T7rF1UgcKd2id3KDeUS+oLWV8DfWAepOfq00CgQabi9zjcgJVYVD7PVzQUAUGAQkbNJTBICDhgwYTjDYD6XeW08ZKh+A4pYkzenOxXUbvZcWz7E8ykRMnIHGX1XPl+1m2vPYpL+2qdb8CDAARlKFEz/ZVkAAAAABJRU5ErkJggg==);
 }
 
-/* line 2119, ../scss/app.scss */
+/* line 2050, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   background: #0a0a0a;
@@ -11868,31 +11791,31 @@ ul[data-bar-id] li:nth-child(2) {
   color: #999;
 }
 
-/* line 2126, ../scss/app.scss */
+/* line 2057, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   background: #0e0e0e;
 }
 
-/* line 2130, ../scss/app.scss */
+/* line 2061, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_today {
   color: #cc5500;
 }
 
-/* line 2134, ../scss/app.scss */
+/* line 2065, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_highlighted_default {
   background: #ffe9d2;
   box-shadow: #ffb871 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 2139, ../scss/app.scss */
+/* line 2070, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_highlighted_mint {
   background: #c1ffc9;
   box-shadow: #00dd1c 0 1px 4px 0 inset;
   color: #000;
 }
 
-/* line 2145, ../scss/app.scss */
+/* line 2076, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
@@ -11901,44 +11824,44 @@ ul[data-bar-id] li:nth-child(2) {
   color: #000;
 }
 
-/* line 2153, ../scss/app.scss */
+/* line 2084, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
   color: #000 !important;
   background: #007fff !important;
 }
 
-/* line 2159, ../scss/app.scss */
+/* line 2090, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   color: #666;
 }
 
-/* line 2163, ../scss/app.scss */
+/* line 2094, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright {
   color: #333 !important;
 }
 
-/* line 2164, ../scss/app.scss */
+/* line 2095, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright a {
   color: #111 !important;
 }
 
-/* line 2165, ../scss/app.scss */
+/* line 2096, ../scss/app.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright a:hover {
   color: #555 !important;
 }
 
-/* line 2167, ../scss/app.scss */
+/* line 2098, ../scss/app.scss */
 .xdsoft_dark .xdsoft_time_box {
   border: 1px solid #333;
 }
 
-/* line 2171, ../scss/app.scss */
+/* line 2102, ../scss/app.scss */
 .xdsoft_dark .xdsoft_scrollbar > .xdsoft_scroller {
   background: #333 !important;
 }
 
-/* line 2174, ../scss/app.scss */
+/* line 2105, ../scss/app.scss */
 .xdsoft_datetimepicker .xdsoft_save_selected {
   display: block;
   border: 1px solid #dddddd !important;
@@ -11948,7 +11871,7 @@ ul[data-bar-id] li:nth-child(2) {
   font-size: 13px;
 }
 
-/* line 2182, ../scss/app.scss */
+/* line 2113, ../scss/app.scss */
 .xdsoft_datetimepicker .blue-gradient-button {
   font-family: "museo-sans", "Book Antiqua", sans-serif;
   font-size: 12px;
@@ -11974,7 +11897,7 @@ ul[data-bar-id] li:nth-child(2) {
   /* IE6-9 */
 }
 
-/* line 2206, ../scss/app.scss */
+/* line 2137, ../scss/app.scss */
 .xdsoft_datetimepicker .blue-gradient-button:hover,
 .xdsoft_datetimepicker .blue-gradient-button:focus,
 .xdsoft_datetimepicker .blue-gradient-button:hover span,
@@ -11996,52 +11919,157 @@ ul[data-bar-id] li:nth-child(2) {
   /* IE6-9 */
 }
 
-/* line 2227, ../scss/app.scss */
+/* line 2158, ../scss/app.scss */
 .no-padding.row {
   padding: 0;
 }
 
-/* line 2231, ../scss/app.scss */
+/* line 2162, ../scss/app.scss */
 .summary.row {
   padding: 1rem 0 0 0;
 }
 
-/* line 2235, ../scss/app.scss */
+/* line 2166, ../scss/app.scss */
 #mouthImageCarousel .item {
   padding: 0 1rem 1.5rem 1rem;
   height: 12rem;
 }
-/* line 2238, ../scss/app.scss */
+/* line 2169, ../scss/app.scss */
 #mouthImageCarousel .item .content {
   position: relative;
   display: block;
   padding: 0 0 0 3rem;
 }
 
+/* line 2176, ../scss/app.scss */
+.dental-health {
+  height: 27rem;
+  display: block;
+  position: relative;
+}
+/* line 2180, ../scss/app.scss */
+.dental-health .read-more {
+  width: 200px;
+  position: absolute;
+  bottom: -5rem;
+  left: calc(50% - 100px);
+  z-index: 20;
+}
+/* line 2187, ../scss/app.scss */
+.dental-health .container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: block;
+  padding-bottom: 1.5rem;
+}
+/* line 2194, ../scss/app.scss */
+.dental-health .container .btnHolder {
+  position: relative;
+  display: block;
+}
+/* line 2198, ../scss/app.scss */
+.dental-health .container .card {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+/* line 2204, ../scss/app.scss */
+.dental-health .container .card .surface {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+/* line 2211, ../scss/app.scss */
+.dental-health .container .card .surface::-webkit-scrollbar {
+  background-color: inherit;
+  width: 0.75rem;
+  padding: 0 2px;
+}
+/* line 2216, ../scss/app.scss */
+.dental-health .container .card .surface::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+/* line 2222, ../scss/app.scss */
+.dental-health .container .card .front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 2228, ../scss/app.scss */
+.dental-health .container .card .back {
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  transform: rotateY(180deg);
+  padding: 2rem;
+}
+/* line 2236, ../scss/app.scss */
+.dental-health .container .card.flipped {
+  transform: rotateY(-180deg);
+}
+/* line 2240, ../scss/app.scss */
+.dental-health:nth-child(1) {
+  width: 100%;
+  margin-right: 0.5rem;
+}
+/* line 2245, ../scss/app.scss */
+.dental-health:nth-child(2) {
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+/* line 2251, ../scss/app.scss */
+.dental-health:nth-child(3) {
+  width: 100%;
+  margin-left: 0.5rem;
+}
+/* line 2256, ../scss/app.scss */
+.dental-health .label {
+  font-size: 1.125rem;
+  background-color: transparent;
+  white-space: normal;
+}
+/* line 2261, ../scss/app.scss */
+.dental-health .data-text {
+  padding-top: 4.3rem;
+  font-size: 7.75rem;
+  line-height: 100%;
+}
+
 @media only screen and (max-width: 40em) {
-  /* line 2249, ../scss/app.scss */
+  /* line 2272, ../scss/app.scss */
   #mouthImageCarousel .item {
     padding: 0 1rem 1.5rem 1rem;
     height: 12rem;
   }
-  /* line 2252, ../scss/app.scss */
+  /* line 2275, ../scss/app.scss */
   #mouthImageCarousel .item .content {
     position: relative;
     display: block;
     padding: 0 0 0 3rem;
   }
 
-  /* line 2259, ../scss/app.scss */
+  /* line 2282, ../scss/app.scss */
   .columns.small-no-columns {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2263, ../scss/app.scss */
+  /* line 2286, ../scss/app.scss */
   .header-bg {
     min-height: 30rem;
   }
-  /* line 2265, ../scss/app.scss */
+  /* line 2288, ../scss/app.scss */
   .header-bg:after {
     width: 4.6875rem;
     height: 1.25rem;
@@ -12050,45 +12078,45 @@ ul[data-bar-id] li:nth-child(2) {
     margin: 0 0 0 -32.5px;
     bottom: -19px;
   }
-  /* line 2274, ../scss/app.scss */
+  /* line 2297, ../scss/app.scss */
   .header-bg .row .hero {
     background-image: none;
   }
-  /* line 2276, ../scss/app.scss */
+  /* line 2299, ../scss/app.scss */
   .header-bg .row .hero .greeting-container {
     padding-top: 2rem;
   }
-  /* line 2278, ../scss/app.scss */
+  /* line 2301, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h2 {
     position: relative;
     padding-left: 1.15rem;
     font-size: 3.125rem;
     line-height: 4.25rem;
   }
-  /* line 2283, ../scss/app.scss */
+  /* line 2306, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h2:before {
     position: absolute;
     font-size: 2.5rem;
     top: -7px;
     left: 0px;
   }
-  /* line 2290, ../scss/app.scss */
+  /* line 2313, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h3 {
     font-size: 1.875rem;
     line-height: 2.25rem;
     padding-left: 1.15rem;
   }
-  /* line 2294, ../scss/app.scss */
+  /* line 2317, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h3:after {
     font-size: 2.5rem;
   }
-  /* line 2298, ../scss/app.scss */
+  /* line 2321, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h4 {
     padding-left: 1.15rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  /* line 2306, ../scss/app.scss */
+  /* line 2329, ../scss/app.scss */
   .header-bg .row .hero .top-bar .logo-bar .bupa {
     background-image: url("img/logo-mobile.png");
     background-size: contain;
@@ -12098,7 +12126,7 @@ ul[data-bar-id] li:nth-child(2) {
     margin-right: 1.5rem;
     float: left;
   }
-  /* line 2315, ../scss/app.scss */
+  /* line 2338, ../scss/app.scss */
   .header-bg .row .hero .top-bar .logo-bar .dentist-logo {
     background-image: url("img/dentist-logo.png");
     background-size: contain;
@@ -12107,125 +12135,125 @@ ul[data-bar-id] li:nth-child(2) {
     height: 3.125rem;
     float: left;
   }
-  /* line 2326, ../scss/app.scss */
+  /* line 2349, ../scss/app.scss */
   .header-bg .row .hero .top-bar .profile-bar .profile {
     display: none;
   }
 
-  /* line 2335, ../scss/app.scss */
+  /* line 2358, ../scss/app.scss */
   #content.margin-top-4.row {
     min-height: 9rem;
     height: auto;
     margin-top: 0;
     padding: 0;
   }
-  /* line 2341, ../scss/app.scss */
+  /* line 2364, ../scss/app.scss */
   #content.margin-top-4.row .container .root-canal {
     background-size: 50px;
   }
-  /* line 2344, ../scss/app.scss */
+  /* line 2367, ../scss/app.scss */
   #content.margin-top-4.row .container .issue {
     padding: 2rem 0 1.6rem 4rem;
   }
-  /* line 2346, ../scss/app.scss */
+  /* line 2369, ../scss/app.scss */
   #content.margin-top-4.row .container .issue span {
     font-family: 'Gotham';
     font-size: 1.25rem;
   }
-  /* line 2350, ../scss/app.scss */
+  /* line 2373, ../scss/app.scss */
   #content.margin-top-4.row .container .issue h3 {
     font-family: 'Gotham';
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 
-  /* line 2359, ../scss/app.scss */
+  /* line 2382, ../scss/app.scss */
   #appointmentDetails {
     margin: 0;
     padding: 0;
   }
-  /* line 2362, ../scss/app.scss */
+  /* line 2385, ../scss/app.scss */
   #appointmentDetails .header-bar {
     padding: 0 1.25em;
   }
-  /* line 2364, ../scss/app.scss */
+  /* line 2387, ../scss/app.scss */
   #appointmentDetails .header-bar h3 {
     font-family: 'Gotham';
     font-size: 1rem;
   }
-  /* line 2369, ../scss/app.scss */
+  /* line 2392, ../scss/app.scss */
   #appointmentDetails .margin-bottom-0-5 {
     margin-bottom: 0 !important;
   }
-  /* line 2372, ../scss/app.scss */
+  /* line 2395, ../scss/app.scss */
   #appointmentDetails .appt-tile {
     height: 7rem;
   }
-  /* line 2375, ../scss/app.scss */
+  /* line 2398, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date span {
     clear: both;
     display: block;
   }
-  /* line 2379, ../scss/app.scss */
+  /* line 2402, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date .year, #appointmentDetails .appt-tile .appt-date .day-name {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
-  /* line 2383, ../scss/app.scss */
+  /* line 2406, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date .month, #appointmentDetails .appt-tile .appt-date .day {
     font-size: 1.75rem;
     line-height: 2.5rem;
   }
-  /* line 2387, ../scss/app.scss */
+  /* line 2410, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date .day-name {
     padding-top: 0.25rem;
   }
-  /* line 2392, ../scss/app.scss */
+  /* line 2415, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-time .time-holder {
     padding-top: 0.5rem;
   }
-  /* line 2394, ../scss/app.scss */
+  /* line 2417, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-time .time-holder .status {
     clear: both;
     padding-top: 0rem;
     font-size: 0.75rem;
   }
-  /* line 2399, ../scss/app.scss */
+  /* line 2422, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-time .time-holder .time {
     font-size: 2rem;
   }
-  /* line 2406, ../scss/app.scss */
+  /* line 2429, ../scss/app.scss */
   #appointmentDetails .alert-symbol {
     width: 1rem;
     height: 1rem;
   }
-  /* line 2409, ../scss/app.scss */
+  /* line 2432, ../scss/app.scss */
   #appointmentDetails .alert-symbol:after {
     width: 1rem;
     height: 1rem;
     background-position: -23px -831px;
   }
 
-  /* line 2418, ../scss/app.scss */
+  /* line 2441, ../scss/app.scss */
   .appt-actions #btnAddToCalendar {
     display: none;
   }
-  /* line 2422, ../scss/app.scss */
+  /* line 2445, ../scss/app.scss */
   .appt-actions .button:nth-child(1) {
     margin-right: 0rem;
   }
-  /* line 2425, ../scss/app.scss */
+  /* line 2448, ../scss/app.scss */
   .appt-actions .button:nth-child(2) {
     margin-left: 0rem;
   }
 
-  /* line 2431, ../scss/app.scss */
+  /* line 2454, ../scss/app.scss */
   .call {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: none;
   }
-  /* line 2435, ../scss/app.scss */
+  /* line 2458, ../scss/app.scss */
   .call .info {
     font-size: 1.25rem;
     line-height: 1.875rem;
@@ -12234,7 +12262,7 @@ ul[data-bar-id] li:nth-child(2) {
     color: #404040;
     font-weight: 200;
   }
-  /* line 2442, ../scss/app.scss */
+  /* line 2465, ../scss/app.scss */
   .call .info:before {
     position: absolute;
     content: '';
@@ -12244,7 +12272,7 @@ ul[data-bar-id] li:nth-child(2) {
     height: 3rem;
     left: 0px;
   }
-  /* line 2452, ../scss/app.scss */
+  /* line 2475, ../scss/app.scss */
   .call .phone-number {
     font-weight: normal;
     font-size: 2rem;
@@ -12252,7 +12280,7 @@ ul[data-bar-id] li:nth-child(2) {
     text-align: left;
     padding-left: 4rem;
   }
-  /* line 2458, ../scss/app.scss */
+  /* line 2481, ../scss/app.scss */
   .call .phone-number a {
     color: #1dafec;
     margin-top: 2rem;
@@ -12260,19 +12288,19 @@ ul[data-bar-id] li:nth-child(2) {
     display: block;
   }
 
-  /* line 2467, ../scss/app.scss */
+  /* line 2490, ../scss/app.scss */
   .summary {
     padding: 0;
   }
-  /* line 2470, ../scss/app.scss */
+  /* line 2493, ../scss/app.scss */
   .summary .no-border-top p {
     font-size: 1rem;
   }
-  /* line 2473, ../scss/app.scss */
+  /* line 2496, ../scss/app.scss */
   .summary .no-border-top blockquote {
     margin: 0.25rem;
   }
-  /* line 2475, ../scss/app.scss */
+  /* line 2498, ../scss/app.scss */
   .summary .no-border-top blockquote p {
     font-size: 1.125rem;
     padding-left: 1rem;
