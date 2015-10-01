@@ -390,41 +390,339 @@
       <div class="large-12">
 
 
-        <!-- Mobile version -->
+        <!-- Mobile plan version -->
         <div class="show-for-small-only">
           <div class="tab-holder">
-            <a href="#" class="tab active" id="calendarTab"></a>
-            <a href="#" class="tab" id="costTab"></a>
-            <div class="folderEdge"></div>
-            <table id="calendarTable" cellpadding="0" cellspacing="0" border="0" class="plan-table show-for-small-only">
-              <thead>
-                <tr>
-                  <th>Description</th>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Duration</th>
-                  <th>Alert</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="description"><strong>Root canal preparation and fillings</strong></td>
-                  <td>
-                    <div data-alert class="alert-box alert booking-alert">NOT BOOKED
-                      <a href="#" class="close show-calendar" data-input-target="apptDate1">&times;</a>
-                    </div>
-                    <input type="text" class="appt-date-time" id="apptDate1" data-time-field="apptTime1" readonly /></td>
-                  <td><input type="text" class="appt-time" id="apptTime1" readonly /></td>
-                  <td class="duration">150 min</td>
-                  <td><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
-                </tr>
-              </tbody>
-            </table>
+            <a href="#" class="tab active" id="calendarTab" data-target="calendarTableHolder"></a>
+            <a href="#" class="tab" id="costTab" data-target="costTableHolder"></a>
+            <div class="folder-edge">
+              <strong>Visit:</strong>
+              <ul class="indicator">
+                <li class="active"><a href="#" data-target="1">1</a></li>
+                <li><a href="#" data-target="2">2</a></li>
+                <li><a href="#" data-target="3">3</a></li>
+              </ul>
+            </div>
+            <div class="table-holder show" id="calendarTableHolder">
+              <table id="calendarTable-1" cellpadding="0" cellspacing="0" border="0" class="plan-table show calendar">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Duration</th>
+                    <th>Alert</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="description"><strong>Root canal preparation and fillings</strong></td>
+                    <td>
+                      <div data-alert class="alert-box alert booking-alert">NOT BOOKED
+                        <a href="#" class="close show-calendar" data-input-target="mobileAppDate-1">&times;</a>
+                      </div>
+                      <textarea class="appt-date-time" id="mobileAppDate-1" data-time-field="mobileAppDate-1" readonly></textarea></td>
+                    <td><input type="text" class="appt-time" id="apptTime-1" readonly /></td>
+                    <td class="duration">150 min</td>
+                    <td class="centered"><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table id="calendarTable-2" cellpadding="0" cellspacing="0" border="0" class="plan-table hide calendar">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Duration</th>
+                    <th>Alert</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="description"><strong>Root canal therapy and fillings</strong></td>
+                    <td>
+                      <div data-alert class="alert-box alert booking-alert">NOT BOOKED
+                        <a href="#" class="close show-calendar" data-input-target="mobileAppDate-2">&times;</a>
+                      </div>
+                      <textarea class="appt-date-time" id="mobileAppDate-2" data-time-field="mobileAppDate-2" readonly></textarea></td>
+                    <td><input type="text" class="appt-time" id="apptTime-2" readonly /></td>
+                    <td class="duration">150 min</td>
+                    <td class="centered"><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table id="calendarTable-3" cellpadding="0" cellspacing="0" border="0" class="plan-table hide calendar">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Duration</th>
+                    <th>Alert</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="description"><strong>Restoration - direct &amp; indirect fillings</strong></td>
+                    <td>
+                      <div data-alert class="alert-box alert booking-alert">NOT BOOKED
+                        <a href="#" class="close show-calendar" data-input-target="mobileAppDate-3">&times;</a>
+                      </div>
+                      <textarea class="appt-date-time" id="mobileAppDate-3" data-time-field="mobileAppDate-3" readonly></textarea></td>
+                    <td><input type="text" class="appt-time" id="apptTime-3" readonly /></td>
+                    <td class="duration">120 min</td>
+                    <td class="centered"><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-holder hide" id="costTableHolder">
+              <table id="costTable-1" cellpadding="0" cellspacing="0" border="0" class="plan-table show cost">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Tooth</th>
+                    <th>Item Code</th>
+                    <th>Cost</th>
+                    <th>Paid</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="description"><strong>Root canal preparation and fillings</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td class="cost"><strong>$1417.00</strong></td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5" class="procedure-title">Root Canal Therapy</td>
+                  </tr>
+
+                  <tr>
+                    <td class="description">Root canal preparation - 1 Canal</td>
+                    <td class="tooth">37</td>
+                    <td class="code">415</td>
+                    <td class="cost">$205.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Root canal preparation - @ Additional Canal</td>
+                    <td class="tooth">37</td>
+                    <td class="code">416 <span>(x2)</span></td>
+                    <td class="cost">$164.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Single X-ray Film</td>
+                    <td class="tooth">37</td>
+                    <td class="code">022</td>
+                    <td class="cost">$41.00</td>
+                    <td class="paid no"></td>
+                  </tr>
+                  <tr>
+                    <td class="description">Metal band</td>
+                    <td class="tooth">37</td>
+                    <td class="code">574</td>
+                    <td class="cost">$49.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5" class="procedure-title">Direct &amp; Indirect Fillings</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                    <td class="tooth">41</td>
+                    <td class="code">522</td>
+                    <td class="cost">$132.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                    <td class="tooth">42</td>
+                    <td class="code">522</td>
+                    <td class="cost">$132.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Adhesive Restoration - 3 surfaces anterior</td>
+                    <td class="tooth">43</td>
+                    <td class="code">522</td>
+                    <td class="cost">$157.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Total</strong></td>
+                    <td class="cost"><strong>$1417.00</strong></td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <table id="costTable-2" cellpadding="0" cellspacing="0" border="0" class="plan-table hide cost">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Tooth</th>
+                    <th>Item Code</th>
+                    <th>Cost</th>
+                    <th>Paid</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="description"><strong>Root canal therapy and fillings</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td class="cost"><strong>$1405.00</strong></td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5" class="procedure-title">Root Canal Therapy</td>
+                  </tr>
+
+                  <tr>
+                    <td class="description">Root canal preparation - 1 Canal</td>
+                    <td class="tooth">37</td>
+                    <td class="code">455</td>
+                    <td class="cost">$85.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5" class="procedure-title">Direct &amp; Indirect Fillings</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Tooth coloured restoration - 4 surfaces - indirect</td>
+                    <td class="tooth">16</td>
+                    <td class="code">554</td>
+                    <td class="cost">$660.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Tooth coloured restoration - 4 surfaces - indirect</td>
+                    <td class="tooth">15</td>
+                    <td class="code">554</td>
+                    <td class="cost">$660.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Total</strong></td>
+                    <td class="cost"><strong>$1405.00</strong></td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <table id="costTable-3" cellpadding="0" cellspacing="0" border="0" class="plan-table hide cost">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Tooth</th>
+                    <th>Item Code</th>
+                    <th>Cost</th>
+                    <th>Paid</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="description"><strong>Root canal therapy and fillings</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td class="cost"><strong>$961.00</strong></td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5" class="procedure-title">Root Canal Therapy</td>
+                  </tr>
+
+                  <tr>
+                    <td class="description">Root canal preparation - 1 Canal</td>
+                    <td class="tooth">37</td>
+                    <td class="code">418<sub>x2</sub></td>
+                    <td class="cost">$164.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td class="description">Single X-ray Film</td>
+                    <td class="tooth">37</td>
+                    <td class="code">022</td>
+                    <td class="cost">$41.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5" class="procedure-title">Restoration</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Preliminary rest for crown - direct</td>
+                    <td class="tooth">37</td>
+                    <td class="code">627</td>
+                    <td class="cost">$130.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5" class="procedure-title">Direct and indirect fillings</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                    <td class="tooth">41</td>
+                    <td class="code">522</td>
+                    <td class="cost">$132.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>                  
+                  <tr>
+                    <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                    <td class="tooth">42</td>
+                    <td class="code">522</td>
+                    <td class="cost">$132.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="description">Adhesive Restoration - 3 surfaces anterior</td>
+                    <td class="tooth">43</td>
+                    <td class="code">522</td>
+                    <td class="cost">$157.00</td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+
+
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Total</strong></td>
+                    <td class="cost"><strong>$961.00</strong></td>
+                    <td class="paid no">&nbsp;</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
        
-        <table cellpadding="0" cellspacing="0" border="0" class="plan-table show-for-medium-up">
+       <!--Desktop plan version -->
+        <table id="planTable" cellpadding="0" cellspacing="0" border="0" class="plan-table show-for-medium-up">
           <thead>
             <tr>
               <th></th>
@@ -537,6 +835,7 @@
                       <td><strong>Total</strong></td>
                       <td class="cost"><strong>$1417.00</strong></td>
                       <td class="paid no">&nbsp;</td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -1409,6 +1708,7 @@
     <script src="js/app.js"></script>
     <script>
 
+
       Pizza.init();
 
       $(document).foundation({
@@ -1503,6 +1803,23 @@
           e.preventDefault();
           $('.tab').removeClass('active');
           $(this).addClass('active');
+          var el = $('#' + $(this).attr('data-target'));
+          console.log('lenght:' + $('.table-holder').length);
+          $('.table-holder.show').removeClass('show').addClass('hide');
+          el.removeClass('hide').addClass('show');
+        });
+
+        $('.indicator li a').click(function(e) {
+          e.preventDefault();
+          var index = $(this).attr('data-target');
+          var costTable = $('#costTable-'+index);
+          var calendarTable = $('#calendarTable-'+index);
+
+          $('.show-for-small-only .plan-table.show').removeClass('show').addClass('hide');
+          costTable.removeClass('hide').addClass('show');
+          calendarTable.removeClass('hide').addClass('show');
+          $('.indicator li.active').removeClass('active');
+          $(this).parent('li').addClass('active');
         })
 
 
@@ -1541,8 +1858,6 @@
 
         $('.accordion').click(function(e) {
           e.preventDefault();
-
-
 
           var el = $('#'+$(this).attr('data-target')), curHeight = el.height(), autoHeight = el.css('height', 'auto').height();
 

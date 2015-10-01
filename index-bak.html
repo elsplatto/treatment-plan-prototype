@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treatment Plan</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6681852/682448/css/fonts.css" />
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="bower_components/plugins/css/owl.carousel.css">
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- AngularJS -->
@@ -22,10 +24,8 @@
   </head>
   <body>
 
+    <!-- Header Area -->
     <div class="header-bg">
-      <!-- <a href="#content" class="chevron">
-        Click to bring content to top
-      </a> -->
       <div class="row">
         <div class="large-12 columns hero">
           <div class="large-12 top-bar">
@@ -44,9 +44,9 @@
           <div class="large-12 clear greeting-container">
             <div class="large-7">
               <h2>Hi Liam</h2>
-              <h3>Let’s get that tooth sorted out.</h3>
-              <span>Dr. Mark Johnson,<br />
-              Bexley Clinic</span>
+              <h3>To avoid a more serious infection, let's get that tooth sorted out.</h3>
+              <h4>Dr. Mark Johns,<br />
+              Bexley Clinic</h4>
             </div>
           </div>
         </div>        
@@ -54,9 +54,10 @@
       </div>
     </div>
 
+    <!-- Your issue -->
     <div class="row margin-top-4" id="content">
       <div class="large-5 columns bg-2 container">
-        <div class="large-12 columns">
+        <div class="large-12 columns small-no-columns">
           <div class="issue root-canal">
             <span>Your issue</span>
             <h3>Root canal infection</h3>
@@ -64,88 +65,87 @@
         </div>
       </div>
       <div class="large-7 columns subtle-shade-bg-3 container">
-        <div class="large-12 columns">
+        <div class="large-12 columns small-no-columns">
           <div class="plan">
-            <p>When we last met we identified an abcess in your lower left molar. We agreed that immediate root canal treatment is required to not only alleviate the pain but protect against more serious infection.</p>  
-            <a href="#" class="button">See my treatment plan and costs</a>
+            <p>When we last met we identified an abcess in your lower left molar. We agreed that immediate root canal treatment is required to not only alleviate the pain but protect against more serious infection. We presented <a href="#" class="goToPlan">3 options</a>, and agreed on <a href="#" class="goToPlan">Option 1</a>.</p> 
+            <p class="centered"> 
+              <a href="#" id="btnTreatmentPlan" class="button goToPlan">Treatment plan and costs</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="large-12 columns text-center bg-3 header-bar">
-        <h3>YOUR NEXT APPOINTMENT</h3>
-      </div>
-    </div>
+    
 
+    <!-- Your next appointment details -->
     <div class="row" id="appointmentDetails">
 
-      <div class="large-4 subtle-shade-bg-5 appt-tile columns">
-        <div class="large-12 columns appt-date vertical-center">
-          <div class="large-6 columns">
+      <!-- Your next appointment header -->
+      <div class="large-12 columns margin-bottom-0-5 bg-3 header-bar">
+        <h3>YOUR NEXT APPOINTMENT</h3>
+      </div>
+
+      <div class="large-4 small-6 subtle-shade-bg-5 appt-tile columns">
+        <div class="large-12 small-12 columns small-no-columns appt-date vertical-center">
+          <div class="large-6 small-6 columns small-no-columns centered">
             <span class="month">OCT</span>
             <span class="year">2015</span>
           </div> 
-          <div class="large-6 columns">
-            <span class="day-name">Saturday</span>
+          <div class="large-6 small-6 columns small-no-columns centered">
+            <span class="day-name show-for-medium-up">Wednesday</span>
+            <span class="day-name show-for-small-only">Wed</span>
             <span class="day">14</span>
           </div>        
         </div>
       </div>
-      <div class="large-4 subtle-shade-bg-3 appt-tile columns">
-        <div class="large-12 columns appt-time vertical-center">
-          <div class="large-12 columns">
+      <div class="large-4 small-6 subtle-shade-bg-3 appt-tile columns">
+        <div class="large-12 small-12 columns small-no-columns appt-time">
+          <div class="large-12 small-12 columns small-no-columns time-holder">
             <span class="time">11:00</span>
             <span class="ampm">am</span>
-            <div id="statusText" class="status right not-confirmed"><span class="text">Not Confirmed</span><span id="apptHelp" data-tooltip aria-haspopup="true" class="help has-tip" title="Please confirm your appointment by clicking on the button below."></span></div>
+
+            <a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a>
+
+            <div id="statusText" class="status right not-confirmed"><span class="text">Not Confirmed</span><!-- <span id="apptHelp" data-tooltip aria-haspopup="true" class="help has-tip" title="Please confirm your appointment by clicking on the button below."></span> --></div>
           </div>               
         </div>
       </div>
+
+      <div class="small-12 show-for-small-only centered margin-top-bottom-1 columns">
+        <a href="#" id="btnAddToCalendarSml" class="button margin-top-bottom-1 width-16">Add to calendar</a>
+      </div>
         
       <div class="large-4 subtle-shade-bg-4 appt-tile columns">
-        <div class="large-12 columns clinic-address vertical-center">
-          <div class="large-12 columns">
+        <div class="large-12 columns small-no-columns clinic-address vertical-center">
+          <div class="large-12 columns small-no-columns">
             <div class="clinic-name">Bexley Clinic</div>
             <div class="clinic-address">Suite 61, 47 Neridah Street Chatswood NSW 2067</div>
           </div>               
         </div>
       </div>
-
     </div>
 
+    <!-- Add to calendar and locations buttons -->
     <div class="row">
-      <div class="large-12 columns centered">
-        <a href="#" id="btnConfirmAppointment" class="button large icon"><span>Confirm your appointment now</span><svg class="si-icon si-icon-clock" id="confirmIcon"></svg></a>
+      <div class="large-12 columns centered appt-actions">
+        <a href="#" id="btnAddToCalendar" class="button width-16">Add to calendar</a>
+        <a href="#" id="btnFindClinic" class="button width-16">Find clinic location</a>
+      </div>
+    </div>   
+
+    <!-- Contact information -->
+    <div class="row">
+      <div class="large-12 columns call padding-top-2 border-top-subtle-shade-3">
+        <div class="large-7 small-12 columns small-no-columns info">For more information or to change your appointment call</div>
+        <div class="large-5 small-12 columns small-no-columns phone-number"><a href="tel:0279101112">02 7910 1112</a></div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="large-12 columns" id="utilityBelt">
-        <div class="large-4 columns calendar">
-          <a href="#">Add to calendar</a>
-        </div>
-
-        <div class="large-4 columns location">
-          <a href="#">Find clinic location</a>
-        </div>
-
-        <div class="large-4 columns sms">
-          <a href="#">Request an SMS reminder</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-12 columns subtle-shade-bg-4 call">
-        <div class="large-7 columns info">For more information or to change your appointment call</div>
-        <div class="large-5 columns phone-number"><a href="tel:0279101112">02 7910 1112</a></div>
-      </div>
-    </div>
-
-    <div class="row summary margin-top-bottom-2-5 collapse">
-      <div class="large-12 columns primary-color-1-bg centered header">
-        <h3>15th of September</h3>
+    <!-- Appointment summary -->
+    <div class="row summary collapse">
+      <div class="large-12 columns primary-color-1-bg header-bar">
+        <h3>15 AUG 20</h3>
       </div>
       <div class="large-12 columns no-border-top padding-top-bottom-2">
         <div class="large-11 large-centered columns">
@@ -165,8 +165,20 @@
             We also discussed the need for early intervention to protect against intensive and costly treatment down the track by filling a further 8 teeth.
           </p>
           <p>
-            <a href="#" class="accordion chevron">Recommended next steps</a>
+            <a href="#" class="accordion chevron" data-target="nextSteps">Recommended next steps</a>
           </p>
+
+          <div class="large-12 large-centred columns hide" id="nextSteps">
+            <p>
+              <ul>
+                <li>Eliminate deseased hard tissue on the lower left molar <span style="color: #d81e05;">(x)</span></li>
+                <li>Restore and protect the lower left molar after the root canal with a crown on <span style="color: #d81e05;">(x)</span></li>
+                <li>Stabilise your mouth with 8 further fillings on teeth <span style="color: #009ee0;">(x)</span></li>
+              </ul>
+
+              <img src="media/img/mouth-diagram.png" width="100%" />
+            </p>
+          </div>
 
           <hr />
 
@@ -188,7 +200,8 @@
         </div>
       </div>
 
-      <div class="large-12 columns subtle-shade-bg-3 border padding-top-bottom-2">
+      <!-- Your mouth intro -->
+      <div class="large-12 columns subtle-shade-bg-3 border padding-top-2">
         <div class="large-11 large-centered columns">
           <h4>Your mouth</h4>
 
@@ -197,34 +210,82 @@
           </p>          
 
           <p>
-            <a href="#" class="accordion chevron">See images</a>
-          </p>
+            <a href="#" class="accordion chevron" data-target="patientImages">See images</a>
+          </p>              
 
         </div>
-      </div>
-      
+      </div>      
     </div>
 
+    <!-- Mouth Images -->
+    <div class="row no-padding subtle-shade-bg-3" id="patientImages">
+      <div class="owl-carousel owl-theme" id="mouthImageCarousel">
+        <div class="item">
+          <img src="media/img/left-side.jpg" />
+          <span>Left side of the mouth</span>
+        </div>
+        <div class="item">
+          <img src="media/img/lower-left-molar.jpg" />
+          <span>Lower left molar</span>
+        </div>
+        <div class="item">
+          <img src="media/img/lower-right-molar.jpg" />
+          <span>Lower right molar</span>
+        </div>
+      </div>
+    </div>
+    <div class="row subtle-shade-bg-3 margin-bottom-2-5"></div>
 
-    <div class="row summary margin-top-bottom-2-5 collapse">
-      <div class="large-12 columns no-border-bottom padding-top-bottom-2">
+    <!-- Lifestyle choices intro -->
+    <div class="row summary no-padding collapse">
+      <div class="large-12 columns no-border-bottom padding-top-2 padding-bottom-1">
         <div class="large-11 large-centered columns">
-          <h3>Dental health</h3>
+          <h3>Lifestyle choices</h3>
           <p>
             Lifestyle and physical predisposition has a significant impact on your dental health. A unique profile has been created for you and will serve as the basis of ongoing oral health management and recommendations.
-          </p>            
-          <p>
-            <a href="#" class="accordion chevron" data-target="chartContainer">Read more</a>
           </p>
         </div>
       </div>
-      <div class="large-12 hide" id="chartContainer">
+    </div>
 
-        <div class="large-4 centered dental-health bg-1 columns">
-          <a href="#" class="read-more" data-target="card1">Read more</a>
-          <div class="container vertical-center">
+    <div class="row no-padding margin-bottom-2-5" id="chartData">
+      <div class="owl-carousel owl-theme no-border-top" id="chartContainer">        
+
+        <div class="centered dental-health item">
+          <div class="container">
+            <div class="card" id="card2">
+              <div class="surface front subtle-shade-bg-4">
+                <div class="data-text">
+                  64%
+                </div>
+
+                <span class="label">Likely fail to floss on the weekends</span>          
+              </div>
+
+              <div class="surface back subtle-shade-bg-4"> 
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. Curabitur hendrerit libero vel sollicitudin convallis. Proin scelerisque dolor lectus, a vehicula enim sodales eu. Curabitur mollis, velit sed consectetur pulvinar, libero lacus consequat metus, sit amet ornare enim eros id libero. Praesent suscipit libero lectus, consectetur placerat felis sagittis nec. Proin facilisis gravida felis at varius. Curabitur scelerisque eget lacus sed ullamcorper. Cras massa enim, hendrerit et elementum sit amet, condimentum eu urna. Nullam mollis, eros a euismod venenatis, odio magna scelerisque ex, in semper nunc lorem id dui. Ut ac suscipit augue. Duis in lacinia nulla, sit amet tincidunt augue.
+                </p>
+                <p>
+                Aliquam vehicula enim vitae velit elementum ultricies. Donec congue justo non odio pharetra, vitae aliquet ipsum interdum. In facilisis ex lacus, et tempus orci finibus scelerisque. Sed rhoncus sem id enim convallis viverra. Sed urna metus, convallis ac nisl in, ornare semper justo. Aenean iaculis condimentum metus, eu lobortis diam finibus id. Aenean vulputate sapien sit amet bibendum pretium.
+                </p>
+                <p>
+                Sed ac mollis magna. Praesent justo nisl, placerat ac neque id, commodo faucibus erat. Pellentesque in scelerisque metus. Duis volutpat, tortor ut vulputate faucibus, lectus metus egestas nisl, quis semper ligula eros eu ex. Quisque vel felis nisl. Suspendisse tincidunt venenatis commodo. Fusce in metus sed enim interdum consectetur vitae at tortor.
+                </p>
+              </div>
+            </div>
+
+            <div class="centered btnHolder">          
+              <a href="#" title="Find out how to be more successful at flossing" class="button read-more" data-target="card2">Read more</a>
+            </div>
+
+          </div>            
+        </div>
+
+        <div class="centered dental-health item">
+          <div class="container">
             <div class="card" id="card1">
-              <div class="surface front">
+              <div class="surface front bg-1">
                 <ul data-pie-id="sugarChart" data-options='{"percent__offset": 0}'>
                   <li data-value="25">Sugar</li>
                   <li data-value="75">Not Sugar</li>
@@ -234,77 +295,749 @@
                 <span class="label">Your sugar intake</span>
               </div>
 
-              <div class="surface back">
-                
+              <div class="surface back bg-1">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. Curabitur hendrerit libero vel sollicitudin convallis. Proin scelerisque dolor lectus, a vehicula enim sodales eu. Curabitur mollis, velit sed consectetur pulvinar, libero lacus consequat metus, sit amet ornare enim eros id libero. Praesent suscipit libero lectus, consectetur placerat felis sagittis nec. Proin facilisis gravida felis at varius. Curabitur scelerisque eget lacus sed ullamcorper. Cras massa enim, hendrerit et elementum sit amet, condimentum eu urna. Nullam mollis, eros a euismod venenatis, odio magna scelerisque ex, in semper nunc lorem id dui. Ut ac suscipit augue. Duis in lacinia nulla, sit amet tincidunt augue.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. Curabitur hendrerit libero vel sollicitudin convallis. Proin scelerisque dolor lectus, a vehicula enim sodales eu. Curabitur mollis, velit sed consectetur pulvinar, libero lacus consequat metus, sit amet ornare enim eros id libero. Praesent suscipit libero lectus, consectetur placerat felis sagittis nec. Proin facilisis gravida felis at varius. Curabitur scelerisque eget lacus sed ullamcorper. Cras massa enim, hendrerit et elementum sit amet, condimentum eu urna. Nullam mollis, eros a euismod venenatis, odio magna scelerisque ex, in semper nunc lorem id dui. Ut ac suscipit augue. Duis in lacinia nulla, sit amet tincidunt augue.
                 </p>
                 <p>
-                Aliquam vehicula enim vitae velit elementum ultricies. Donec congue justo non odio pharetra, vitae aliquet ipsum interdum. In facilisis ex lacus, et tempus orci finibus scelerisque. Sed rhoncus sem id enim convallis viverra. Sed urna metus, convallis ac nisl in, ornare semper justo. Aenean iaculis condimentum metus, eu lobortis diam finibus id. Aenean vulputate sapien sit amet bibendum pretium.
+                  Aliquam vehicula enim vitae velit elementum ultricies. Donec congue justo non odio pharetra, vitae aliquet ipsum interdum. In facilisis ex lacus, et tempus orci finibus scelerisque. Sed rhoncus sem id enim convallis viverra. Sed urna metus, convallis ac nisl in, ornare semper justo. Aenean iaculis condimentum metus, eu lobortis diam finibus id. Aenean vulputate sapien sit amet bibendum pretium.
                 </p>
                 <p>
-                Sed ac mollis magna. Praesent justo nisl, placerat ac neque id, commodo faucibus erat. Pellentesque in scelerisque metus. Duis volutpat, tortor ut vulputate faucibus, lectus metus egestas nisl, quis semper ligula eros eu ex. Quisque vel felis nisl. Suspendisse tincidunt venenatis commodo. Fusce in metus sed enim interdum consectetur vitae at tortor.
-              </p>
+                  Sed ac mollis magna. Praesent justo nisl, placerat ac neque id, commodo faucibus erat. Pellentesque in scelerisque metus. Duis volutpat, tortor ut vulputate faucibus, lectus metus egestas nisl, quis semper ligula eros eu ex. Quisque vel felis nisl. Suspendisse tincidunt venenatis commodo. Fusce in metus sed enim interdum consectetur vitae at tortor.
+                </p>
               </div>
             </div>
+
+            <div class="centered btnHolder">
+              <a href="#" title="Understand more about how your sugar intake effects your dental health" class="button read-more" data-target="card1">Read more</a>
+            </div>
           </div>
         </div>
 
-        <div class="large-4 centered dental-health subtle-shade-bg-4 columns">
-          <div class="container vertical-center">
-            <div class="data-text">
-              64%
+        <div class="centered dental-health item">
+          <div class="container">
+            <div class="card" id="card3">
+              <div class="surface front bg-2">
+                <ul data-bar-id="gumChart" data-options='{"percent__offset": -30}'>
+                  <li data-value="50">Smoker</li>
+                  <li data-value="6.5">Non-smoker</li>
+                </ul>
+                <div id="gumChart"></div>
+                <span class="label">Smoker vs Non-smoker percentage of having gum disease</span>
+              
+              </div>
+
+               <div class="surface back bg-2"> 
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo et sodales suscipit. Pellentesque ex arcu, molestie a accumsan porta, semper id orci. Vivamus imperdiet tempus turpis at rutrum. Curabitur hendrerit libero vel sollicitudin convallis. Proin scelerisque dolor lectus, a vehicula enim sodales eu. Curabitur mollis, velit sed consectetur pulvinar, libero lacus consequat metus, sit amet ornare enim eros id libero. Praesent suscipit libero lectus, consectetur placerat felis sagittis nec. Proin facilisis gravida felis at varius. Curabitur scelerisque eget lacus sed ullamcorper. Cras massa enim, hendrerit et elementum sit amet, condimentum eu urna. Nullam mollis, eros a euismod venenatis, odio magna scelerisque ex, in semper nunc lorem id dui. Ut ac suscipit augue. Duis in lacinia nulla, sit amet tincidunt augue.
+                  </p>
+                  <p>
+                    Aliquam vehicula enim vitae velit elementum ultricies. Donec congue justo non odio pharetra, vitae aliquet ipsum interdum. In facilisis ex lacus, et tempus orci finibus scelerisque. Sed rhoncus sem id enim convallis viverra. Sed urna metus, convallis ac nisl in, ornare semper justo. Aenean iaculis condimentum metus, eu lobortis diam finibus id. Aenean vulputate sapien sit amet bibendum pretium.
+                  </p>
+                  <p>
+                    Sed ac mollis magna. Praesent justo nisl, placerat ac neque id, commodo faucibus erat. Pellentesque in scelerisque metus. Duis volutpat, tortor ut vulputate faucibus, lectus metus egestas nisl, quis semper ligula eros eu ex. Quisque vel felis nisl. Suspendisse tincidunt venenatis commodo. Fusce in metus sed enim interdum consectetur vitae at tortor.
+                  </p>
+              </div>
             </div>
 
-            <span class="label">Likely fail to floss on the weekends</span>
-          </div>
-            
-        </div>
+            <div class="centered btnHolder">          
+              <a href="#" title="Read more about the effects of smoking on gums" class="button read-more" data-target="card3">Read more</a>
+            </div>
 
-        <div class="large-4 dental-health bg-2 columns">
-          <div class="container vertical-center">
-            <ul data-bar-id="gumChart" data-options='{"percent__offset": -30}'>
-              <li data-value="75">Smoker</li>
-              <li data-value="25">Non-smoker</li>
-            </ul>
-            <div id="gumChart"></div>
           </div>
-        </div>
+        </div>        
 
       </div>
-
-      <div class="large-12 columns no-border-top">
-      </div>
-
     </div>
+      
 
+    <!-- Treatment plans -->
 
-    <div class="row summary margin-top-2-5 collapse">
-      <div class="large-12 columns primary-color-1-bg centered header">
-        <h3>YOUR TREATMENT PLAN: ROOT CANAL THERAPY</h3>
+    <!-- Option 1 summary container -->
+    <div class="row summary collapse" id="planContainer">
+      <div class="large-12 columns primary-color-1-bg header-bar">
+        <h3>YOUR TREATMENT PLAN</h3>
       </div>
 
-      <div class="large-12 columns no-border-top padding-top-bottom-2 subtle-shade-bg-3">               
+      <!-- Option 1 summary -->
+      <div class="large-12 columns padding-top-2">
 
         <div class="large-7 columns">
-          <h4 class="accordion chevron left" data-target="treatmentOption1">Option 1: Root Canal Therapy <br />
-          (Recommended)</h4>
+          <h3 class="tick-left shade-5">Option 1: Root Canal Therapy</h4>
         </div>
         
         <div class="large-5 columns text-right">
-          <h4>Total $5663.00</h4>
+          <h4>Total $5003.00</h4>
         </div>
 
-        <div class="large-12 columns padding-left-4">
+        <div class="large-12 padding-top-bottom-1 columns">
           <p>
             I recommend Root canal therapy for you to eradicate the infection in your mouth. This is the preferred option because it’s always better to do everything possible to keep the teeth you have in your mouth. This is better for your overall ongoing health and avoids removing the tooth and the expense of replacing it.
           </p>
+          <a href="#" class="accordion chevron" data-target="treatmentOption1">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1 detail -->
+    <div class="row collapse hide margin-bottom-2-5" id="treatmentOption1">
+
+      <div class="large-12 padding-bottom-2 columns">
+        <h3 CLASS=" padding-left-right-1-25">Schedule &amp; cost breakdown</h3>
+      </div>
+
+      <!-- Treatment Plan -->
+      <div class="large-12">
+
+
+        <!-- Mobile plan version -->
+        <div class="show-for-small-only">
+          <div class="tab-holder">
+            <a href="#" class="tab active" id="calendarTab" data-target="calendarTable" data-target-class="calendar"></a>
+            <a href="#" class="tab" id="costTab" data-target="costTable" data-target-class="cost"></a>
+            <div class="folderEdge"></div>
+            <!-- <table id="calendarTable" cellpadding="0" cellspacing="0" border="0" class="plan-table calendar show-for-small-only">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Duration</th>
+                  <th>Alert</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="description"><strong>Root canal preparation and fillings</strong></td>
+                  <td>
+                    <div data-alert class="alert-box alert booking-alert">NOT BOOKED
+                      <a href="#" class="close show-calendar" data-input-target="mobileAppDate1">&times;</a>
+                    </div>
+                    <textarea class="appt-date-time" id="mobileAppDate1" data-time-field="mobileAppDate1" readonly></textarea></td>
+                  <td><input type="text" class="appt-time" id="apptTime1" readonly /></td>
+                  <td class="duration">150 min</td>
+                  <td class="centered"><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table id="costTable" cellpadding="0" cellspacing="0" border="0" class="plan-table cost show-for-small-only">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Item Code</th>
+                  <th>Tooth</th>
+                  <th>Cost</th>
+                  <th>Paid</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="description"><strong>Root canal preparation and fillings</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td class="cost"><strong>$1417.00</strong></td>
+                  <td class="paid no">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table> -->
+          </div>
+        </div>
+
+       
+       <!--Desktop plan version -->
+        <table id="planTable" cellpadding="0" cellspacing="0" border="0" class="plan-table show-for-medium-up">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Visit</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Duration</th>
+              <th>Alert</th>
+              <th>Description</th>
+              <th>Tooth</th>
+              <th>Item code</th>
+              <th class="padding-right-1">Cost</th>
+              <th>Paid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#" class="accordion plus-minus" data-target="detailRow1">&nbsp;</a></td>
+              <td>1</td>
+              <td>
+                <div data-alert class="alert-box alert booking-alert">
+                  First appt. - <strong>NOT BOOKED</strong>
+                  <a href="#" class="close show-calendar" data-input-target="apptDate1">&times;</a>
+                </div>
+                <input type="text" class="appt-date-time" id="apptDate1" data-time-field="apptTime1" readonly /></td>
+              <td><input type="text" class="appt-time" id="apptTime1" readonly /></td>
+              <td class="duration">150 min</td>
+              <td><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+              <td class="description"><strong>Root canal preparation and fillings</strong></td>
+              <td></td>
+              <td></td>
+              <td class="cost"><strong>$1417.00</strong></td>
+              <td class="paid no">&nbsp;</td>
+            </tr>
+
+            <tr class="hide" id="detailRow1">
+              <td colspan="6"></td>
+              <td colspan="5">
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td class="tooth">37</td>
+                      <td class="code">415</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Root canal preparation - @ Additional Canal</td>
+                      <td class="tooth">37</td>
+                      <td class="code">416 <span>(x2)</span></td>
+                      <td class="cost">$164.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Single X-ray Film</td>
+                      <td class="tooth">37</td>
+                      <td class="code">022</td>
+                      <td class="cost">$41.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Metal band</td>
+                      <td class="tooth">37</td>
+                      <td class="code">574</td>
+                      <td class="cost">$49.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Direct and indirect fillings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Adhesive Restoration - 1 surface posterior</td>
+                      <td class="tooth">34</td>
+                      <td class="code">531</td>
+                      <td class="cost">$116.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                      <td class="tooth">33</td>
+                      <td class="code">522</td>
+                      <td class="cost">$132.00</td>
+                      <td class="paid no"></td>
+                    </tr>
+                    <tr>
+                      <td class="description">Tooth Coloured Restoration - 5 surfaces (CEREC)</td>
+                      <td class="tooth">26</td>
+                      <td class="code">555</td>
+                      <td class="cost">$710.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><strong>Total</strong></td>
+                      <td class="cost"><strong>$1417.00</strong></td>
+                      <td class="paid no">&nbsp;</td>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+            <tr class="border-top">
+              <td><a href="#" class="accordion plus-minus" data-target="detailRow2">&nbsp;</a></td>
+              <td>2</td>
+              <td>
+                <div data-alert class="alert-box alert booking-alert">
+                  2 wks from last appt. - <strong>NOT BOOKED</strong>
+                  <a href="#" class="close show-calendar" data-input-target="apptDate2">&times;</a>                  
+                </div>
+                <input type="text" class="appt-date-time" id="apptDate2" data-time-field="apptTime2" readonly /></td>
+              </td>
+              <td><input type="text" class="appt-time" id="apptTime2" readonly /></td>
+              <td>150 min</td>
+              <td><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+              <td class="description"><strong>Root canal therapy and fillings</strong></td>
+              <td></td>
+              <td></td>
+              <td class="cost"><strong>$1405.00</strong></td>
+              <td class="paid no"></td>
+            </tr>
+
+            <tr class="hide" id="detailRow2">
+              <td colspan="6"></td>
+              <td colspan="5">
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Root canal preparation - 1 Canal</td>
+                      <td class="tooth">37</td>
+                      <td class="code">455</td>
+                      <td class="cost">$85.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Direct and indirect fillings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Tooth coloured restoration - 4 surfaces - indirect</td>
+                      <td class="tooth">16</td>
+                      <td class="code">554</td>
+                      <td class="cost">$660.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Tooth coloured restoration - 4 surfaces - indirect</td>
+                      <td class="tooth">15</td>
+                      <td class="code">554</td>
+                      <td class="cost">$660.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><strong>Total</strong></td>
+                      <td class="cost"><strong>$1405.00</strong></td>
+                      <td class="paid no"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+            <tr class="border-top">
+              <td><a href="#" class="accordion plus-minus" data-target="detailRow3">&nbsp;</a></td>
+              <td>3</td>
+              <td>
+                <div data-alert class="alert-box alert booking-alert">
+                  2 wks from last appt. - <strong>NOT BOOKED</strong>
+                  <a href="#" class="close show-calendar" data-input-target="apptDate3">&times;</a>                  
+                </div>
+                <input type="text" class="appt-date-time" id="apptDate3" data-time-field="apptTime3" readonly /></td>
+              </td>
+              <td><input type="text" class="appt-time" id="apptTime3" readonly /></td>
+              <td>120 min</td>
+              <td><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+              <td class="description"><strong>Restoration - direct and indirect fillings</strong></td>
+              <td></td>
+              <td></td>
+              <td class="cost"><strong>$961.00</strong></td>
+              <td class="paid no"></td>
+            </tr>
+
+            <tr class="hide" id="detailRow3">
+              <td colspan="6"></td>
+              <td colspan="5">
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Root canal therapy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Root canal obturation - 1 Canal</td>
+                      <td class="tooth">37</td>
+                      <td class="code">417</td>
+                      <td class="cost">$205.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Obturation - each addtional canal</td>
+                      <td class="tooth">37</td>
+                      <td class="code">418<span>(x2)</span></td>
+                      <td class="cost">$164.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Single X-ray Film</td>
+                      <td class="tooth">37</td>
+                      <td class="code">022</td>
+                      <td class="cost">$41.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Restoration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Preliminary rest for crown - direct</td>
+                      <td class="tooth">37</td>
+                      <td class="code">627</td>
+                      <td class="cost">$130.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Direct and indirect fillings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                      <td class="tooth">41</td>
+                      <td class="code">522</td>
+                      <td class="cost">$132.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                      <td class="tooth">42</td>
+                      <td class="code">522</td>
+                      <td class="cost">$132.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="description">Adhesive Restoration - 3 surfaces anterior</td>
+                      <td class="tooth">43</td>
+                      <td class="code">522</td>
+                      <td class="cost">$157.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><strong>Total</strong></td>
+                      <td class="cost"><strong>$961.00</strong></td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                
+              </td>
+            </tr>         
+
+
+
+
+            <tr class="border-top">
+              <td><a href="#" class="accordion plus-minus" data-target="detailRow4">&nbsp;</a></td>
+              <td>4</td>
+              <td>
+                <div data-alert class="alert-box alert booking-alert">
+                  2 wks from last appt. - <strong>NOT BOOKED</strong>
+                  <a href="#" class="close show-calendar" data-input-target="apptDate4">&times;</a>                  
+                </div>
+                <input type="text" class="appt-date-time" id="apptDate4" data-time-field="apptTime4" readonly /></td>
+              </td>
+              <td><input type="text" class="appt-time" id="apptTime4" readonly /></td>
+              <td>20 min</td>
+              <td><a href="#" data-tooltip aria-haspopup="true" class="alert-symbol has-tip tip-bottom-left" title="Oral sedation needed for this appointment. Please come 1 hr before indicated time to receive sedation. <a href='#'>Tell me more about oral sedation</a>"></a></td>
+              <td class="description"><strong>Crown</strong></td>
+              <td></td>
+              <td></td>
+              <td class="cost"><strong>$1220.00</strong></td>
+              <td class="paid no"></td>
+            </tr>
+
+            <tr class="hide" id="detailRow4">
+              <td colspan="6"></td>
+              <td colspan="5">                
+                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
+                  <thead>
+                    <tr>
+                      <th colspan="5" class="text-left">Crown</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description">Insert PFM Crown (Procelain fused to metal)</td>
+                      <td class="tooth">37</td>
+                      <td class="code">615</td>
+                      <td class="cost">$1220.00</td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td><strong>Total</strong></td>
+                      <td class="cost"><strong>$1220.00</strong></td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>            
+
+            <tr class="border-top">              
+              <td colspan="11" class="text-right">
+                <h4 class="padding-right-1"><span>Total:</span> <span>$5003.00</span></h4>
+                 <span class="special-text padding-right-1">*0% interest for 6, 12, and 18 months</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="large-10 large-centered columns border-top-subtle-shade-3 margin-bottom-3">
+        <div class="large-12 large-centered padding-top-1 columns">
+          <table cellpadding="0" cellspacing="0" border="0" class="treatment-facts">
+            <tbody>
+
+              <tr>
+                <td class="title">What is root canal therapy?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail1">Read more</a></td>
+              </tr>
+
+              <tr class="holder">
+                <td colspan="2">
+                  <div class="hide" id="factDetail1">
+                    <p>
+                      The need for root canal treatment arises for two main reasons:
+                    </p>
+                    <p>
+                      Infection or permanent damage to the tooth’s pulp: Commonly this is the result of an untreated cavity, which allows the bacteria to enter and infect the pulp. Inflammation resulting from such infection restricts the tooth's blood supply. Hence antibiotic treatment is not effective in treating it.
+                    </p>
+                    <p>
+                      Trauma or dental restorative work: Trauma and extensive dental restorative work can also result in the need for root canal treatment.
+                    </p>
+                    <p>
+                      <strong>Signs and symptoms of pulp infection</strong><br />
+                      In the case of pulp infection, no pain is felt at first. Pain and swelling occur if the infection is left untreated. An absess may develop. The following are common signs and symptoms of pulp infection:
+                      <ul>
+                        <li>Touching, pushing, or biting down on a tooth makes results in pain</li>
+                        <li>Tooth is sensitive to heat and cold for more than a few seconds</li>
+                        <li>Swelling near the tooth</li>
+                        <li>Discoloration of tooth (with or without pain)</li>
+                        <li>Broken tooth</li>
+                      </ul>
+                    </p>
+                    <p>
+                      The pulp consists of blood vessels, nerves and various other tissues. While the pulp is vital in a tooth’s development during childhood, by the time we reach adulthood, the tooth has finished growing and the pulp starts to decrease in size. If the pulp becomes infected or contaminated by decay, the tooth becomes painful and root canal treatment may be necessary.
+                    </p>
+
+                    <p>
+                      <img src="media/img/movie.png" width="100%" />
+                    </p>
+
+
+                    <div class="row padding-top-bottom-1">
+                      <div class="large-4 columns">
+                        <img src="media/img/root-canal-1.jpg" width="100%" />
+                        <p>
+                          Steps 1 and 2 of the root canal treatment process.
+                          source: <a href="#">Australian Dental Association</a>
+                        </p>
+                      </div>
+                      <div class="large-4 columns">
+                        <img src="media/img/root-canal-2.jpg" width="100%" />
+                        <p>
+                          Steps 3 and 4 of the root canal treatment process.
+                          source: <a href="#">Australian Dental Association</a>
+                        </p>
+                      </div>
+                      <div class="large-4 columns">
+                        <img src="media/img/root-canal-x-ray.jpg" width="100%" />
+                        <p>
+                          Xray of root canal treatment.
+                          source: <a href="#">Australian Dental Association</a>
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="large-12 bg-1 risk-data-header">
+                      <h4>Associated risks</h4>
+                    </div>
+                    <div class="risk-data large-12 no-border-top-color-1 columns margin-bottom-3">
+                      <a href="#" class="accordion dark-chevron" data-target="risk1">Root Canal Therapy or Other Necessary Treatment</a>
+                      <p class="hide" id="risk1">
+                        Once any prior fillings and decay are removed, it may be revealed that there is a more severe condition present that will need to be treated. A root canal procedure may be necessary before placing the crown to ensure the tooth continues to function without issue. In some cases, the tooth may be deemd unrestorable making a crown no longer an option.
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk2">Pulp Death Requiring Root Canal Therapy</a>
+                      <p class="hide" id="risk2">
+                        Ocassionaly the nerve of a tooth dies following the placement of a crown. Should this occur, root canal therapy or extraction are the only options.
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk3">Gum Recession</a>
+                      <p class="hide" id="risk3">
+                       Gums can recede with age, therefore exposing the margins of the crown. This can be unsightly and may require the replacement of the crown in the future. Such a replacement will be at my expense.
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk4">Patients That Have Existing Root Canal Teeth</a>
+                      <p class="hide" id="risk4">
+                        At the time of crowning the tooth, the root canal appeared infection free. However, with all root canal treated teeth there is a risk of possible reinfection of the tooth. If this was to occur the options would be to either have the tooth re-treated by a specialist (Endodontist) or to have the tooth removed. 
+                      </p>
+
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk5">Patients that have an existing denture around the fitting surface of the crown</a>
+                      <p class="hide" id="risk5">
+                        It can be very difficult to design a new crown that will fit perfectly around an existing denture. We take extra steps to ensure that your denture will fit as closely as possible to the new crown. Unfortunately, in some cases this is not possible. We have the ability to make minor adjustments to both the crown and the denture. However, occasionally this is not sufficient and a new denture will be necessary at your own cost.
+                      </p>
+                      
+                      <a href="#" class="accordion dark-chevron" data-target="risk6">Caring for the Restoration</a>
+                      <p class="hide" id="risk6">
+                        As part of the treatment, I may be required to wear temporary crowns for several weeks while waiting for my final restoration to be fabricated. During this time, I must be careful to ensure the temporary restoration remains in place and does not fall off.
+                        I also understand that once treatment is started, I must return to have the treatment finished at the recommended time. Failure to do so may result in decay, the need for root canal treatment, tooth fracture or loss of the tooth. Further necessary treatment due to failure to keep appointments will be at an additional cost.
+                        Like natural teeth, crowns and bridges need to be kept clean with a proper oral hygiene routine, otherwise decay may develop underneath or around the restoration, leading to further treatment and possibly a replacement of the crown(s) or bridge. 
+                      </p>
+
+                    </div>
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="shaded">
+                <td class="title">What is a crown?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail2">Read more</a></td>  
+              </tr>
+
+              <tr class="holder shaded">
+                <td colspan="2">
+                  <div class="hide" id="factDetail2">
+                    <p>
+                      A crown is basically a manufactured tooth. It’s generally made of porcelain or ceramic, which can be matched to the colour and texture of your existing teeth.
+                    </p>
+                    <p>
+                      A crown can also be made of gold alloys for improved strength when replacing a back tooth. Often a metal crown will have porcelain bonded to the exterior to give it strength and a natural look.
+                    </p>
+                    
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="title">What are direct and indirect fillings?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail3">Read more</a></td>
+              </tr>
+
+              <tr class="holder">
+                <td colspan="2">
+                  <div class="hide" id="factDetail3">
+                    <p>
+                      Depending on your unique case, you may require an indirect or a direct dental restoration. What is the difference?
+                      An indirect restoration will require more than a single visit. At the first visit, you’ll have the tooth prepared and an impression will be taken of the restoration area. When you visit the dentist again, the filing will then be placed and any needed adjustments can be made. Fillings used for indirect restorations include indirect composites, gold alloys, ceramics and base metal alloys.
+                    </p>
+                    <p>
+                      When it comes to a direct dental restoration, you’ll only need to make one visit to the dentist. The filling can be placed into the prepared cavity right away. The tooth is prepared and the filling placed and then any adjusting is done.
+                    </p>
+                    
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="shaded">
+                <td class="title">What is oral sedation?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail4">Read more</a></td>  
+              </tr>
+
+              <tr class="holder shaded">
+                <td colspan="2">
+                  <div class="hide" id="factDetail4">
+                    <p>
+                      Oral sedation is the most common form of antianxiety medication used for majority of patients. The choice of drug, dosage and timing is decided by one of our trained sedation dentists who can also prescribe you the medication at the time of your consult appointment.
+
+                    </p>
+                    <p>
+                      If taken 1 hour prior to appointment the oral sedation pill will take effect almost immediately, helping to calm and relax you and keep you unaware as your Healthy Smiles dentist works on your mouth.
+                    </p>
+                    
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+      
+
+      <!-- Consent -->
+      <div class="large-12 border-primary-color-5 padding-2 columns" id="consentArea1">
+        <input type="checkbox" id="consent1" /> <label for="consent1"><span></span>I have read and understood the information provided about the procedures involved in my treatment and risks associated with it. I give consent to have the treatment as recommended.</label>
+        <button id="btnConsent1" disabled="disabled">Submit</button>
+      </div>       
+    </div>
+
+    <!-- Option 2 summary container -->
+    <div class="row summary collapse">
+
+      <div class="large-12 columns padding-top-2 border-top-dark">               
+
+        <div class="large-7 columns">
+          <h3 class="cross-left">Option 2: Tooth extraction</h4>
+        </div>
+        
+        <div class="large-5 columns text-right">
+          <h4 class="shade-4">Total $596.00</h4>
+        </div>
+
+        <div class="large-12 padding-top-bottom-1 columns">
+          <p>
+            Extracting the tooth will eradicate the infection in your mouth this is important as infection causes systemic health problems and has a drain on your immune system.<br />
+          </p>
+          <p>
+            The repercussion for tooth extraction is you will have a gap that impacts your chewing efficiency and your bite. It de-stabilises your mouth, as the opposing tooth doesn’t have something to push against and starts to drift. Therefore it is preferable to replace the teeth. 
+          </p>
+          <p>
+            There are three ways that we would recommend to replace a tooth, <a href="#">partial denture</a>, <a href="#">bridge</a> and <a href="#">implant</a> starting with the least expensive and temporary and ending with the most permanent which can cost more.
+          </p>
+
+          <a href="#" class="chevron accordion" data-target="treatmentOption2">Read more</a>
+          
         </div>
 
       </div>
     </div>
 
-    <div class="row collapse hide" id="treatmentOption1">
+    <!-- Option 2 detail -->
+    <div class="row collapse hide margin-bottom-2-5" id="treatmentOption2">
+
+      <div class="large-12 padding-top-1 columns">
+        <h3>Schedule &amp; cost breakdown</h3>
+      </div>
+
+
       <div class="large-12">
         <table cellpadding="0" cellspacing="0" border="0" class="plan-table">
           <thead>
@@ -318,255 +1051,390 @@
               <th>Description</th>
               <th>Tooth</th>
               <th>Item code</th>
-              <th>Cost</th>
+              <th class="padding-right-1">Cost</th>
+              <th>Paid</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><a href="#" class="accordion chevron-only" data-target="detailRow1">&nbsp;</a></td>
+              <td><a href="#" class="accordion plus-minus" data-target="detailRow1-2">&nbsp;</a></td>
               <td>1</td>
-              <td>05 August 2015</td>
-              <td>09:30am</td>
-              <td>150 min</td>
-              <td><a href="#" class="alert has-tip" title="Oral sedation"></a></td>
-              <td class="description"><strong>Root canal preparation and fillings</strong></td>
+
+              <td>
+                <div data-alert class="alert-box alert booking-alert">
+                  First appt. - <strong>NOT BOOKED</strong>
+                  <a href="#" class="close show-calendar" data-input-target="apptDate1-2">&times;</a>
+                </div>
+                <input type="text" class="appt-date-time" id="apptDate1-2" data-time-field="apptTime1-2" readonly /></td>
+              <td><input type="text" class="appt-time" id="apptTime1-2" readonly /></td>
+
+              <td>80 min</td>
+              <td><a href="#" class="alert-symbol has-tip" title="Oral sedation"></a></td>
+              <td class="description"><strong>Tooth extraction</strong></td>
               <td></td>
               <td></td>
-              <td class="cost">$1640.00</td>
+              <td class="cost"><strong>$175.00</strong></td>
+              <td class="paid no"></td>
             </tr>
 
-            <tr class="hide" id="detailRow1">
+            <tr class="hide" id="detailRow1-2">
               <td colspan="6"></td>
-              <td colspan="4">
+              <td colspan="5">
                 <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
                   <thead>
                     <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
+                      <th colspan="5" class="text-left">Tooth extraction</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
+                      <td class="description">Remove tooth</td>
+                      <td class="tooth">37</td>
+                      <td class="code">311</td>
+                      <td class="cost">$175.00</td>
+                      <td class="paid no">&nbsp;</td>
                     </tr>
                   </tbody>
                 </table>
+                
+              </td>
+            </tr>
 
+            <tr class="border-top">
+              <td><a href="#" class="accordion plus-minus" data-target="detailRow2-2">&nbsp;</a></td>
+              <td>2</td>
+              <td>
+                <div data-alert class="alert-box alert booking-alert">
+                  2 wks from last appt. - <strong>NOT BOOKED</strong>.
+                  <a href="#" class="close show-calendar" data-input-target="apptDate2-2">&times;</a>
+                </div>
+                <input type="text" class="appt-date-time" id="apptDate2-2" data-time-field="apptTime2-2" readonly /></td>
+              <td><input type="text" class="appt-time" id="apptTime2-2" readonly /></td>
+              <td>150 min</td>
+              <td><a href="#" class="alert-symbol has-tip" title="Oral sedation"></a></td>
+              <td class="description"><strong>Direct and indirect fillings</strong></td>
+              <td></td>
+              <td></td>
+              <td class="cost"><strong>$421.00</strong></td>
+              <td class="paid no"></td>
+            </tr>
+
+            <tr class="hide" id="detailRow2-2">
+              <td colspan="6"></td>
+              <td colspan="5">
                 <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
                   <thead>
                     <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
+                      <th colspan="5" class="text-left">Direct and indirect fillings</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
+                      <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                      <td class="tooth">41</td>
+                      <td class="code">522</td>
+                      <td class="cost">$132.00</td>
+                      <td class="paid no">&nbsp;</td>
                     </tr>
                     <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
+                      <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
+                      <td class="tooth">42</td>
+                      <td class="code">522</td>
+                      <td class="cost">$132.00</td>
+                      <td class="paid no">&nbsp;</td>
                     </tr>
                     <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
+                      <td class="description">Adhesive Restoration - 3 surfaces anterior</td>
+                      <td class="tooth">43</td>
+                      <td class="code">522</td>
+                      <td class="cost">$157.00</td>
+                      <td class="paid no">&nbsp;</td>
                     </tr>
 
                     <tr>
                       <td></td>
                       <td></td>
                       <td><strong>Total</strong></td>
-                      <td class="cost"><strong>$1640.00</strong></td>
+                      <td class="cost"><strong>$421.00</strong></td>
+                      <td class="paid no">&nbsp;</td>
+                    </tr>
                   </tbody>
                 </table>
+
+                
               </td>
             </tr>
 
 
-            <tr>
-              <td><a href="#" class="accordion chevron-only" data-target="detailRow2">&nbsp;</a></td>
-              <td>1</td>
-              <td>05 August 2015</td>
-              <td>09:30am</td>
-              <td>150 min</td>
-              <td><a href="#" class="alert has-tip" title="Oral sedation"></a></td>
-              <td class="description"><strong>Root canal preparation and fillings</strong></td>
-              <td></td>
-              <td></td>
-              <td class="cost">$1640.00</td>
-            </tr>
-
-            <tr class="hide" id="detailRow2">
-              <td colspan="6"></td>
-              <td colspan="4">
-                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
-                  <thead>
-                    <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <table cellpadding="0" cellspacing="0" border="0" class="detail-table">  
-                  <thead>
-                    <tr>
-                      <th colspan="4" class="text-left">Root canal therapy</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-                    <tr>
-                      <td class="description">Root canal preparation - 1 Canal</td>
-                      <td>37</td>
-                      <td>415</td>
-                      <td class="cost">$205.00</td>
-                    </tr>
-
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td><strong>Total</strong></td>
-                      <td class="cost"><strong>$1640.00</strong></td>
-                  </tbody>
-                </table>
+            <tr class="border-top">
+              <td colspan="11" class="text-right">
+                <h4 class="padding-right-1"><span>Total:</span> <span>$596.00</span></h4>
+                 <span class="special-text padding-right-1">*0% interest for 6, 12, and 18 months</span>
               </td>
             </tr>
+
           </tbody>
         </table>
+      </div>
+
+      <div class="large-10 large-centered columns border-top-subtle-shade-3 margin-bottom-3">
+        <div class="large-12 large-centered padding-top-1 columns">
+          <table cellpadding="0" cellspacing="0" border="0" class="treatment-facts">
+            <tbody>
+              <tr>
+                <td class="title">What is a tooth extraction?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail2-1">Read more</a></td>
+              </tr>
+              <tr class="holder">
+                <td colspan="2">
+                  <div class="hide" id="factDetail2-1">
+                    <p>
+                      Tooth extraction is the removal of a tooth. A tooth may need to be extracted for a number of reasons including extensive damage, disease to the surrounding gums (periodontitis), problems with eruption such as Wisdom Teeth and also to prevent further problems from arising if a tooth is diseased or infected. Teeth may also sometimes be extracted as part of orthodontic treatment to improve the effectiveness of treatment.
+                    </p>
+
+                    <p>
+                      <img src="media/img/movie.png" width="100%" />
+                    </p>
+
+
+                    <div class="large-12 bg-1 risk-data-header">
+                      <h4>Associated risks</h4>
+                    </div>
+                    <div class="risk-data large-12 no-border-top-color-1 columns margin-bottom-3">
+                      <a href="#" class="accordion dark-chevron" data-target="risk1-2">Pain</a>
+                      <p class="hide" id="risk1-2">
+                         Pain can occur in the Jaw due to irritation of the nerves and the movement of the joint (TMJ) during the extraction. This pain is usually temporary and can often be treated with most available pain relief medicines.
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk2-2">Dry Socket</a>
+                      <p class="hide" id="risk2-2">
+                        A dry socket can occur when a blood clot does not correctly form in the remaining socket after extraction. The bone underneath the gum can be exposed to air or food and can be very painful. Dry sockets will need to be treated separately.
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk3-2">Infection</a>
+                      <p class="hide" id="risk3-2">
+                        The remaining socket can become infected and must be kept clean to ensure a low risk of infection. This is likely to resolve completely once treatment is undertaken but if infection continues to occur it can usually be treated with antibiotics.
+                      </p>
+
+                      <a href="#" class="accordion dark-chevron" data-target="risk4-2">Tooth Fracture</a>
+                      <p class="hide" id="risk4-2">
+                        It is possible that during extraction, the tooth may fracture, particularly at the root. The remaining fragment of root may be left in place if the dentist deems it too risky to remove such as in the case where it may lie close to a nerve.
+                      </p>
+                      
+                      <a href="#" class="accordion dark-chevron" data-target="risk5-2">Nerve Damage</a>
+                      <p class="hide" id="risk5-2">
+                        During extraction, underlying nerves may lie close to the tooth that needs to be extracted. Despite all precautions taken, nerves can be damaged and numbness or loss of feeling and use of the affected area can occur. The effects of this can be temporary if the nerve is irritated during surgery, or permanent if significant damage occurs to the nerve. Areas that can be affected by this include the lips, chin, cheeks, tongue and surrounding teeth.
+                      </p>
+
+                    </div>
+
+                  </div>
+                </td>
+              </tr>
+              <tr class="shaded">
+                <td class="title">What are direct and indirect fillings?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail2-2">Read more</a></td>  
+              </tr>
+              <tr class="holder shaded">
+                <td colspan="2">
+                  <div class="hide" id="factDetail2-2">
+                    <p>
+                      Depending on your unique case, you may require an indirect or a direct dental restoration. What is the difference?
+                    </p>
+
+                    <p>
+                      An indirect restoration will require more than a single visit. At the first visit, you’ll have the tooth prepared and an impression will be taken of the restoration area. When you visit the dentist again, the filing will then be placed and any needed adjustments can be made. Fillings used for indirect restorations include indirect composites, gold alloys, ceramics and base metal alloys.
+                    </p>
+
+                    <p>
+                      When it comes to a direct dental restoration, you’ll only need to make one visit to the dentist. The filling can be placed into the prepared cavity right away. The tooth is prepared and the filling placed and then any adjusting is done
+                    </p>
+                    
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="title">What is oral sedation?</td>
+                <td class="read-more-cell"><a href="#" class="accordion chevron" data-target="factDetail2-3">Read more</a></td>
+              </tr>
+              <tr class="holder">
+                <td colspan="2">
+                  <div class="hide" id="factDetail2-3">
+                    <p>
+                      Oral sedation is the most common form of antianxiety medication used for majority of patients. The choice of drug, dosage and timing is decided by one of our trained sedation dentists who can also prescribe you the medication at the time of your consult appointmen.
+
+                    </p>
+                    <p>
+                      If taken 1 hour prior to appointment the oral sedation pill will take effect almost immediately, helping to calm and relax you and keep you unaware as your Healthy Smiles dentist works on your mouth.
+                    </p>
+                  </div>
+                </td>
+              </tr>              
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+
+      <div class="large-12 border-primary-color-5 padding-2 columns" id="consentArea2">
+        <input type="checkbox" id="consent2" /> <label for="consent2"><span></span>I have read and understood the information provided about the procedures involved in my treatment and risks associated with it. I give consent to have the treatment as recommended.</label>
+        <button id="btnConsent2" disabled="disabled">Submit</button>
+      </div>     
+    </div>
+
+    <!-- Option 3 summary container -->
+    <div class="row summary collapse">
+
+      <div class="large-12 columns padding-top-2 border-top-dark">               
+
+        <div class="large-7 columns">
+          <h3 class="cross-left" data-target="treatmentOption3">Option 3: Do nothing</h4>
+        </div>
+        
+        <div class="large-5 columns text-right">
+          <h4 class="shade-4">Total $0.00</h4>
+        </div>
+
+        <div class="large-12 padding-top-bottom-1 columns">
+          <p>
+           Some people choose to do nothing especially if they are not in pain. But it is important to know the risks of leaving the infection in your mouth.
+            
+          </p>
+
+          <p>
+            There is a risk that an infection can develop into an abscess, which can in extremely rare cases be fatal. Secondly if it doesn’t become an abscess and it periodically drains by itself your body will still be compromised in its immune system through constantly fighting infection. Thirdly you could be limiting your option of replacing that tooth over time. The infection can eat away at the surrounding bone and leave you with less area to place an implant into making it a much longer and costly process.
+          </p>
+            
+          <a href="#" class="chevron accordion" data-target="treatmentOption3">Read more</a>
+
+        </div>
+      </div>
+    </div>
+  
+    <!-- Option 3 detail -->
+    <div class="row collapse hide margin-bottom-4" id="treatmentOption3">
+      <div class="large-12 border-primary-color-5 padding-2 columns" id="consentArea3">
+        <input type="checkbox" id="consent3" /> <label for="consent3"><span></span>I have read and understood the information provided about the procedures involved in my treatment and risks associated with it. I give consent to have the treatment as recommended.</label>
+        <button id="btnConsent3" disabled="disabled">Submit</button>
       </div>
     </div>
 
 
 
+    <!-- Payment and HI content -->
+    <div class="row margin-top-bottom-2 collapse border-top-dark">
+
+      <!-- Health Insurance -->
+      <div class="large-12 columns padding-top-bottom-2 hi-bg border-subtle-shade-3 margin-top-bottom-2-5">
+        <div class="large-11 large-centered columns">
+
+          <h3>Health insurance</h3>
+
+          <p>
+            <i>Check your allowances and limits with your health insurance provider</i>
+          </p>
+          <p>
+
+            Bupa members, if you’d like to find out more about how you’re covered for your next dental treatment, You can log into myBupa to check your cover, call <a href="tel:134135">134 135</a>  or visit your local Bupa Centre.
+
+          </p>
+
+          <p class="small">
+            **For most items at our Members First extras providers covering dental. Excludes orthodontics and hospital treatments. Fund and policy rules, waiting periods, and yearly limits apply.
+          </p>
+
+          <p>
+            <a href="#" class="button margin-right-2 width-20">Log into myBupa</a>
+
+            <a href="#" class="button width-20">How to make a claim</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="large-12 columns padding-top-bottom-2 border-subtle-shade-3 margin-top-bottom-2-5 payment">
+
+        <div class="large-11 large-centered columns intro">
+          <h3>Payment</h3>
+
+          <p>
+           To pay by direct deposit, cheque or for financing call us at <a href="tel:0279101112">02 7910 1112</a>
+          </p>
+          <h5>0% interest for 6, 12, and 18 months</h5>
+          <p class="padding-top-2">
+             <a href="#" class="accordion chevron" data-target="applyNow">Read more</a>
+          </p>
+        </div>
+
+        <div class="large-11 large-centered columns subtle-shade-bg-2 hide columns" id="applyNow">
+
+          <div class="large-12 columns padding-top-bottom-2">
+
+            <div class="large-4 columns text-center border-right">
+              <p>
+                6 months<br />
+                <span>for $350/month</span>
+              </p>
+            </div>
+            <div class="large-4 columns text-center border-right">
+              <p>
+                12 months<br />
+                <span>for $350/month</span>
+              </p>
+            </div>
+            <div class="large-4 columns text-center">
+              <p>
+                18 months<br />
+                <span>for $350/month</span>
+              </p>
+            </div>
+
+
+            <div class="large-12 columns text-center columns">
+              <a href="#" class="button">Apply now</a>
+            </div>
+            
+          </div>
+
+          
+        </div>
+
+
+        <div class="large-11 large-centered columns padding-top-2 margin-top-1 pay-now">
+          <div class="large-8 float-left">
+            <h5>Up front payments</h5>
+            <p>
+              You can pay on the day of your appointment or pay online now.
+            </p>
+          </div>
+
+          <div class="large-4 float-right text-right">
+            <a href="#" class="button">Pay now</a>
+          </div>
+        </div>
+      </div>        
+    </div>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
 
-     <script src="bower_components/plugins/js/pizza.js"></script>
-     <script src="bower_components/plugins/js/pizza/pie.js"></script>
-     <script src="bower_components/plugins/js/pizza/line.js"></script>
-     <script src="bower_components/plugins/js/pizza/bar.js"></script>
+    <script src="bower_components/plugins/js/pizza.js"></script>
+    <script src="bower_components/plugins/js/pizza/pie.js"></script>
+    <script src="bower_components/plugins/js/pizza/line.js"></script>
+    <script src="bower_components/plugins/js/pizza/bar.js"></script>
+    <script src="bower_components/plugins/js/snap.svg.js"></script>
+    <script src="bower_components/plugins/js/owl.carousel.min.js"></script>
 
-     <script src="bower_components/plugins/js/snap.svg.js"></script>
+    <script src="bower_components/plugins/js/datetimepicker.js"></script>
+
 
     <script src="js/app.js"></script>
     <script>
 
-      var s = Snap('#confirmIcon');
-
-      var clockCircle = s.circle(18, 18, 16);
-
-      clockCircle.attr({
-          fill: "transparent",
-          stroke: "#fff",
-          strokeWidth: 2.5
-      });
-
-      var minuteHand = s.line(18,20,18,5);
-      var hourHand = s.line(19,20,8,18);
-
-      minuteHand.attr({
-        stroke: "#fff",
-        strokeWidth: 2.5
-      });
-      hourHand.attr({
-        stroke: "#fff",
-        strokeWidth: 2.5
-      });    
-
 
       Pizza.init();
-      // Pizza.init(document.body, {
-      //   percent_offset: 0
-      // });
-
 
       $(document).foundation({
-        // accordion: {
-        //   // specify the class used for accordion panels
-        //   content_class: 'content',
-        //   // specify the class used for active (or open) accordion panels
-        //   active_class: 'active',
-        //   // allow multiple accordion panels to be active at the same time
-        //   multi_expand: true,
-        //   // allow accordion panels to be closed by clicking on their headers
-        //   // setting to false only closes accordion panels when another is opened
-        //   toggleable: true
-        // },
         tooltip: {
           selector : '.has-tip',
           additional_inheritable_classes : [],
@@ -577,8 +1445,6 @@
       });
 
       $(window).load(function() {
-        // console.log('window height: ' + window.innerHeight);
-        // console.dir(window)
         $('#heroImageContainer').css({
           'backgroundImage': 'url(stylesheets/img/hero-1.png)'
         });        
@@ -586,18 +1452,140 @@
 
       $(function() {
 
+        function handleTimeSelect(ct,$i) { 
+
+          var hours = ct.getHours();
+          var minutes = ct.getMinutes();
+
+          if (minutes.toString().length === 1) {
+            minutes = '0' + minutes;
+          }
+
+          // var dateVal = dayName + ' ' + monthDay + ' ' + monthName + ' ' + year;
+          var timeVal = hours + ':' + minutes;
+
+          var $timeInput = $('#'+$i.attr('data-time-field'));
+
+          // $i.val(dateVal);
+          console.log($timeInput)
+          $timeInput.val(timeVal);
+        }
+
+        var mouthImageCarousel = $("#mouthImageCarousel"); 
+        mouthImageCarousel.owlCarousel({
+          stagePadding: 50,
+          margin: 0,
+          responsive:{
+              0: {
+                  nav: false,
+                  loop: true,
+                  items: 1
+              },
+              600: {
+                  nav: false,
+                  loop: false,
+                  items: 3
+              },
+              1000: {
+                  nav: false,
+                  loop: false,
+                  items: 3
+             }
+          } 
+        });
+
+        var chartContainer = $("#chartContainer"); 
+        chartContainer.owlCarousel({
+          startPosition: 1,
+          responsive:{
+              0: {
+                  margin: 10,
+                  stagePadding: 30,
+                  nav: false,
+                  loop: false,
+                  items: 1
+              },
+              600: {
+                  margin: 0,
+                  stagePadding: 0,
+                  nav: false,
+                  loop: false,
+                  items: 3
+              },
+              1000: {
+                  margin: 0,
+                  stagePadding: 0,
+                  nav: false,
+                  loop: false,
+                  items: 3
+             }
+          } 
+        });
+
+        $('.tab').click(function(e) {
+          e.preventDefault();
+          $('.tab').removeClass('active');
+          $(this).addClass('active');
+        })
+
+
+        $('#patientImages').addClass('hide');        
+
+
+        $('.appt-date-time').datetimepicker({
+          format: 'D d M Y',
+          onSelectTime: handleTimeSelect,
+          step: 30
+        });
+
+        $('.appt-time').datetimepicker({
+          datepicker: false,
+          format: 'H:i',
+          step: 30
+        });
+
+
+        $('.show-calendar').click(function(e) {
+          e.preventDefault();          
+
+          var el = $('#'+$(this).attr('data-input-target'));
+
+          el.datetimepicker('show');
+        });
+
+        $('a.goToPlan').click(function(e) {
+            e.preventDefault();
+
+            var scrollHeight = ($('#planContainer').offset().top);
+            $('html, body').animate({
+                scrollTop: scrollHeight
+            },'slow');
+        });
+
         $('.accordion').click(function(e) {
           e.preventDefault();
 
 
+
           var el = $('#'+$(this).attr('data-target')), curHeight = el.height(), autoHeight = el.css('height', 'auto').height();
 
+          if ($('html').hasClass('touch') && $(this).attr('data-touch-target')) {
+            el = $('#'+$(this).attr('data-touch-target'));
+          }
 
-          // console.log('==================================================');
-          // console.dir(el);
-          // console.log('current hieght: ' + curHeight);
-          // console.log('auto hieght: ' + autoHeight);
-          // console.log('==================================================');
+          console.dir(el);
+
+
+
+          var timing = autoHeight;
+
+          if (timing === 0) {
+            timing = curHeight;
+          } 
+
+          if (timing > 800) {
+            timing = 800;
+          }
 
 
           if (el.hasClass('hide'))
@@ -606,28 +1594,64 @@
             el.removeClass('hide');
             $(this).addClass('show');
             curHeight = 0;
-            el.height(curHeight).animate({height: autoHeight}, 500);
+            el.height(curHeight).animate({height: autoHeight}, timing, function() {
+              el.find('.booking-alert').addClass('show');
+            });
           }
           else
           {
             // console.log('close');
+            el.find('.booking-alert').removeClass('show');
             $(this).removeClass('show');
-            el.height(curHeight).animate({height: 0}, 500, function(){
+            el.height(curHeight).animate({height: 0}, timing, function(){
               el.addClass('hide');  
             });             
-          }
-          
+          }          
         });
+
+        $('.more').click(function(e) {
+          e.preventDefault();
+
+          var el = $('#'+$(this).attr('data-target')), curHeight = el.height(), autoHeight = el.css('height', 'auto').height();
+
+          var timing = autoHeight;
+
+          if (timing === 0) {
+            timing = curHeight;
+          } 
+
+          if (timing > 800) {
+            timing = 800;
+          }
+
+          if (el.hasClass('hide'))
+          {
+            el.removeClass('hide');
+            $(this).text('Less');
+            curHeight = 0;
+            el.height(curHeight).animate({height: autoHeight}, timing);
+          }
+          else
+          {
+            $(this).text('More');
+            el.height(curHeight).animate({height: 0}, timing, function(){
+              el.addClass('hide');  
+            });             
+          }          
+        });
+
 
         $('.read-more').click(function(e) {
           e.preventDefault();
           var el = $('#'+$(this).attr('data-target'));
           if (el.hasClass('flipped')) {
-            el.removeClass('flipped');
+            el.removeClass('flipped');       
+            $(this).text('Read more');
           }  
           else 
           {
-            el.addClass('flipped');[]
+            el.addClass('flipped');     
+            $(this).text('Back to chart');
           }
         });
 
@@ -647,6 +1671,50 @@
             var tooltip = $('#'+ $('#apptHelp').attr('data-selector'));
             tooltip.text('For more information or to change your appointment call 02 7901 1112');
           }
+        });
+
+
+        $('#consent1').change(function() {
+          if($(this).is(":checked")) {
+            $('#btnConsent1').removeAttr('disabled');
+          }
+          else {
+            $('#btnConsent1').attr('disabled','disabled');
+          }  
+        });
+
+        $('#btnConsent1').click(function(e) {
+          e.preventDefault();
+          $('#consentArea1').html('<p><strong>I have understood the treatment and the risks associated with the recommended option and have given consent.</strong></p>').addClass('primary-color-5-bg');
+        });
+
+
+        $('#consent2').change(function() {
+          if($(this).is(":checked")) {
+            $('#btnConsent2').removeAttr('disabled');
+          }
+          else {
+            $('#btnConsent2').attr('disabled','disabled');
+          }  
+        });
+
+        $('#btnConsent2').click(function(e) {
+          e.preventDefault();
+          $('#consentArea2').html('<p><strong>I have understood the treatment and the risks associated with the recommended option and have given consent.</strong></p>').addClass('primary-color-5-bg');
+        });
+
+        $('#consent3').change(function() {
+          if($(this).is(":checked")) {
+            $('#btnConsent3').removeAttr('disabled');
+          }
+          else {
+            $('#btnConsent3').attr('disabled','disabled');
+          }  
+        });
+
+        $('#btnConsent3').click(function(e) {
+          e.preventDefault();
+          $('#consentArea3').html('<p><strong>I have understood the treatment and the risks associated with the recommended option and have given consent.</strong></p>').addClass('primary-color-5-bg');
         });
 
 
