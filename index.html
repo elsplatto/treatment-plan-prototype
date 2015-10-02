@@ -511,7 +511,7 @@
                     <td class="cost">$205.00</td>
                     <td class="paid no">&nbsp;</td>
                   </tr>
-                  <tr>
+                  <tr class="shaded">
                     <td class="description">Root canal preparation - @ Additional Canal</td>
                     <td class="tooth">37</td>
                     <td class="code">416 <span>(x2)</span></td>
@@ -525,7 +525,7 @@
                     <td class="cost">$41.00</td>
                     <td class="paid no"></td>
                   </tr>
-                  <tr>
+                  <tr class="shaded">
                     <td class="description">Metal band</td>
                     <td class="tooth">37</td>
                     <td class="code">574</td>
@@ -543,7 +543,7 @@
                     <td class="cost">$132.00</td>
                     <td class="paid no">&nbsp;</td>
                   </tr>
-                  <tr>
+                  <tr class="shaded">
                     <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
                     <td class="tooth">42</td>
                     <td class="code">522</td>
@@ -610,7 +610,7 @@
                     <td class="cost">$660.00</td>
                     <td class="paid no">&nbsp;</td>
                   </tr>
-                  <tr>
+                  <tr class="shaded">
                     <td class="description">Tooth coloured restoration - 4 surfaces - indirect</td>
                     <td class="tooth">15</td>
                     <td class="code">554</td>
@@ -660,7 +660,7 @@
                     <td class="paid no">&nbsp;</td>
                   </tr>
 
-                  <tr>
+                  <tr class="shaded">
                     <td class="description">Single X-ray Film</td>
                     <td class="tooth">37</td>
                     <td class="code">022</td>
@@ -689,7 +689,7 @@
                     <td class="cost">$132.00</td>
                     <td class="paid no">&nbsp;</td>
                   </tr>                  
-                  <tr>
+                  <tr class="shaded">
                     <td class="description">Adhesive Restoration - 2 surfaces anterior</td>
                     <td class="tooth">42</td>
                     <td class="code">522</td>
@@ -1799,6 +1799,8 @@
           } 
         });
 
+        
+
         $('.tab').click(function(e) {
           e.preventDefault();
           $('.tab').removeClass('active');
@@ -1865,7 +1867,7 @@
             el = $('#'+$(this).attr('data-touch-target'));
           }
 
-          console.dir(el);
+          
 
 
 

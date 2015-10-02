@@ -2287,6 +2287,31 @@ ul[data-bar-id] li:nth-child(2) {
 
 @media only screen and (max-width: 40em) { 
 
+	.hi-bg {
+		&:after {
+			background-image: none;
+		}
+		h3 {
+			padding-right: 0 !important;
+		}
+		p {
+			padding-right: 0 !important;
+		}
+	}
+
+	.payment {
+		.intro {
+			padding-right: 0;
+			&:after {
+				background-image: none;
+			}
+		}	
+		.border-right {
+			border-right: none;
+		}
+	}
+	
+
 	.paid.no:before {
     background-position: -14px -1078px;
     width: 1rem;
@@ -2305,6 +2330,7 @@ ul[data-bar-id] li:nth-child(2) {
 			width: 10.5rem;
 			padding: 0.25rem 0.5rem;
 			font-size: 0.75rem;
+			top: 56%;
 		}
 	}
 
@@ -2345,6 +2371,10 @@ ul[data-bar-id] li:nth-child(2) {
 		}
 	}
 
+	.plan-table tr.shaded {
+		background-color: $background-subtle-shade-2;
+	}
+
 	table.plan-table.calendar {
 		tbody { 
 			tr {
@@ -2382,7 +2412,7 @@ ul[data-bar-id] li:nth-child(2) {
 		height: auto;
 		.folder-edge { 
 			padding: 0 1.25rem;
-			top: -0.5rem;
+			top: -0.48rem;
 			position: relative;
 			border-top: 1px solid transparent;
 			height: rem-calc(60);
