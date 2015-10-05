@@ -12021,73 +12021,80 @@ ul[data-bar-id] li:nth-child(2) {
 }
 /* line 2247, ../scss/app.scss */
 .dental-health .container .card .back {
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   text-align: left;
   transform: rotateY(180deg);
   padding: 2rem;
 }
-/* line 2255, ../scss/app.scss */
+/* line 2256, ../scss/app.scss */
 .dental-health .container .card.flipped {
   transform: rotateY(-180deg);
 }
-/* line 2259, ../scss/app.scss */
+/* line 2260, ../scss/app.scss */
 .dental-health:nth-child(1) {
   width: 100%;
   margin-right: 0.5rem;
 }
-/* line 2264, ../scss/app.scss */
+/* line 2265, ../scss/app.scss */
 .dental-health:nth-child(2) {
   width: 100%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-/* line 2270, ../scss/app.scss */
+/* line 2271, ../scss/app.scss */
 .dental-health:nth-child(3) {
   width: 100%;
   margin-left: 0.5rem;
 }
-/* line 2275, ../scss/app.scss */
+/* line 2276, ../scss/app.scss */
 .dental-health .label {
   font-size: 1.125rem;
   background-color: transparent;
   white-space: normal;
 }
-/* line 2280, ../scss/app.scss */
+/* line 2281, ../scss/app.scss */
 .dental-health .data-text {
   padding-top: 4.3rem;
   font-size: 7.75rem;
   line-height: 100%;
 }
 
-@media only screen and (max-width: 40em) {
-  /* line 2291, ../scss/app.scss */
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  /* line 2292, ../scss/app.scss */
+  #gumChart {
+    width: 15em;
+    height: 15em;
+  }
+
+  /* line 2297, ../scss/app.scss */
   .hi-bg:after {
     background-image: none;
   }
-  /* line 2294, ../scss/app.scss */
+  /* line 2300, ../scss/app.scss */
   .hi-bg h3 {
     padding-right: 0 !important;
   }
-  /* line 2297, ../scss/app.scss */
+  /* line 2303, ../scss/app.scss */
   .hi-bg p {
     padding-right: 0 !important;
   }
 
-  /* line 2303, ../scss/app.scss */
+  /* line 2309, ../scss/app.scss */
   .payment .intro {
     padding-right: 0;
   }
-  /* line 2305, ../scss/app.scss */
+  /* line 2311, ../scss/app.scss */
   .payment .intro:after {
     background-image: none;
   }
-  /* line 2309, ../scss/app.scss */
+  /* line 2315, ../scss/app.scss */
   .payment .border-right {
     border-right: none;
   }
 
-  /* line 2315, ../scss/app.scss */
+  /* line 2321, ../scss/app.scss */
   .paid.no:before {
     background-position: -14px -1078px;
     width: 1rem;
@@ -12096,13 +12103,13 @@ ul[data-bar-id] li:nth-child(2) {
     left: 12px;
   }
 
-  /* line 2323, ../scss/app.scss */
+  /* line 2329, ../scss/app.scss */
   h3 {
     font-size: 1.5rem;
     font-weight: 600;
   }
 
-  /* line 2329, ../scss/app.scss */
+  /* line 2335, ../scss/app.scss */
   table .booking-alert {
     width: 10.5rem;
     padding: 0.25rem 0.5rem;
@@ -12110,41 +12117,41 @@ ul[data-bar-id] li:nth-child(2) {
     top: 56%;
   }
 
-  /* line 2339, ../scss/app.scss */
+  /* line 2345, ../scss/app.scss */
   table.treatment-facts tr td.title {
     font-size: 1rem;
   }
 
-  /* line 2354, ../scss/app.scss */
+  /* line 2360, ../scss/app.scss */
   table.treatment-facts tbody tr td.title {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-  /* line 2359, ../scss/app.scss */
+  /* line 2365, ../scss/app.scss */
   table.treatment-facts tbody tr td.read-more-cell a.chevron {
     font-size: 1rem;
     display: inline-block;
   }
-  /* line 2362, ../scss/app.scss */
+  /* line 2368, ../scss/app.scss */
   table.treatment-facts tbody tr td.read-more-cell a.chevron:after {
     top: 0px;
   }
-  /* line 2368, ../scss/app.scss */
+  /* line 2374, ../scss/app.scss */
   table.treatment-facts tbody tr.shaded {
     background-color: #f7f7f7;
   }
 
-  /* line 2374, ../scss/app.scss */
+  /* line 2380, ../scss/app.scss */
   .plan-table tr.shaded {
     background-color: #f7f7f7;
   }
 
-  /* line 2382, ../scss/app.scss */
+  /* line 2388, ../scss/app.scss */
   table.plan-table.calendar tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 2393, ../scss/app.scss */
+  /* line 2399, ../scss/app.scss */
   table.plan-table.cost tbody tr td.procedure-title {
     background-color: #48bfae;
     color: #FFFFFF;
@@ -12152,12 +12159,12 @@ ul[data-bar-id] li:nth-child(2) {
     font-weight: 600;
   }
 
-  /* line 2403, ../scss/app.scss */
+  /* line 2409, ../scss/app.scss */
   table.show-for-small-only.hide {
     display: none !important;
   }
 
-  /* line 2407, ../scss/app.scss */
+  /* line 2413, ../scss/app.scss */
   .tab-holder {
     clear: both;
     display: block;
@@ -12165,7 +12172,7 @@ ul[data-bar-id] li:nth-child(2) {
     width: 100%;
     height: auto;
   }
-  /* line 2413, ../scss/app.scss */
+  /* line 2419, ../scss/app.scss */
   .tab-holder .folder-edge {
     padding: 0 1.25rem;
     top: -0.48rem;
@@ -12178,13 +12185,13 @@ ul[data-bar-id] li:nth-child(2) {
     width: 100%;
     box-shadow: 0px -2px 8px 0px rgba(50, 50, 50, 0.25);
   }
-  /* line 2424, ../scss/app.scss */
+  /* line 2430, ../scss/app.scss */
   .tab-holder .folder-edge strong {
     float: left;
     padding: 0.83rem 0;
     margin: 0;
   }
-  /* line 2429, ../scss/app.scss */
+  /* line 2435, ../scss/app.scss */
   .tab-holder .folder-edge .indicator {
     display: inline-block;
     height: auto;
@@ -12192,20 +12199,20 @@ ul[data-bar-id] li:nth-child(2) {
     list-style: none;
     margin: 0;
   }
-  /* line 2435, ../scss/app.scss */
+  /* line 2441, ../scss/app.scss */
   .tab-holder .folder-edge .indicator li {
     position: relative;
     padding: 0.9rem 0;
     float: left;
   }
-  /* line 2439, ../scss/app.scss */
+  /* line 2445, ../scss/app.scss */
   .tab-holder .folder-edge .indicator li a {
     padding: 0rem 1.5rem;
     margin: 0.5rem 0;
     border-right: 1px solid #b5b6b8;
     font-weight: 600;
   }
-  /* line 2447, ../scss/app.scss */
+  /* line 2453, ../scss/app.scss */
   .tab-holder .folder-edge .indicator li.active:before {
     content: '';
     position: absolute;
@@ -12217,7 +12224,7 @@ ul[data-bar-id] li:nth-child(2) {
     top: -1px;
     left: 0.86rem;
   }
-  /* line 2461, ../scss/app.scss */
+  /* line 2467, ../scss/app.scss */
   .tab-holder a.tab {
     border: 1px solid transparent;
     border-radius: 5px 5px 0px 0px;
@@ -12229,23 +12236,23 @@ ul[data-bar-id] li:nth-child(2) {
     z-index: 1;
     box-shadow: 0px 1px 4px 2px rgba(50, 50, 50, 0.25);
   }
-  /* line 2471, ../scss/app.scss */
+  /* line 2477, ../scss/app.scss */
   .tab-holder a.tab:before {
     content: '';
     position: absolute;
     background-image: url("img/icon-sheet.png");
   }
-  /* line 2477, ../scss/app.scss */
+  /* line 2483, ../scss/app.scss */
   .tab-holder .tab.active {
     background-color: #FFFFFF;
     box-shadow: 0px -3px 4px 1px rgba(50, 50, 50, 0.25);
     z-index: 3;
   }
-  /* line 2482, ../scss/app.scss */
+  /* line 2488, ../scss/app.scss */
   .tab-holder #calendarTab {
     margin-left: 1.5rem;
   }
-  /* line 2484, ../scss/app.scss */
+  /* line 2490, ../scss/app.scss */
   .tab-holder #calendarTab:before {
     background-position: -131px -672px;
     width: 3.3125rem;
@@ -12253,11 +12260,11 @@ ul[data-bar-id] li:nth-child(2) {
     top: 6px;
     left: 16px;
   }
-  /* line 2492, ../scss/app.scss */
+  /* line 2498, ../scss/app.scss */
   .tab-holder #costTab {
     margin-left: 0.125rem;
   }
-  /* line 2494, ../scss/app.scss */
+  /* line 2500, ../scss/app.scss */
   .tab-holder #costTab:before {
     background-position: -201px -672px;
     width: 1.6875rem;
@@ -12265,13 +12272,13 @@ ul[data-bar-id] li:nth-child(2) {
     top: 8px;
     left: 28px;
   }
-  /* line 2502, ../scss/app.scss */
+  /* line 2508, ../scss/app.scss */
   .tab-holder #calendarTable, .tab-holder #costTable {
     z-index: 2;
     position: relative;
   }
 
-  /* line 2508, ../scss/app.scss */
+  /* line 2514, ../scss/app.scss */
   .table-holder {
     width: 100%;
     position: relative;
@@ -12279,29 +12286,29 @@ ul[data-bar-id] li:nth-child(2) {
     top: -0.5rem;
   }
 
-  /* line 2515, ../scss/app.scss */
+  /* line 2521, ../scss/app.scss */
   #mouthImageCarousel .item {
     padding: 0 1rem 1.5rem 1rem;
     height: 12rem;
   }
-  /* line 2518, ../scss/app.scss */
+  /* line 2524, ../scss/app.scss */
   #mouthImageCarousel .item .content {
     position: relative;
     display: block;
     padding: 0 0 0 3rem;
   }
 
-  /* line 2525, ../scss/app.scss */
+  /* line 2531, ../scss/app.scss */
   .columns.small-no-columns {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2529, ../scss/app.scss */
+  /* line 2535, ../scss/app.scss */
   .header-bg {
     min-height: 30rem;
   }
-  /* line 2531, ../scss/app.scss */
+  /* line 2537, ../scss/app.scss */
   .header-bg:after {
     width: 4.6875rem;
     height: 1.25rem;
@@ -12310,45 +12317,45 @@ ul[data-bar-id] li:nth-child(2) {
     margin: 0 0 0 -32.5px;
     bottom: -19px;
   }
-  /* line 2540, ../scss/app.scss */
+  /* line 2546, ../scss/app.scss */
   .header-bg .row .hero {
     background-image: none;
   }
-  /* line 2542, ../scss/app.scss */
+  /* line 2548, ../scss/app.scss */
   .header-bg .row .hero .greeting-container {
     padding-top: 2rem;
   }
-  /* line 2544, ../scss/app.scss */
+  /* line 2550, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h2 {
     position: relative;
     padding-left: 1.15rem;
     font-size: 3.125rem;
     line-height: 4.25rem;
   }
-  /* line 2549, ../scss/app.scss */
+  /* line 2555, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h2:before {
     position: absolute;
     font-size: 2.5rem;
     top: -7px;
     left: 0px;
   }
-  /* line 2556, ../scss/app.scss */
+  /* line 2562, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h3 {
     font-size: 1.875rem;
     line-height: 2.25rem;
     padding-left: 1.15rem;
   }
-  /* line 2560, ../scss/app.scss */
+  /* line 2566, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h3:after {
     font-size: 2.5rem;
   }
-  /* line 2564, ../scss/app.scss */
+  /* line 2570, ../scss/app.scss */
   .header-bg .row .hero .greeting-container h4 {
     padding-left: 1.15rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  /* line 2572, ../scss/app.scss */
+  /* line 2578, ../scss/app.scss */
   .header-bg .row .hero .top-bar .logo-bar .bupa {
     background-image: url("img/logo-mobile.png");
     background-size: contain;
@@ -12358,7 +12365,7 @@ ul[data-bar-id] li:nth-child(2) {
     margin-right: 1.5rem;
     float: left;
   }
-  /* line 2581, ../scss/app.scss */
+  /* line 2587, ../scss/app.scss */
   .header-bg .row .hero .top-bar .logo-bar .dentist-logo {
     background-image: url("img/dentist-logo.png");
     background-size: contain;
@@ -12367,125 +12374,125 @@ ul[data-bar-id] li:nth-child(2) {
     height: 3.125rem;
     float: left;
   }
-  /* line 2592, ../scss/app.scss */
+  /* line 2598, ../scss/app.scss */
   .header-bg .row .hero .top-bar .profile-bar .profile {
     display: none;
   }
 
-  /* line 2601, ../scss/app.scss */
+  /* line 2607, ../scss/app.scss */
   #content.margin-top-4.row {
     min-height: 9rem;
     height: auto;
     margin-top: 0;
     padding: 0;
   }
-  /* line 2607, ../scss/app.scss */
+  /* line 2613, ../scss/app.scss */
   #content.margin-top-4.row .container .root-canal {
     background-size: 50px;
   }
-  /* line 2610, ../scss/app.scss */
+  /* line 2616, ../scss/app.scss */
   #content.margin-top-4.row .container .issue {
     padding: 2rem 0 1.6rem 4rem;
   }
-  /* line 2612, ../scss/app.scss */
+  /* line 2618, ../scss/app.scss */
   #content.margin-top-4.row .container .issue span {
     font-family: 'Gotham';
     font-size: 1.25rem;
   }
-  /* line 2616, ../scss/app.scss */
+  /* line 2622, ../scss/app.scss */
   #content.margin-top-4.row .container .issue h3 {
     font-family: 'Gotham';
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 
-  /* line 2625, ../scss/app.scss */
+  /* line 2631, ../scss/app.scss */
   #appointmentDetails {
     margin: 0;
     padding: 0;
   }
-  /* line 2628, ../scss/app.scss */
+  /* line 2634, ../scss/app.scss */
   #appointmentDetails .header-bar {
     padding: 0 1.25em;
   }
-  /* line 2630, ../scss/app.scss */
+  /* line 2636, ../scss/app.scss */
   #appointmentDetails .header-bar h3 {
     font-family: 'Gotham';
     font-size: 1rem;
   }
-  /* line 2635, ../scss/app.scss */
+  /* line 2641, ../scss/app.scss */
   #appointmentDetails .margin-bottom-0-5 {
     margin-bottom: 0 !important;
   }
-  /* line 2638, ../scss/app.scss */
+  /* line 2644, ../scss/app.scss */
   #appointmentDetails .appt-tile {
     height: 7rem;
   }
-  /* line 2641, ../scss/app.scss */
+  /* line 2647, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date span {
     clear: both;
     display: block;
   }
-  /* line 2645, ../scss/app.scss */
+  /* line 2651, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date .year, #appointmentDetails .appt-tile .appt-date .day-name {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
-  /* line 2649, ../scss/app.scss */
+  /* line 2655, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date .month, #appointmentDetails .appt-tile .appt-date .day {
     font-size: 1.75rem;
     line-height: 2.5rem;
   }
-  /* line 2653, ../scss/app.scss */
+  /* line 2659, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-date .day-name {
     padding-top: 0.25rem;
   }
-  /* line 2658, ../scss/app.scss */
+  /* line 2664, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-time .time-holder {
     padding-top: 0.5rem;
   }
-  /* line 2660, ../scss/app.scss */
+  /* line 2666, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-time .time-holder .status {
     clear: both;
     padding-top: 0rem;
     font-size: 0.75rem;
   }
-  /* line 2665, ../scss/app.scss */
+  /* line 2671, ../scss/app.scss */
   #appointmentDetails .appt-tile .appt-time .time-holder .time {
     font-size: 2rem;
   }
-  /* line 2672, ../scss/app.scss */
+  /* line 2678, ../scss/app.scss */
   #appointmentDetails .alert-symbol {
     width: 1rem;
     height: 1rem;
   }
-  /* line 2675, ../scss/app.scss */
+  /* line 2681, ../scss/app.scss */
   #appointmentDetails .alert-symbol:after {
     width: 1rem;
     height: 1rem;
     background-position: -23px -831px;
   }
 
-  /* line 2684, ../scss/app.scss */
+  /* line 2690, ../scss/app.scss */
   .appt-actions #btnAddToCalendar {
     display: none;
   }
-  /* line 2688, ../scss/app.scss */
+  /* line 2694, ../scss/app.scss */
   .appt-actions .button:nth-child(1) {
     margin-right: 0rem;
   }
-  /* line 2691, ../scss/app.scss */
+  /* line 2697, ../scss/app.scss */
   .appt-actions .button:nth-child(2) {
     margin-left: 0rem;
   }
 
-  /* line 2697, ../scss/app.scss */
+  /* line 2703, ../scss/app.scss */
   .call {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: none;
   }
-  /* line 2701, ../scss/app.scss */
+  /* line 2707, ../scss/app.scss */
   .call .info {
     font-size: 1.25rem;
     line-height: 1.875rem;
@@ -12494,7 +12501,7 @@ ul[data-bar-id] li:nth-child(2) {
     color: #404040;
     font-weight: 200;
   }
-  /* line 2708, ../scss/app.scss */
+  /* line 2714, ../scss/app.scss */
   .call .info:before {
     position: absolute;
     content: '';
@@ -12504,7 +12511,7 @@ ul[data-bar-id] li:nth-child(2) {
     height: 3rem;
     left: 0px;
   }
-  /* line 2718, ../scss/app.scss */
+  /* line 2724, ../scss/app.scss */
   .call .phone-number {
     font-weight: normal;
     font-size: 2rem;
@@ -12512,7 +12519,7 @@ ul[data-bar-id] li:nth-child(2) {
     text-align: left;
     padding-left: 4rem;
   }
-  /* line 2724, ../scss/app.scss */
+  /* line 2730, ../scss/app.scss */
   .call .phone-number a {
     color: #1dafec;
     margin-top: 2rem;
@@ -12520,19 +12527,498 @@ ul[data-bar-id] li:nth-child(2) {
     display: block;
   }
 
-  /* line 2733, ../scss/app.scss */
+  /* line 2739, ../scss/app.scss */
   .summary {
     padding: 0;
   }
-  /* line 2736, ../scss/app.scss */
+  /* line 2742, ../scss/app.scss */
   .summary .no-border-top p {
     font-size: 1rem;
   }
-  /* line 2739, ../scss/app.scss */
+  /* line 2745, ../scss/app.scss */
   .summary .no-border-top blockquote {
     margin: 0.25rem;
   }
-  /* line 2741, ../scss/app.scss */
+  /* line 2747, ../scss/app.scss */
+  .summary .no-border-top blockquote p {
+    font-size: 1.125rem;
+    padding-left: 1rem;
+    border-width: 0 0 0 0.5rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 2761, ../scss/app.scss */
+  .hi-bg:after {
+    background-image: none;
+  }
+  /* line 2764, ../scss/app.scss */
+  .hi-bg h3 {
+    padding-right: 0 !important;
+  }
+  /* line 2767, ../scss/app.scss */
+  .hi-bg p {
+    padding-right: 0 !important;
+  }
+
+  /* line 2773, ../scss/app.scss */
+  .payment .intro {
+    padding-right: 0;
+  }
+  /* line 2775, ../scss/app.scss */
+  .payment .intro:after {
+    background-image: none;
+  }
+  /* line 2779, ../scss/app.scss */
+  .payment .border-right {
+    border-right: none;
+  }
+
+  /* line 2785, ../scss/app.scss */
+  .paid.no:before {
+    background-position: -14px -1078px;
+    width: 1rem;
+    height: 0.8125rem;
+    top: calc(50% - 8px);
+    left: 12px;
+  }
+
+  /* line 2793, ../scss/app.scss */
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  /* line 2799, ../scss/app.scss */
+  table .booking-alert {
+    width: 10.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    top: 56%;
+  }
+
+  /* line 2809, ../scss/app.scss */
+  table.treatment-facts tr td.title {
+    font-size: 1rem;
+  }
+
+  /* line 2824, ../scss/app.scss */
+  table.treatment-facts tbody tr td.title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  /* line 2829, ../scss/app.scss */
+  table.treatment-facts tbody tr td.read-more-cell a.chevron {
+    font-size: 1rem;
+    display: inline-block;
+  }
+  /* line 2832, ../scss/app.scss */
+  table.treatment-facts tbody tr td.read-more-cell a.chevron:after {
+    top: 0px;
+  }
+  /* line 2838, ../scss/app.scss */
+  table.treatment-facts tbody tr.shaded {
+    background-color: #f7f7f7;
+  }
+
+  /* line 2844, ../scss/app.scss */
+  .plan-table tr.shaded {
+    background-color: #f7f7f7;
+  }
+
+  /* line 2852, ../scss/app.scss */
+  table.plan-table.calendar tbody tr td:last-child {
+    text-align: center;
+  }
+
+  /* line 2863, ../scss/app.scss */
+  table.plan-table.cost tbody tr td.procedure-title {
+    background-color: #48bfae;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  /* line 2873, ../scss/app.scss */
+  table.show-for-small-only.hide {
+    display: none !important;
+  }
+
+  /* line 2877, ../scss/app.scss */
+  .tab-holder {
+    clear: both;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  /* line 2883, ../scss/app.scss */
+  .tab-holder .folder-edge {
+    padding: 0 1.25rem;
+    top: -0.48rem;
+    position: relative;
+    border-top: 1px solid transparent;
+    height: 3.75rem;
+    background-color: #FFFFFF;
+    clear: both;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0px -2px 8px 0px rgba(50, 50, 50, 0.25);
+  }
+  /* line 2894, ../scss/app.scss */
+  .tab-holder .folder-edge strong {
+    float: left;
+    padding: 0.83rem 0;
+    margin: 0;
+  }
+  /* line 2899, ../scss/app.scss */
+  .tab-holder .folder-edge .indicator {
+    display: inline-block;
+    height: auto;
+    float: left;
+    list-style: none;
+    margin: 0;
+  }
+  /* line 2905, ../scss/app.scss */
+  .tab-holder .folder-edge .indicator li {
+    position: relative;
+    padding: 0.9rem 0;
+    float: left;
+  }
+  /* line 2909, ../scss/app.scss */
+  .tab-holder .folder-edge .indicator li a {
+    padding: 0rem 1.5rem;
+    margin: 0.5rem 0;
+    border-right: 1px solid #b5b6b8;
+    font-weight: 600;
+  }
+  /* line 2917, ../scss/app.scss */
+  .tab-holder .folder-edge .indicator li.active:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #c6007e;
+    top: -1px;
+    left: 0.86rem;
+  }
+  /* line 2931, ../scss/app.scss */
+  .tab-holder a.tab {
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0px 0px;
+    width: 5.625rem;
+    height: 4.625rem;
+    background-color: #F6F6F6;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    box-shadow: 0px 1px 4px 2px rgba(50, 50, 50, 0.25);
+  }
+  /* line 2941, ../scss/app.scss */
+  .tab-holder a.tab:before {
+    content: '';
+    position: absolute;
+    background-image: url("img/icon-sheet.png");
+  }
+  /* line 2947, ../scss/app.scss */
+  .tab-holder .tab.active {
+    background-color: #FFFFFF;
+    box-shadow: 0px -3px 4px 1px rgba(50, 50, 50, 0.25);
+    z-index: 3;
+  }
+  /* line 2952, ../scss/app.scss */
+  .tab-holder #calendarTab {
+    margin-left: 1.5rem;
+  }
+  /* line 2954, ../scss/app.scss */
+  .tab-holder #calendarTab:before {
+    background-position: -131px -672px;
+    width: 3.3125rem;
+    height: 3.5625rem;
+    top: 6px;
+    left: 16px;
+  }
+  /* line 2962, ../scss/app.scss */
+  .tab-holder #costTab {
+    margin-left: 0.125rem;
+  }
+  /* line 2964, ../scss/app.scss */
+  .tab-holder #costTab:before {
+    background-position: -201px -672px;
+    width: 1.6875rem;
+    height: 3.25rem;
+    top: 8px;
+    left: 28px;
+  }
+  /* line 2972, ../scss/app.scss */
+  .tab-holder #calendarTable, .tab-holder #costTable {
+    z-index: 2;
+    position: relative;
+  }
+
+  /* line 2978, ../scss/app.scss */
+  .table-holder {
+    width: 100%;
+    position: relative;
+    height: auto;
+    top: -0.5rem;
+  }
+
+  /* line 2985, ../scss/app.scss */
+  #mouthImageCarousel .item {
+    padding: 0 1rem 1.5rem 1rem;
+    height: 12rem;
+  }
+  /* line 2988, ../scss/app.scss */
+  #mouthImageCarousel .item .content {
+    position: relative;
+    display: block;
+    padding: 0 0 0 3rem;
+  }
+
+  /* line 2995, ../scss/app.scss */
+  .columns.small-no-columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 2999, ../scss/app.scss */
+  .header-bg {
+    min-height: 30rem;
+  }
+  /* line 3001, ../scss/app.scss */
+  .header-bg:after {
+    width: 4.6875rem;
+    height: 1.25rem;
+    background-position: -201px 0px;
+    background-repeat: no-repeat;
+    margin: 0 0 0 -32.5px;
+    bottom: -19px;
+  }
+  /* line 3010, ../scss/app.scss */
+  .header-bg .row .hero {
+    background-image: none;
+  }
+  /* line 3012, ../scss/app.scss */
+  .header-bg .row .hero .greeting-container {
+    padding-top: 2rem;
+  }
+  /* line 3014, ../scss/app.scss */
+  .header-bg .row .hero .greeting-container h2 {
+    position: relative;
+    padding-left: 1.15rem;
+    font-size: 3.125rem;
+    line-height: 4.25rem;
+  }
+  /* line 3019, ../scss/app.scss */
+  .header-bg .row .hero .greeting-container h2:before {
+    position: absolute;
+    font-size: 2.5rem;
+    top: -7px;
+    left: 0px;
+  }
+  /* line 3026, ../scss/app.scss */
+  .header-bg .row .hero .greeting-container h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    padding-left: 1.15rem;
+  }
+  /* line 3030, ../scss/app.scss */
+  .header-bg .row .hero .greeting-container h3:after {
+    font-size: 2.5rem;
+  }
+  /* line 3034, ../scss/app.scss */
+  .header-bg .row .hero .greeting-container h4 {
+    padding-left: 1.15rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  /* line 3042, ../scss/app.scss */
+  .header-bg .row .hero .top-bar .logo-bar .bupa {
+    background-image: url("img/logo-mobile.png");
+    background-size: contain;
+    display: block;
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-right: 1.5rem;
+    float: left;
+  }
+  /* line 3051, ../scss/app.scss */
+  .header-bg .row .hero .top-bar .logo-bar .dentist-logo {
+    background-image: url("img/dentist-logo.png");
+    background-size: contain;
+    display: block;
+    width: 7.5rem;
+    height: 3.125rem;
+    float: left;
+  }
+  /* line 3062, ../scss/app.scss */
+  .header-bg .row .hero .top-bar .profile-bar .profile {
+    display: none;
+  }
+
+  /* line 3071, ../scss/app.scss */
+  #content.margin-top-4.row {
+    min-height: 9rem;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+  }
+  /* line 3077, ../scss/app.scss */
+  #content.margin-top-4.row .container .root-canal {
+    background-size: 50px;
+  }
+  /* line 3080, ../scss/app.scss */
+  #content.margin-top-4.row .container .issue {
+    padding: 2rem 0 1.6rem 4rem;
+  }
+  /* line 3082, ../scss/app.scss */
+  #content.margin-top-4.row .container .issue span {
+    font-family: 'Gotham';
+    font-size: 1.25rem;
+  }
+  /* line 3086, ../scss/app.scss */
+  #content.margin-top-4.row .container .issue h3 {
+    font-family: 'Gotham';
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  /* line 3095, ../scss/app.scss */
+  #appointmentDetails {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 3098, ../scss/app.scss */
+  #appointmentDetails .header-bar {
+    padding: 0 1.25em;
+  }
+  /* line 3100, ../scss/app.scss */
+  #appointmentDetails .header-bar h3 {
+    font-family: 'Gotham';
+    font-size: 1rem;
+  }
+  /* line 3105, ../scss/app.scss */
+  #appointmentDetails .margin-bottom-0-5 {
+    margin-bottom: 0 !important;
+  }
+  /* line 3108, ../scss/app.scss */
+  #appointmentDetails .appt-tile {
+    height: 7rem;
+  }
+  /* line 3111, ../scss/app.scss */
+  #appointmentDetails .appt-tile .appt-date span {
+    clear: both;
+    display: block;
+  }
+  /* line 3115, ../scss/app.scss */
+  #appointmentDetails .appt-tile .appt-date .year, #appointmentDetails .appt-tile .appt-date .day-name {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+  /* line 3119, ../scss/app.scss */
+  #appointmentDetails .appt-tile .appt-date .month, #appointmentDetails .appt-tile .appt-date .day {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  /* line 3123, ../scss/app.scss */
+  #appointmentDetails .appt-tile .appt-date .day-name {
+    padding-top: 0.25rem;
+  }
+  /* line 3128, ../scss/app.scss */
+  #appointmentDetails .appt-tile .appt-time .time-holder {
+    padding-top: 0.5rem;
+  }
+  /* line 3130, ../scss/app.scss */
+  #appointmentDetails .appt-tile .appt-time .time-holder .status {
+    clear: both;
+    padding-top: 0rem;
+    font-size: 0.75rem;
+  }
+  /* line 3135, ../scss/app.scss */
+  #appointmentDetails .appt-tile .appt-time .time-holder .time {
+    font-size: 2rem;
+  }
+  /* line 3142, ../scss/app.scss */
+  #appointmentDetails .alert-symbol {
+    width: 1rem;
+    height: 1rem;
+  }
+  /* line 3145, ../scss/app.scss */
+  #appointmentDetails .alert-symbol:after {
+    width: 1rem;
+    height: 1rem;
+    background-position: -23px -831px;
+  }
+
+  /* line 3154, ../scss/app.scss */
+  .appt-actions #btnAddToCalendar {
+    display: none;
+  }
+  /* line 3158, ../scss/app.scss */
+  .appt-actions .button:nth-child(1) {
+    margin-right: 0rem;
+  }
+  /* line 3161, ../scss/app.scss */
+  .appt-actions .button:nth-child(2) {
+    margin-left: 0rem;
+  }
+
+  /* line 3167, ../scss/app.scss */
+  .call {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: none;
+  }
+  /* line 3171, ../scss/app.scss */
+  .call .info {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-left: 4rem;
+    position: relative;
+    color: #404040;
+    font-weight: 200;
+  }
+  /* line 3178, ../scss/app.scss */
+  .call .info:before {
+    position: absolute;
+    content: '';
+    background-image: url("img/icon-sheet.png");
+    background-position: -82px -672px;
+    width: 3rem;
+    height: 3rem;
+    left: 0px;
+  }
+  /* line 3188, ../scss/app.scss */
+  .call .phone-number {
+    font-weight: normal;
+    font-size: 2rem;
+    position: relative;
+    text-align: left;
+    padding-left: 4rem;
+  }
+  /* line 3194, ../scss/app.scss */
+  .call .phone-number a {
+    color: #1dafec;
+    margin-top: 2rem;
+    position: relative;
+    display: block;
+  }
+
+  /* line 3203, ../scss/app.scss */
+  .summary {
+    padding: 0;
+  }
+  /* line 3206, ../scss/app.scss */
+  .summary .no-border-top p {
+    font-size: 1rem;
+  }
+  /* line 3209, ../scss/app.scss */
+  .summary .no-border-top blockquote {
+    margin: 0.25rem;
+  }
+  /* line 3211, ../scss/app.scss */
   .summary .no-border-top blockquote p {
     font-size: 1.125rem;
     padding-left: 1rem;
